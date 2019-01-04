@@ -13,8 +13,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
 //1.@EnableAutoConfiguration 自动配置 扫包范围默认当前类。
 //2.加上扫包范围
 @SpringBootApplication
-@EnableAsync   //开启异步调用
-@MapperScan(basePackages = {"App/Mapper"})//Mapper调用
+//@EnableAsync   //开启异步调用
+//@MapperScan(basePackages = {"App/Mapper"})//Mapper调用
 public class App {
         public static void main(String[] args) {
             //整个程序的入口，启动springboot项目
