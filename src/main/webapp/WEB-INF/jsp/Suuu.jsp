@@ -10,7 +10,14 @@
 <head>
     <title>Title</title>
 </head>
-<body>abc
+<body>
+
+
+<form action="${pageContext.request.contextPath}/insertUser1  ">
+    <input type="text" name="name">
+    <input type="int" name="age">
+    <input type="submit">
+</form>
 
 </body>
 </html>

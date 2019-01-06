@@ -15,9 +15,9 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
-
+//数据库test2的配置文件
 @Configuration
-@MapperScan(basePackages = "App.Mapper.test2",sqlSessionTemplateRef = "test2SqlSessionTemplate")
+@MapperScan(basePackages = "App.Mapper.test2",sqlSessionFactoryRef = "test2SqlSessionFactory")
 public class DataSource2Config {
     @Bean(name = "test2DataSource")
     @ConfigurationProperties(prefix = "spring.datasource.test2")
@@ -32,7 +32,7 @@ public class DataSource2Config {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
         //添加XML目录
-        ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+//        ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 //无xml
 //        try {
 //            bean.setMapperLocations(resolver.getResources("classpath*:mappers/test2/*.xml"));

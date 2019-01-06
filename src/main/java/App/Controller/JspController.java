@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @Slf4j
 public class JspController {
-    @RequestMapping("/aaaa")
+    //转向Suuu页面
+    @RequestMapping("/Suuu")
     public String aaa(String name,String age){
-        System.out.println("Aaaaaaa");
+        System.out.println("Turn to Suuu.jsp");
         return "Suuu";
     }
-    @RequestMapping("/bbbb")
+    //全局错误测试
+    @RequestMapping("/error")
     public String bbb(){
         int i;
         i=5/0;

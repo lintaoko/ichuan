@@ -3,6 +3,7 @@ package App.Service;
 import App.Domain.User;
 import App.Mapper.test2.UserMapperTest2;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,7 +12,7 @@ import javax.annotation.Resource;
 @Service
 @Slf4j
 public class UserServiceTest2 {
-    @Resource
+    @Autowired
     private UserMapperTest2 userMapperTest2;
 
     @Transactional
