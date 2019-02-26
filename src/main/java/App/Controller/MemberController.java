@@ -25,8 +25,11 @@ public class MemberController {
     //test
     @RequestMapping("/abc")
     public String memberIndex(){
-        return httpurl;
+        String abc="abcdasdsadasdad";
+        return abc;
     }
+
+
     @RequestMapping("/abcd")
     public String test2(){
         log.info("1");

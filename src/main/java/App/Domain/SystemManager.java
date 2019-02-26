@@ -9,10 +9,10 @@ import lombok.extern.slf4j.Slf4j;
 @Data
 @Slf4j
 @ToString
-public class User {
-    private  Integer id;
-   private String name;
-   private Integer age;
+public class SystemManager {
+    private  Integer userId;
+   private String userName;
+   private String userPass;
 //    public static void main(String[] args) {
 //        User user=new User();
 //        user.setName("name");

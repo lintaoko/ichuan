@@ -18,7 +18,7 @@ public class JspController {
         return "Suuu";
     }
     //全局错误测试
-    @RequestMapping("/error")
+    @RequestMapping("/errortest")
     public String bbb(){
         int i;
         i=5/0;
