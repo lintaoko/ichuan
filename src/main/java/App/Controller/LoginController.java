@@ -1,39 +1,48 @@
 package App.Controller;
 
 
-import App.Domain.SystemManager;
-import App.Service.SystemManagerService;
+import App.Domain.UserLogin;
+import App.Mapper.UserLoginMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
 
-@Controller
+@RestController
 @Slf4j
-@RequestMapping("/user")
 public class LoginController {
 
     @Autowired
-    SystemManagerService systemManagerService;
+    UserLoginMapper userLoginMapper;
 
-    @RequestMapping("/login")
-    public String login(){
-        return "login";
-    }
-    @RequestMapping("/loginVerify")
-    public String loginVerify(String userName, String userPass, HttpSession session){
+    @PostMapping("/user/loginVerify" )
+    public String userloginVerify(String accountNumber , String password, HttpSession session){
 
-
-        SystemManager systemManager=systemManagerService.queryByUserNameAndUserPass(userName,userPass);
-        if (systemManager==null){
-            return "login";
+        //登陆验证
+        UserLogin userLogin=userLoginMapper.userLogin(accountNumber,password);
+        if (userLogin==null){
+            return "0";
         }
         else {
-            session.setAttribute("user",systemManager);
-            return "index";
+            session.setAttribute("user",userLogin);
+            return "1";
         }
-        return null;
+    }
+    @PostMapping("/admin/loginVerify")
+    public String adminloginVerify(String accountNumber , String password, HttpSession session){
+
+        //登陆验证
+        UserLogin userLogin=userLoginMapper.systemManagerLogin(accountNumber,password);
+        if (userLogin==null){
+            return "0";
+        }
+        else {
+            session.setAttribute("user",userLogin);
+            return "1";
+        }
     }
 }
