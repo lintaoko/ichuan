@@ -32,5 +32,16 @@ public class UserLoginService {
         int updateResult= userLoginMapper.userLoginUpdatePasswordById(password, userLoginId);
         return updateResult;
     }
-
+    //修改邮箱
+    public int userLoginUpdateEmailById(String email,Integer userLoginId)
+    {
+        int updateResult=userLoginMapper.userLoginUpdateEmailById(email, userLoginId);
+        return updateResult;
+    }
+    //修改电话
+    public int userLoginUpdatePhoneById(String phone,Integer userLoginId)
+    {
+        int updateResult=userLoginMapper.userLoginUpdatePhoneById(phone, userLoginId);
+        return updateResult;
+    }
 }
