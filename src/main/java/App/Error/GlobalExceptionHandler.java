@@ -21,8 +21,7 @@ public class GlobalExceptionHandler {
         StringWriter sw=new StringWriter();
         PrintWriter pw=new PrintWriter(sw);
         e.printStackTrace(pw);
-        errorResultMap.put("errorCode","500");
-        errorResultMap.put("errormsg",sw.toString());
+        errorResultMap.put("errorCode",e.getMessage());
         return errorResultMap;
     }
 }

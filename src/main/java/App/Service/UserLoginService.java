@@ -2,7 +2,6 @@ package App.Service;
 
 import App.Domain.UserLogin;
 import App.Mapper.UserLoginMapper;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,25 +22,25 @@ public class UserLoginService {
         return  selectResult;
     }
     //增加用户
-    public int userLoginInsert (String accountNumber,String password,String email,String phone){
-        int insertResult= userLoginMapper.userLoginInsert(accountNumber, password, email, phone);
+    public Integer userLoginInsert (String accountNumber,String password,String email,String phone){
+        Integer insertResult= userLoginMapper.userLoginInsert(accountNumber, password, email, phone);
         return insertResult;
     }
     //修改密码
-    public int userLoginUpdatePasswordById(String password,Integer userLoginId){
-        int updateResult= userLoginMapper.userLoginUpdatePasswordById(password, userLoginId);
+    public Integer userLoginUpdatePasswordById(String password,Integer userLoginId){
+        Integer updateResult= userLoginMapper.userLoginUpdatePasswordById(password, userLoginId);
         return updateResult;
     }
     //修改邮箱
-    public int userLoginUpdateEmailById(String email,Integer userLoginId)
+    public Integer userLoginUpdateEmailById(String email,Integer userLoginId)
     {
-        int updateResult=userLoginMapper.userLoginUpdateEmailById(email, userLoginId);
+        Integer updateResult=userLoginMapper.userLoginUpdateEmailById(email, userLoginId);
         return updateResult;
     }
     //修改电话
-    public int userLoginUpdatePhoneById(String phone,Integer userLoginId)
+    public Integer userLoginUpdatePhoneById(String phone,Integer userLoginId)
     {
-        int updateResult=userLoginMapper.userLoginUpdatePhoneById(phone, userLoginId);
+        Integer updateResult=userLoginMapper.userLoginUpdatePhoneById(phone, userLoginId);
         return updateResult;
     }
 }

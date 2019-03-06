@@ -16,5 +16,4 @@ public class UserInf {
    private String email;
    private Integer age;
    private String hobby;
-
 }
