@@ -13,4 +13,5 @@ public class Goods {
     private String goodsQuantity;
     private JsonObject goodInf;
     private Integer goodsType;
+    private String goodsTypeName;
 }

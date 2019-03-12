@@ -12,26 +12,22 @@ public class ShopCarService {
 
     //购物车查询
     public ShopCar queryShopCarByUserId(Integer userId){
-        String url="http://127.0.0.1:8081/api/shopcar/1/"+userId;
+        String url="http://127.0.0.1:8081/api/shopcar/"+userId+"/userid";
         return this.restTemplate.getForObject(url,ShopCar.class);
     }
     //购物车添加
     public Integer shopCarInsert (Integer userId,String goodsName,String goodsImg,Double goodsPrice, Integer purchaseQuantity){
-        String url="http://127.0.0.1:8081/api/shopcar/1";
+        String url="http://127.0.0.1:8081/api/shopcar";
         return this.restTemplate.getForObject(url,Integer.class);
     }
     //购物车单项删除
     public Integer shopCarDeleteByShopCarId(Integer shopCarId){
-        String url="http://127.0.0.1:8081/api/shopcar/1";
+        String url="http://127.0.0.1:8081/api/shopcar/"+shopCarId+"/shopcarid";
         return this.restTemplate.getForObject(url,Integer.class);
     }
     public Integer shopCarDeleteByUserId(Integer userId){
-        String url="http://127.0.0.1:8081/api/shopcar/1";
+        String url="http://127.0.0.1:8081/api/shopcar/"+userId+"/userid";
         return this.restTemplate.getForObject(url,Integer.class);
     }
-    //todo
-//    public Item queryItemById(Long id){
-//        String url =itcastItemurl+id;
-//        return this.restTemplate.getForObject(url,Item.class);
-//    }
+
 }

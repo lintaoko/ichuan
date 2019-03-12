@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>xyz</groupId>
-    <artifactId>Springboot-helloworld</artifactId>
+    <groupId>com.f00w</groupId>
+    <artifactId>ichuan</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
@@ -71,10 +71,10 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <!--jta atomikos依赖注入-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jta-atomikos</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-jta-atomikos</artifactId>-->
+        <!--</dependency>-->
         <!--pagehelper依赖注入-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
