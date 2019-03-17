@@ -41,7 +41,7 @@ public class GoodsService {
         multiValueMap.add("goodsQuantity",goodsQuantity);
         multiValueMap.add("goodsinf",goodsinf);
         multiValueMap.add("goodsType",goodsType);
-        return  this.restTemplate.postForObject(url, multiValueMap, Integer.class);
+        return this.restTemplate.postForObject(url, multiValueMap, Integer.class);
     }
     //删除货物
     public Integer goodsDeleteByGoodsId (Integer goodsId){

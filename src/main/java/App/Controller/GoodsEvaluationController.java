@@ -27,7 +27,6 @@ public class GoodsEvaluationController {
     //删除评论
     @DeleteMapping("api/goodsevaluation/{GoodsEvaluationId}/goodsEvaluationId")
     public Integer goodsEvaluationDeleteByGoodsEvalutionId( @PathVariable("GoodsEvaluationId") Integer goodsEvaluationId)throws Exception{
-        Integer deleteResult =goodsEvaluationService.goodsEvaluationDeleteByGoodsEvalutionId(goodsEvaluationId);
-        return  deleteResult;
+        return goodsEvaluationService.goodsEvaluationDeleteByGoodsEvalutionId(goodsEvaluationId);
     }
 }

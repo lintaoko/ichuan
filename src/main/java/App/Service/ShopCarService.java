@@ -17,7 +17,7 @@ public class ShopCarService {
     //购物车查询
     public ShopCar[] queryShopCarByUserId(Integer userId){
         String url="http://127.0.0.1:8081/api/shopcar/"+userId+"/userid";
-        return restTemplate.getForObject(url,ShopCar[].class);
+        return this.restTemplate.getForObject(url,ShopCar[].class);
     }
     //购物车添加
     public Integer shopCarInsert (Integer userId,String goodsName,String goodsImg,Double goodsPrice, Integer purchaseQuantity){
@@ -28,7 +28,7 @@ public class ShopCarService {
         multiValueMap.add("goodsImg",goodsImg);
         multiValueMap.add("goodsPrice",goodsPrice);
         multiValueMap.add("purchaseQuantity",purchaseQuantity);
-        return  restTemplate.postForObject(url, multiValueMap, Integer.class);
+        return this.restTemplate.postForObject(url, multiValueMap, Integer.class);
     }
     //购物车单项删除
     public Integer shopCarDeleteByShopCarId(Integer shopCarId){

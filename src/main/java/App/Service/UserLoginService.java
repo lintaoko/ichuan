@@ -10,37 +10,33 @@ public class UserLoginService {
     @Autowired
     UserLoginMapper userLoginMapper;
 
-    //管理员登陆
-    public UserLogin systemManagerLogin(String accountNumber,String password)
-    {
-        UserLogin selectResult= userLoginMapper.systemManagerLogin(accountNumber, password);
-        return selectResult;
-    }
-    //用户登陆
-    public UserLogin userLogin (String accountNumber,String password){
-        UserLogin selectResult= userLoginMapper.userLogin(accountNumber, password);
-        return  selectResult;
-    }
+//    //管理员登陆
+//    public UserLogin systemManagerLogin(String accountNumber,String password)
+//    {
+//        UserLogin selectResult= userLoginMapper.systemManagerLogin(accountNumber, password);
+//        return selectResult;
+//    }
+//    //用户登陆
+//    public UserLogin userLogin (String accountNumber,String password){
+//        UserLogin selectResult= userLoginMapper.userLogin(accountNumber, password);
+//        return  selectResult;
+//    }
     //增加用户
     public Integer userLoginInsert (String accountNumber,String password,String email,String phone){
-        Integer insertResult= userLoginMapper.userLoginInsert(accountNumber, password, email, phone);
-        return insertResult;
+        return userLoginMapper.userLoginInsert(accountNumber, password, email, phone);
     }
     //修改密码
     public Integer userLoginUpdatePasswordById(String password,Integer userLoginId){
-        Integer updateResult= userLoginMapper.userLoginUpdatePasswordById(password, userLoginId);
-        return updateResult;
+        return userLoginMapper.userLoginUpdatePasswordById(password, userLoginId);
     }
     //修改邮箱
     public Integer userLoginUpdateEmailById(String email,Integer userLoginId)
     {
-        Integer updateResult=userLoginMapper.userLoginUpdateEmailById(email, userLoginId);
-        return updateResult;
+        return userLoginMapper.userLoginUpdateEmailById(email, userLoginId);
     }
     //修改电话
     public Integer userLoginUpdatePhoneById(String phone,Integer userLoginId)
     {
-        Integer updateResult=userLoginMapper.userLoginUpdatePhoneById(phone, userLoginId);
-        return updateResult;
+        return userLoginMapper.userLoginUpdatePhoneById(phone, userLoginId);
     }
 }

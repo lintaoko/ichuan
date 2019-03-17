@@ -11,8 +11,6 @@ import java.util.Map;
 
 @ControllerAdvice(basePackages ="App.Controller")
 public class GlobalExceptionHandler {
-
-
     @ResponseBody
     //输出形式
     @ExceptionHandler(RuntimeException.class)

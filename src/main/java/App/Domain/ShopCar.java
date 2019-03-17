@@ -14,5 +14,4 @@ public class ShopCar {
     private String goodsImg;
     private Double goodsPrice;
     private Integer purchaseQuantity;
-
 }

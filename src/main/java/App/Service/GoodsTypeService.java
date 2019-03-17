@@ -12,7 +12,6 @@ import org.springframework.web.client.RestTemplate;
 public class GoodsTypeService {
     @Autowired
     private RestTemplate restTemplate;
-
     //查询类别
     public GoodsType queryGoodsTypeByTypeId(Integer typeid){
         String url="http://127.0.0.1:8081/api/goodstype/"+typeid+"/typeid";
@@ -23,8 +22,7 @@ public class GoodsTypeService {
         String url="http://127.0.0.1:8081/api/goodstype/"+typeName+"/typename";
         MultiValueMap<String,Object> multiValueMap=new LinkedMultiValueMap<>();
         multiValueMap.add("typeName",typeName);
-        return  restTemplate.postForObject(url, multiValueMap, Integer.class);
-
+        return this.restTemplate.postForObject(url, multiValueMap, Integer.class);
     }
     //删除类别
     public Integer goodsTypeDeleteByTypeId(Integer typeId){

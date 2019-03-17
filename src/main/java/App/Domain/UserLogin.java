@@ -23,9 +23,6 @@ public class UserLogin implements UserDetails, Serializable {
    private String email;
    private String phone;
    private Integer type;
-
-
-
    //安全模块
    private String role;
    private boolean accountNonExpired;
@@ -36,27 +33,22 @@ public class UserLogin implements UserDetails, Serializable {
    public Collection<? extends GrantedAuthority> getAuthorities() {
       return AuthorityUtils.commaSeparatedStringToAuthorityList(role);
    }
-
    @Override
    public String getUsername() {
       return accountNumber;
    }
-
    @Override
    public boolean isAccountNonExpired() {
       return accountNonExpired;
    }
-
    @Override
    public boolean isAccountNonLocked() {
       return accountNonLocked;
    }
-
    @Override
    public boolean isCredentialsNonExpired() {
       return accountNonExpired;
    }
-
    @Override
    public boolean isEnabled() {
       return enabled;

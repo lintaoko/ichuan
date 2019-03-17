@@ -12,7 +12,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-
     @Autowired
     private MyAuthenticationProvider provider;
     @Override
@@ -33,11 +32,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 //任何以"/db/" 开头的URL需要同时具有 "ROLE_ADMIN" 和 "ROLE_DBA"权限的用户才可以访问。
                 //和上面一样我们的 hasRole 方法也没有使用 "ROLE_" 前缀。              
                 .antMatchers("/tooooo").access("hasRole('ADMIN') and hasRole('USER')")
-
                 //任何以"/db/" 开头的URL只需要拥有 "ROLE_ADMIN" 和 "ROLE_DBA"其中一个权限的用户才可以访问。
                 //和上面一样我们的 hasRole 方法也没有使用 "ROLE_" 前缀。          
 //                .antMatchers("/api/**").hasAnyRole("ADMIN", "USER")
-
                 //尚未匹配的任何URL都要求用户进行身份验证
                 .anyRequest().authenticated()
                 .and()

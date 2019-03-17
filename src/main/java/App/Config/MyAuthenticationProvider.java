@@ -30,7 +30,6 @@ public class MyAuthenticationProvider implements AuthenticationProvider {
     public Authentication authenticate(Authentication authentication ) throws AuthenticationException {
         String userName = authentication.getName();// 这个获取表单输入中返回的用户名;
         String password = (String) authentication.getCredentials();// 这个是表单中输入的密码；
-
         // 这里构建来判断用户是否存在和密码是否正确
         UserLogin userLogin = (UserLogin) userDetailService.loadUserByUsername(userName); // 这里调用我们的自己写的获取用户的方法；
         if (userLogin == null) {
@@ -56,7 +55,6 @@ public class MyAuthenticationProvider implements AuthenticationProvider {
         // //这里还可以加一些其他信息的判断，比如用户账号已停用等判断，这里为了方便我接下去的判断，我就不用加密了。
         //
         //
-
     }
     @Override
     public boolean supports(Class<?> authentication) {

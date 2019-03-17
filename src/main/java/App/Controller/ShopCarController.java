@@ -13,7 +13,6 @@ import java.util.List;
 public class ShopCarController {
     @Autowired
     ShopCarService shopCarService;
-
     //购物车查询
     @GetMapping("api/shopcar/{UserId}/userid")
     public ShopCar[] queryShopCarByUserId(@PathVariable("UserId") Integer userId){
@@ -33,8 +32,6 @@ public class ShopCarController {
     @DeleteMapping("api/shopcar/{UserId}/userid")
     public Integer shopCarDeleteByUserId(@PathVariable("UserId") Integer userId) {
         return shopCarService.shopCarDeleteByUserId(userId);
-
     }
-
 }
 
