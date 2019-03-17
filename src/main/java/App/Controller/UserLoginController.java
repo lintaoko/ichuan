@@ -1,23 +1,15 @@
 package App.Controller;
-
-
 import App.Domain.UserLogin;
 import App.Service.UserLoginService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
-import javax.annotation.security.RolesAllowed;
-import javax.servlet.http.HttpSession;
-
 @RestController
 @Slf4j
 public class UserLoginController {
-
     @Autowired
     UserLoginService userLoginService;
     @Autowired
@@ -58,17 +50,15 @@ public class UserLoginController {
     public Integer userLoginInsert (String accountNumber,String password,String email,String phone){
         //判断代码正则
         //todo
-        Integer result =userLoginService.userLoginInsert(accountNumber, password, email, phone);
-        return result;
+        return userLoginService.userLoginInsert(accountNumber, password, email, phone);
     }
     //修改密码
     @PutMapping("/api/userlogin/{UserLoginId}/password")
     public Integer userLoginUpdatePasswordById(String password, @PathVariable("UserLoginId") Integer userLoginId, Authentication authentication) throws BadCredentialsException {
         UserLogin us = (UserLogin) authentication.getPrincipal();
-        if (us.getUserLoginId()==userLoginId||us.getType()==1) {
+        if (us.getUserLoginId().equals(userLoginId) ||us.getType()==1) {
             String encoderpassword=passwordEncoder.encode(password);
-            Integer result = userLoginService.userLoginUpdatePasswordById(encoderpassword, userLoginId);
-            return result;
+            return  userLoginService.userLoginUpdatePasswordById(encoderpassword, userLoginId);
         }else{
             log.info("权限不足");
             throw new BadCredentialsException("权限不足");
@@ -78,9 +68,8 @@ public class UserLoginController {
     @PutMapping("/api/userlogin/{UserLoginId}/email")
     public Integer userLoginUpdateEmailById(String email,@PathVariable("UserLoginId")Integer userLoginId,Authentication authentication){
         UserLogin us = (UserLogin) authentication.getPrincipal();
-        if (us.getUserLoginId() == userLoginId || us.getType() == 1) {
-            Integer result = userLoginService.userLoginUpdateEmailById(email, userLoginId);
-            return result;
+        if (us.getUserLoginId().equals(userLoginId) || us.getType() == 1) {
+            return  userLoginService.userLoginUpdateEmailById(email, userLoginId);
         } else {
             log.info("权限不足");
             throw new BadCredentialsException("权限不足");
@@ -90,14 +79,11 @@ public class UserLoginController {
     @PutMapping("/api/userlogin/{UserLoginId}/phone")
     public Integer userLoginUpdatePhoneById(String phone,@PathVariable("UserLoginId")Integer userLoginId,Authentication authentication){
         UserLogin us = (UserLogin) authentication.getPrincipal();
-        if (us.getUserLoginId() == userLoginId || us.getType() == 1) {
-            Integer result=userLoginService.userLoginUpdatePhoneById(phone, userLoginId);
-            return result;
+        if (us.getUserLoginId().equals(userLoginId) || us.getType() == 1) {
+            return userLoginService.userLoginUpdatePhoneById(phone, userLoginId);
         } else {
             log.info("权限不足");
             throw new BadCredentialsException("权限不足");
         }
     }
-
-
 }

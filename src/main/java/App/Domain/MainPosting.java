@@ -15,6 +15,6 @@ public class MainPosting {
     private String postingTitle;
     private String postingContent;
     private Date postedTime;
-    private String postAuther;
+    private String postAuthor;
     private String postImg;
 }

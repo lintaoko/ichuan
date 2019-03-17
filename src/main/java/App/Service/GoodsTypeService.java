@@ -2,7 +2,10 @@ package App.Service;
 
 import App.Domain.GoodsType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 @Service
@@ -18,11 +21,14 @@ public class GoodsTypeService {
     //增加类别
     public Integer goodsTypeInsert ( String typeName){
         String url="http://127.0.0.1:8081/api/goodstype/"+typeName+"/typename";
-        return this.restTemplate.getForObject(url,Integer.class);
+        MultiValueMap<String,Object> multiValueMap=new LinkedMultiValueMap<>();
+        multiValueMap.add("typeName",typeName);
+        return  restTemplate.postForObject(url, multiValueMap, Integer.class);
+
     }
     //删除类别
     public Integer goodsTypeDeleteByTypeId(Integer typeId){
         String url="http://127.0.0.1:8081/api/goodstype/"+typeId+"/typeid";
-        return this.restTemplate.getForObject(url,Integer.class);
+        return this.restTemplate.exchange(url, HttpMethod.DELETE,null,Integer.class).getBody();
     }
 }

@@ -14,7 +14,7 @@ public interface UserLoginMapper {
     @Select("select * from user_login where AccountNumber=#{LoginObject} or Email=#{LoginObject} or Phone=#{LoginObject}")
     UserLogin findByName (@Param("LoginObject") String accountNumber);
     //添加普通用户。注册
-    @Insert("insert into user_login(AccountNumber,Password,Email,Email,Type) values(#{AccountNumber},#{Password},#{Email},#{Phone},0)" )
+    @Insert("insert into user_login(AccountNumber,Password,Email,Type) values(#{AccountNumber},#{Password},#{Email},#{Phone},0)" )
     int userLoginInsert (@Param("AccountNumber") String accountNumber, @Param("Password") String password,@Param("Email") String email,@Param("Phone") String phone);
     //更改用户密码
     @Update("update user_login set Password = #{Password} where UserLoginId=#{UserLoginId} ")
