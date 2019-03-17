@@ -11,8 +11,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.client.OkHttp3ClientHttpRequestFactory;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
 
 import java.util.Properties;
 
@@ -31,6 +32,10 @@ public class App   {
 //        return new RestTemplate();
         //整合okhttp
         return new RestTemplate(new OkHttp3ClientHttpRequestFactory());
+    }
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
     }
         public static void main(String[] args) {
             //整个程序的入口，启动springboot项目

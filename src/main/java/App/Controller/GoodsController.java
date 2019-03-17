@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @Slf4j
@@ -32,12 +33,12 @@ public class GoodsController {
     }
     //查询货物从样式
     @GetMapping("api/goods/{GoodsType}/goodstype")
-    public ArrayList<Goods> queryGoodsInfByGoodsType(@PathVariable("GoodsType")Integer goodsType) {
-        ArrayList<Goods> result=goodsService.queryGoodsInfByGoodsType(goodsType);
+    public Goods[] queryGoodsInfByGoodsType(@PathVariable("GoodsType")Integer goodsType) {
+        Goods[] result=goodsService.queryGoodsInfByGoodsType(goodsType);
         return result;
     }
     //添加货物
-    @PostMapping("api/goods/")
+    @PostMapping("api/goods")
     public Integer goodsInsert(String goodsName , String goodsImg , Integer goodsQuantity, JsonObject goodsinf, Integer goodsType){
         Integer result = goodsService.goodsInsert(goodsName, goodsImg, goodsQuantity, goodsinf, goodsType);
         return result;

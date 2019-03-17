@@ -6,6 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @Slf4j
 public class ShopCarController {
@@ -14,8 +16,8 @@ public class ShopCarController {
 
     //购物车查询
     @GetMapping("api/shopcar/{UserId}/userid")
-    public ShopCar queryShopCarByUserId(@PathVariable("UserId") Integer userId){
-        ShopCar result =shopCarService.queryShopCarByUserId(userId);
+    public ShopCar[] queryShopCarByUserId(@PathVariable("UserId") Integer userId){
+        ShopCar[] result =shopCarService.queryShopCarByUserId(userId);
         return result;
     }
     //购物车添加
