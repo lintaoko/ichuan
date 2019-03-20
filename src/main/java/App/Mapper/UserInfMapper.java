@@ -11,16 +11,16 @@ public interface UserInfMapper {
     @Select("select * from user_inf where UserLoginId=#{UserLoginId}")
     UserInf queryUserInfByUserLoginId (@Param("UserLoginId")Integer userLoginId);
     //更改user_login邮箱
-    @Update("update user_inf set Email =#{Email} where id=#{UserLoginId} ")
+    @Update("update user_inf set Email =#{Email} where UserLoginId=#{UserLoginId} ")
     int userInfUpdateEmailById(@Param("Email")String email,@Param("UserLoginId") Integer userLoginId);
     //更改user_inf电话
-    @Update("update user_inf set Phone =#{Phone} where id=#{UserLoginId} ")
+    @Update("update user_inf set Phone =#{Phone} where UserLoginId=#{UserLoginId} ")
     int userInfUpdatePhoneById(@Param("Phone")String phone,@Param("UserLoginId") Integer userLoginId);
     //更改user_inf昵称
-    @Update("update user_inf set UserName =#{UserName} where id=#{UserLoginId} ")
+    @Update("update user_inf set UserName =#{UserName} where UserLoginId=#{UserLoginId} ")
     int userInfUpdateUserNameById(@Param("UserName")String userName,@Param("UserLoginId") Integer userLoginId);
     //修改个人地址
-    @Update("update user_inf set Address =#{Address} where id=#{UserLoginId}" )
+    @Update("update user_inf set Address =#{Address} where UserLoginId=#{UserLoginId}" )
     int userInfUpdateAddressById (@Param("Address")String address,@Param("UserLoginId") Integer userLoginId);
     //增添个人信息
     @Insert("insert into user_inf(UserLoginId,UserName,Phone,Address,Email,Age,Hobby) VALUES(#{UserLoginId},#{UserName},#{Phone},#{Address},#{Email},#{Age},#{Hobby})")

@@ -17,17 +17,17 @@ public class ReplyPostingService {
     private RestTemplate restTemplate;
     //查询自己的回复贴
     public ReplyPosting[] queryReplyPostingByReplyUserId(Integer replyUserId){
-        String url="http://127.0.0.1:8082/replyposting/"+replyUserId+"/replyuserid";
-        return this.restTemplate.getForObject(url, ReplyPosting[].class);
+        String url="http://127.0.0.1:8082/api/replyposting/"+replyUserId+"/replyuserid";
+        return this.restTemplate.getForObject(url,ReplyPosting[].class);
     }
     //查询主题帖的回复贴
     public ReplyPosting[] queryReplyPostingByMainPostingId(Integer mainPostingId){
-        String url="http://127.0.0.1:8082/replyposting/"+mainPostingId+"/mainpostingid";
-        return this.restTemplate.getForObject(url, ReplyPosting[].class);
+        String url="http://127.0.0.1:8082/api/replyposting/"+mainPostingId+"/mainpostingid";
+        return this.restTemplate.getForObject(url,ReplyPosting[].class);
     }
     //查询主题帖中某人的回复贴(只看楼主)
     public ReplyPosting[] queryReplyPostingByMainPostingIdAndReplyUserId(Integer mainPostingId, Integer replyUserId){
-        String url="http://127.0.0.1:8082/replyposting/"+mainPostingId+"/mainpostingid/"+replyUserId+"/replyuserid";
+        String url="http://127.0.0.1:8082/api/replyposting/"+mainPostingId+"/mainpostingid/"+replyUserId+"/replyuserid";
         return this.restTemplate.getForObject(url, ReplyPosting[].class);
     }
     //回复主题帖

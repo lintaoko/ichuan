@@ -35,8 +35,8 @@ public class ReplyPostingController {
         return replyPostingService.replyPostingInsert(mainPostingId, replyUserId, replyContent, replyImg, Replier);
     }
     //删除回复
-    @DeleteMapping("api/replyposting/{ReplyUserId}/replyuserid")
-    public Integer replyPostingDeleteByReplyPostingId( @PathVariable("ReplyUserId") Integer replyPostingId){
+    @DeleteMapping("api/replyposting/{ReplyPostingId}/replypostingid")
+    public Integer replyPostingDeleteByReplyPostingId( @PathVariable("ReplyPostingId") Integer replyPostingId){
         return replyPostingService.replyPostingDeleteByReplyPostingId(replyPostingId);
     }
 }

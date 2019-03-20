@@ -47,43 +47,25 @@ public class UserLoginController {
 //    }
     //添加用户，注册
     @PostMapping("/api/userlogin/register")
-    public Integer userLoginInsert (String accountNumber,String password,String email,String phone){
+    public Integer userLoginInsert (@RequestParam String accountNumber,@RequestParam String password,@RequestParam String email,@RequestParam String phone){
         //判断代码正则
         //todo
         return userLoginService.userLoginInsert(accountNumber, password, email, phone);
     }
     //修改密码
     @PutMapping("/api/userlogin/{UserLoginId}/password")
-    public Integer userLoginUpdatePasswordById(String password, @PathVariable("UserLoginId") Integer userLoginId, Authentication authentication) throws BadCredentialsException {
-        UserLogin us = (UserLogin) authentication.getPrincipal();
-        if (us.getUserLoginId().equals(userLoginId) ||us.getType()==1) {
+    public Integer userLoginUpdatePasswordById(@RequestParam String password, @PathVariable("UserLoginId") Integer userLoginId, Authentication authentication)  {
             String encoderpassword=passwordEncoder.encode(password);
             return  userLoginService.userLoginUpdatePasswordById(encoderpassword, userLoginId);
-        }else{
-            log.info("权限不足");
-            throw new BadCredentialsException("权限不足");
-        }
     }
     //修改邮箱
     @PutMapping("/api/userlogin/{UserLoginId}/email")
     public Integer userLoginUpdateEmailById(String email,@PathVariable("UserLoginId")Integer userLoginId,Authentication authentication){
-        UserLogin us = (UserLogin) authentication.getPrincipal();
-        if (us.getUserLoginId().equals(userLoginId) || us.getType() == 1) {
             return  userLoginService.userLoginUpdateEmailById(email, userLoginId);
-        } else {
-            log.info("权限不足");
-            throw new BadCredentialsException("权限不足");
-        }
     }
     //修改电话
     @PutMapping("/api/userlogin/{UserLoginId}/phone")
     public Integer userLoginUpdatePhoneById(String phone,@PathVariable("UserLoginId")Integer userLoginId,Authentication authentication){
-        UserLogin us = (UserLogin) authentication.getPrincipal();
-        if (us.getUserLoginId().equals(userLoginId) || us.getType() == 1) {
             return userLoginService.userLoginUpdatePhoneById(phone, userLoginId);
-        } else {
-            log.info("权限不足");
-            throw new BadCredentialsException("权限不足");
-        }
     }
 }

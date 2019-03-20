@@ -13,9 +13,11 @@ import java.util.Map;
 public class GlobalExceptionHandler {
     @ResponseBody
     //输出形式
+    //因为某些业务需要进行业务回滚。
+    // 但spring的事务只针对RuntimeException的进行回滚操作。所以需要回滚就要继承RuntimeException。
     @ExceptionHandler(RuntimeException.class)
     public Map<String,Object> errorResult(Exception e){
-        Map<String,Object> errorResultMap=new HashMap<String, Object>();
+        Map<String,Object> errorResultMap=new HashMap<>();
         StringWriter sw=new StringWriter();
         PrintWriter pw=new PrintWriter(sw);
         e.printStackTrace(pw);

@@ -22,8 +22,7 @@ public interface UserLoginMapper {
     int userLoginUpdatePasswordById(@Param("Password")String password,@Param("UserLoginId") Integer userLoginId);
     //更改user_login邮箱
     @Update("update user_login set Email =#{Email} where UserLoginId=#{UserLoginId} ")
-    int userLoginUpdateEmailById(@Param("Email")String email,@Param("UserLoginId") Integer userLoginId);
-    //更改user_login电话
+    int userLoginUpdateEmailById(@Param("Email")String email,@Param("UserLoginId") Integer userLoginId);      //更改user_login电话
     @Update("update user_login set Phone =#{Phone} where UserLoginId=#{UserLoginId} ")
     int userLoginUpdatePhoneById(@Param("Phone")String phone,@Param("UserLoginId") Integer userLoginId);
 }

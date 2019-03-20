@@ -17,14 +17,15 @@ import java.util.Arrays;
 @Aspect
 public class WebLogAspect {
     private Logger logger = Logger.getLogger(getClass());
-    ThreadLocal<Long> startTime = new ThreadLocal<>();
-    @Pointcut("execution(public * App.Controller.JspController.*(..))")
+    private ThreadLocal<Long> startTime = new ThreadLocal<>();
+    @Pointcut("execution(public * App.Controller.*.*(..))")
     public void webLog(){}
     @Before("webLog()")
     public void doBefore(JoinPoint joinPoint) throws Throwable {
         startTime.set(System.currentTimeMillis());
         // 接收到请求，记录请求内容
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        assert attributes != null;
         HttpServletRequest request = attributes.getRequest();
         // 记录下请求内容
         logger.info("URL : " + request.getRequestURL().toString());

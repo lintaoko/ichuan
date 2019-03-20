@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
+import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.client.OkHttp3ClientHttpRequestFactory;
@@ -15,6 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.client.RestTemplate;
 
 
+import javax.servlet.MultipartConfigElement;
 import java.util.Properties;
 
 
@@ -37,6 +39,12 @@ public class App   {
     public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
+    @Bean
+    MultipartConfigElement multipartConfigElement(){
+        MultipartConfigFactory factory=new MultipartConfigFactory();
+        factory.setLocation("D:/Project/ichuan粉丝站后台管理系统/src/main/resources/");
+        return factory.createMultipartConfig();
+    }
         public static void main(String[] args) {
             //整个程序的入口，启动springboot项目
 //        @SpringBootApplication
@@ -44,5 +52,5 @@ public class App   {
             SpringApplication.run(App.class,args);
 
         }
-
 }
+

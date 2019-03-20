@@ -28,7 +28,7 @@ public class UserInfService {
     }
     //更改user_inf昵称
     public Integer userInfUpdateUserNameById(String userName,Integer userLoginId){
-        return userInfMapper.userInfUpdatePhoneById(userName, userLoginId);
+        return userInfMapper.userInfUpdateUserNameById(userName, userLoginId);
     }
     //修改个人地址
     public Integer userInfUpdateAddressById(String address,Integer userLoginId){
