@@ -1,7 +1,9 @@
 package App.Controller;
 
 import App.Domain.UserInf;
+import App.Domain.UserLogin;
 import App.Service.UserInfService;
+import App.Untils.SecurityParameter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -13,33 +15,33 @@ public class UserInfController  {
     @Autowired
     UserInfService userInfService;
     //查询个人信息
-    @GetMapping("api/userinf/{UserLoginId}/userloginid")
-    public UserInf queryUserInfByUserLoginId(@PathVariable("UserLoginId") Integer userLoginId){
-        return userInfService.queryUserInfByUserLoginId(userLoginId);
+    @GetMapping("api/userinf/userloginid")
+    public UserInf queryUserInfByUserLoginId( @RequestBody UserInf userInf){
+        return userInfService.queryUserInfByUserLoginId(userInf.getUserLoginId());
     }
     //增添个人信息
     @PostMapping("api/userinf")
-    public Integer userInfInsert (@RequestParam Integer userLoginId,@RequestParam String userName,@RequestParam String Phone , String address,@RequestParam String email ,Integer age ,String Hobby){
-        return userInfService.userInfInsert(userLoginId, userName, Phone, address, email, age, Hobby);
+    public Integer userInfInsert (@RequestBody UserInf userInf){
+        return userInfService.userInfInsert(userInf.getUserLoginId(), userInf.getUserName(), userInf.getPhone(), userInf.getAddress(), userInf.getEmail(), userInf.getAge(), userInf.getHobby());
     }
     //更改user_inf邮箱
-    @PutMapping("api/userinf/{UserLoginId}/email")
-    public Integer userInfUpdateEmailById(@RequestParam String email, @PathVariable("UserLoginId")Integer userLoginId, Authentication authentication){
-        return userInfService.userInfUpdateEmailById(email, userLoginId);
+    @PutMapping("api/userinf/email")
+    public Integer userInfUpdateEmailById(@RequestBody UserInf userInf, Authentication authentication){
+        return userInfService.userInfUpdateEmailById(userInf.getEmail(),userInf.getUserLoginId());
     }
     //更改user_inf电话
-    @PutMapping("api/userinf/{UserLoginId}/phone")
-    public Integer userInfUpdatePhoneById(@RequestParam String phone,@PathVariable("UserLoginId")Integer userLoginId, Authentication authentication){
-        return userInfService.userInfUpdatePhoneById(phone, userLoginId);
+    @PutMapping("api/userinf/phone")
+    public Integer userInfUpdatePhoneById(@RequestBody UserInf userInf, Authentication authentication){
+        return userInfService.userInfUpdatePhoneById(userInf.getPhone(), userInf.getUserLoginId());
     }
     //更改user_inf昵称
-    @PutMapping("api/userinf/{UserLoginId}/username")
-    public Integer userInfUpdateUserNameById(@RequestParam String userName,@PathVariable("UserLoginId")Integer userLoginId, Authentication authentication){
-        return userInfService.userInfUpdateUserNameById(userName, userLoginId);
+    @PutMapping("api/userinf/username")
+    public Integer userInfUpdateUserNameById(@RequestBody UserInf userInf, Authentication authentication){
+        return userInfService.userInfUpdateUserNameById(userInf.getUserName(), userInf.getUserLoginId());
     }
     //修改个人地址
-    @PutMapping("api/userinf/{UserLoginId}/address")
-    public Integer userInfUpdateAddressById(String address,@PathVariable("UserLoginId")Integer userLoginId, Authentication authentication) {
-        return userInfService.userInfUpdateAddressById(address,userLoginId);
+    @PutMapping("api/userinf/address")
+    public Integer userInfUpdateAddressById(@RequestBody UserInf userInf, Authentication authentication) {
+        return userInfService.userInfUpdateAddressById(userInf.getAddress(),userInf.getUserLoginId());
     }
 }

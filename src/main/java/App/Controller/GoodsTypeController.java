@@ -13,18 +13,18 @@ public class GoodsTypeController {
     GoodsTypeService goodsTypeService;
 
     //查询类别
-    @GetMapping("api/goodstype/{Typeid}/typeid")
-    public GoodsType queryGoodsTypeByTypeId(@PathVariable("Typeid") Integer typeid) {
-        return goodsTypeService.queryGoodsTypeByTypeId(typeid);
+    @GetMapping("api/goodstype/typeid")
+    public GoodsType queryGoodsTypeByTypeId(@RequestBody GoodsType goodsType) {
+        return goodsTypeService.queryGoodsTypeByTypeId(goodsType.getTypeId());
     }
     //增加类别
-    @PostMapping("api/goodstype/{TypeName}/typename")
-    public Integer goodsTypeInsert(@PathVariable("TypeName") String typeName) {
-        return goodsTypeService.goodsTypeInsert(typeName);
+    @PostMapping("api/goodstype/typename")
+    public Integer goodsTypeInsert(@RequestBody GoodsType goodsType) {
+        return goodsTypeService.goodsTypeInsert(goodsType.getTypeName());
     }
     //删除类别
-    @DeleteMapping("apo/goodstype/{Typeid}/typeid")
-    public Integer goodsTypeDeleteByTypeId(@PathVariable("Typeid")Integer typeId){
-        return goodsTypeService.goodsTypeDeleteByTypeId(typeId);
+    @DeleteMapping("apo/goodstype/typeid")
+    public Integer goodsTypeDeleteByTypeId(@RequestBody GoodsType goodsType){
+        return goodsTypeService.goodsTypeDeleteByTypeId(goodsType.getTypeId());
     }
 }

@@ -15,19 +15,19 @@ public class ReplyPostingController {
     @Autowired
     ReplyPostingService replyPostingService;
     //查询自己的回复贴
-    @GetMapping("api/replyposting/{ReplyUserId}/replyuserid")
-    public ReplyPosting[] queryReplyPostingByReplyUserId(@PathVariable("ReplyUserId") Integer replyUserId){
-     return replyPostingService.queryReplyPostingByReplyUserId(replyUserId);
+    @GetMapping("api/replyposting/replyuserid")
+    public ReplyPosting[] queryReplyPostingByReplyUserId(@RequestBody ReplyPosting replyPosting){
+     return replyPostingService.queryReplyPostingByReplyUserId(replyPosting.getReplyUserId());
     }
     //查询主题帖的回复贴
-    @GetMapping("api/replyposting/{MainPostingId}/mainpostingid")
-    public ReplyPosting[] queryReplyPostingByMainPostingId(@PathVariable("MainPostingId") Integer mainPostingId){
-        return replyPostingService.queryReplyPostingByMainPostingId(mainPostingId);
+    @GetMapping("api/replyposting/mainpostingid")
+    public ReplyPosting[] queryReplyPostingByMainPostingId(@RequestBody ReplyPosting replyPosting){
+        return replyPostingService.queryReplyPostingByMainPostingId(replyPosting.getMainPostingId());
     }
     //查询主题帖中某人的回复贴(只看楼主)
-    @GetMapping("api/replyposting/{MainPostingId}/mainpostingid/{ReplyUserId}/replyuserid")
-    public ReplyPosting[] queryReplyPostingByMainPostingIdAndReplyUserId(@PathVariable("MainPostingId") Integer mainPostingId, @PathVariable("ReplyUserId") Integer replyUserId){
-        return replyPostingService.queryReplyPostingByMainPostingIdAndReplyUserId(mainPostingId, replyUserId);
+    @GetMapping("api/replyposting/mainpostingid/replyuserid")
+    public ReplyPosting[] queryReplyPostingByMainPostingIdAndReplyUserId(@RequestBody ReplyPosting replyPosting){
+        return replyPostingService.queryReplyPostingByMainPostingIdAndReplyUserId(replyPosting.getMainPostingId(), replyPosting.getReplyUserId());
     }
     //回复主题帖
     @PostMapping("api/replyposting")
@@ -35,8 +35,8 @@ public class ReplyPostingController {
         return replyPostingService.replyPostingInsert(mainPostingId, replyUserId, replyContent, replyImg, Replier);
     }
     //删除回复
-    @DeleteMapping("api/replyposting/{ReplyPostingId}/replypostingid")
-    public Integer replyPostingDeleteByReplyPostingId( @PathVariable("ReplyPostingId") Integer replyPostingId){
-        return replyPostingService.replyPostingDeleteByReplyPostingId(replyPostingId);
+    @DeleteMapping("api/replyposting/replypostingid")
+    public Integer replyPostingDeleteByReplyPostingId( @RequestBody ReplyPosting replyPosting){
+        return replyPostingService.replyPostingDeleteByReplyPostingId(replyPosting.getReplyPostingId());
     }
 }

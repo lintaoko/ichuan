@@ -2,15 +2,14 @@ package App.Controller;
 
 
 import App.Domain.UserLogin;
+import App.Untils.SecurityParameter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.User;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
@@ -39,6 +38,13 @@ public class JspController {
     public String aaa(){
         System.out.println("Turn to Login.jsp");
         return "login";
+    }
+    @RequestMapping("/save")
+    @ResponseBody
+    @SecurityParameter
+    public Object save(@RequestBody String info) {
+        System.out.println(info);
+        return info;
     }
     @RequestMapping("/index")
     public String index(){

@@ -10,7 +10,7 @@ public class Goods {
     private Integer goodsId;
     private String goodsName;
     private String goodsImg;
-    private String goodsQuantity;
+    private Integer goodsQuantity;
     private JsonObject goodInf;
     private Integer goodsType;
     private String goodsTypeName;

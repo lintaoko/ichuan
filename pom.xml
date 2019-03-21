@@ -109,12 +109,33 @@
             <artifactId>okhttp</artifactId>
             <version>3.12.1</version>
         </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
         <!--&lt;!&ndash;md5&ndash;&gt;-->
         <!--<dependency>-->
             <!--<groupId>commons-codec</groupId>-->
             <!--<artifactId>commons-codec</artifactId>-->
             <!--<version>1.11</version>-->
         <!--</dependency>-->
+        <dependency>
+            <groupId>org.apache.commons.io</groupId>
+            <artifactId>commonsIO</artifactId>
+            <version>2.5.0</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

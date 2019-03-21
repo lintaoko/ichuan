@@ -15,18 +15,18 @@ public class GoodsEvaluationController {
     @Autowired
     GoodsEvaluationService goodsEvaluationService;
     //评论查询
-    @GetMapping("api/goodsevaluation/{GoodsID}/goodsid")
-    public GoodsEvaluation[] queryGoodsEvaluationByGoodsId(@PathVariable("GoodsID") Integer goodsId){
-        return goodsEvaluationService.queryGoodsEvaluationByGoodsId(goodsId);
+    @GetMapping("api/goodsevaluation/goodsid")
+    public GoodsEvaluation[] queryGoodsEvaluationByGoodsId(@RequestBody GoodsEvaluation goodsEvaluation){
+        return goodsEvaluationService.queryGoodsEvaluationByGoodsId(goodsEvaluation.getGoodsId());
     }
     //评论添加
     @PostMapping("api/goodsevaluation")
-    public Integer goodsEvaluationInsert(Integer goodsId, String evaluationType, String evaluationContent,String evaluationImg){
-        return goodsEvaluationService.goodsEvaluationInsert(goodsId, evaluationType, evaluationContent, evaluationImg);
+    public Integer goodsEvaluationInsert(@RequestBody GoodsEvaluation goodsEvaluation){
+        return goodsEvaluationService.goodsEvaluationInsert(goodsEvaluation.getGoodsId(), goodsEvaluation.getEvaluationType(), goodsEvaluation.getEvaluationContent(), goodsEvaluation.getEvaluationImg());
 }
     //删除评论
-    @DeleteMapping("api/goodsevaluation/{GoodsEvaluationId}/goodsEvaluationId")
-    public Integer goodsEvaluationDeleteByGoodsEvalutionId( @PathVariable("GoodsEvaluationId") Integer goodsEvaluationId)throws Exception{
-        return goodsEvaluationService.goodsEvaluationDeleteByGoodsEvalutionId(goodsEvaluationId);
+    @DeleteMapping("api/goodsevaluation/goodsEvaluationId")
+    public Integer goodsEvaluationDeleteByGoodsEvalutionId( @RequestBody GoodsEvaluation goodsEvaluation){
+        return goodsEvaluationService.goodsEvaluationDeleteByGoodsEvalutionId(goodsEvaluation.getGoodsEvaluationId());
     }
 }

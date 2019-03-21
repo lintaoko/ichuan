@@ -32,7 +32,7 @@ public class GoodsEvaluationService {
         return this.restTemplate.postForObject(url, multiValueMap, Integer.class);
     }
     //删除评论
-    public Integer goodsEvaluationDeleteByGoodsEvalutionId( Integer goodsEvaluationId)throws Exception{
+    public Integer goodsEvaluationDeleteByGoodsEvalutionId( Integer goodsEvaluationId){
         String url="http://127.0.0.1:8081/api/goodsevaluation/"+goodsEvaluationId+"/goodsEvaluationId";
         return this.restTemplate.exchange(url, HttpMethod.DELETE,null,Integer.class).getBody();
     }

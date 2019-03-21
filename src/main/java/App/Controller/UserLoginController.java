@@ -47,25 +47,25 @@ public class UserLoginController {
 //    }
     //添加用户，注册
     @PostMapping("/api/userlogin/register")
-    public Integer userLoginInsert (@RequestParam String accountNumber,@RequestParam String password,@RequestParam String email,@RequestParam String phone){
+    public Integer userLoginInsert (@RequestBody UserLogin userLogin){
         //判断代码正则
         //todo
-        return userLoginService.userLoginInsert(accountNumber, password, email, phone);
+        return userLoginService.userLoginInsert(userLogin.getAccountNumber(), userLogin.getPassword(), userLogin.getEmail(), userLogin.getPhone());
     }
     //修改密码
-    @PutMapping("/api/userlogin/{UserLoginId}/password")
-    public Integer userLoginUpdatePasswordById(@RequestParam String password, @PathVariable("UserLoginId") Integer userLoginId, Authentication authentication)  {
-            String encoderpassword=passwordEncoder.encode(password);
-            return  userLoginService.userLoginUpdatePasswordById(encoderpassword, userLoginId);
+    @PutMapping("/api/userlogin/password")
+    public Integer userLoginUpdatePasswordById(@RequestBody UserLogin userLogin,Authentication authentication)  {
+            String encoderpassword=passwordEncoder.encode(userLogin.getPassword());
+            return  userLoginService.userLoginUpdatePasswordById(encoderpassword, userLogin.getUserLoginId());
     }
     //修改邮箱
-    @PutMapping("/api/userlogin/{UserLoginId}/email")
-    public Integer userLoginUpdateEmailById(String email,@PathVariable("UserLoginId")Integer userLoginId,Authentication authentication){
-            return  userLoginService.userLoginUpdateEmailById(email, userLoginId);
+    @PutMapping("/api/userlogin/email")
+    public Integer userLoginUpdateEmailById(@RequestBody UserLogin userLogin,Authentication authentication){
+            return  userLoginService.userLoginUpdateEmailById(userLogin.getEmail(), userLogin.getUserLoginId());
     }
     //修改电话
-    @PutMapping("/api/userlogin/{UserLoginId}/phone")
-    public Integer userLoginUpdatePhoneById(String phone,@PathVariable("UserLoginId")Integer userLoginId,Authentication authentication){
-            return userLoginService.userLoginUpdatePhoneById(phone, userLoginId);
+    @PutMapping("/api/userlogin/phone")
+    public Integer userLoginUpdatePhoneById(@RequestBody UserLogin userLogin,Authentication authentication){
+            return userLoginService.userLoginUpdatePhoneById(userLogin.getPhone(), userLogin.getUserLoginId());
     }
 }
