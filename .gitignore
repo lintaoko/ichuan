@@ -1,3 +1,4 @@
 /.idea/
 /target/
 /src/main/java/resources/application.properties
+/logs/
