@@ -42,7 +42,7 @@ public class AesEncryptUtils {
 
     public static void main(String[] args) throws Exception {
         //test
-        String content = "1";
+        String content = "dd";
         System.out.println("加密前：" + content);
 
         String encrypt = encrypt(content, KEY);
