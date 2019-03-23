@@ -1,0 +1,739 @@
+2019-01-26 15:37:22,180 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-01-26 15:37:22,387 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 3680 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:37:22,392 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:37:22,486 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:37:22,488 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:37:24,091 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:37:24,236 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1743 ms
+2019-01-26 15:37:24,564 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:37:24,740 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 15:37:24,783 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 15:37:24,785 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.675 seconds (JVM running for 3.575)
+2019-01-26 15:37:50,951 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-01-26 15:37:50,958 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 6 ms
+2019-01-26 15:38:03,169 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-01-26 15:38:31,332 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-01-26 15:38:32,173 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-01-26 15:38:32,860 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-01-26 15:38:33,520 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-9] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-01-26 15:38:35,988 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-5] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:38:36,158 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:38:36,158 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:38:36,166 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 3680 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:38:36,166 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:38:36,420 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:38:36,453 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 285 ms
+2019-01-26 15:38:36,533 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:38:36,590 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 15:38:36,603 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 15:38:36,604 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 0.456 seconds (JVM running for 75.394)
+2019-01-26 15:38:36,605 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-01-26 15:38:38,566 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-01-26 15:38:38,570 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 4 ms
+2019-01-26 15:38:38,604 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-01-26 15:38:46,472 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2019-01-26 15:38:48,264 App.Service.UserServiceTest2 [http-nio-8080-exec-1] (UserServiceTest2.java:35) INFO  --> result:Page{count=true, pageNum=1, pageSize=3, startRow=0, endRow=3, total=13, pages=5, reasonable=true, pageSizeZero=false}[User(id=null, name=Tawn, age=12), User(id=null, name=Tawn2, age=2), User(id=null, name=Tawn3, age=32)]
+2019-01-26 15:38:49,211 App.Service.UserServiceTest2 [http-nio-8080-exec-2] (UserServiceTest2.java:35) INFO  --> result:Page{count=true, pageNum=1, pageSize=3, startRow=0, endRow=3, total=13, pages=5, reasonable=true, pageSizeZero=false}[User(id=null, name=Tawn, age=12), User(id=null, name=Tawn2, age=2), User(id=null, name=Tawn3, age=32)]
+2019-01-26 15:38:50,502 App.Service.UserServiceTest2 [http-nio-8080-exec-3] (UserServiceTest2.java:35) INFO  --> result:Page{count=true, pageNum=1, pageSize=3, startRow=0, endRow=3, total=13, pages=5, reasonable=true, pageSizeZero=false}[User(id=null, name=Tawn, age=12), User(id=null, name=Tawn2, age=2), User(id=null, name=Tawn3, age=32)]
+2019-01-26 15:39:02,754 App.Service.UserServiceTest2 [http-nio-8080-exec-5] (UserServiceTest2.java:35) INFO  --> result:Page{count=true, pageNum=4, pageSize=3, startRow=9, endRow=12, total=13, pages=5, reasonable=true, pageSizeZero=false}[User(id=null, name=ç››å¤§ä¿¡æ�¯2, age=22), User(id=null, name=ä¹�å��ä¹�, age=22), User(id=null, name=å±±ä¸œé»„é‡‘çœ‹åˆ°, age=22)]
+2019-01-26 15:39:53,475 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-9] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:39:53,476 com.zaxxer.hikari.HikariDataSource [Thread-9] (HikariDataSource.java:350) INFO  --> HikariPool-1 - Shutdown initiated...
+2019-01-26 15:39:53,482 com.zaxxer.hikari.HikariDataSource [Thread-9] (HikariDataSource.java:352) INFO  --> HikariPool-1 - Shutdown completed.
+2019-01-26 15:39:53,619 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:39:53,619 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:39:53,625 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 3680 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:39:53,626 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:39:53,845 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:39:53,873 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 246 ms
+2019-01-26 15:39:53,952 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:39:54,012 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 15:39:54,025 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 15:39:54,025 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 0.415 seconds (JVM running for 152.816)
+2019-01-26 15:39:54,027 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-01-26 15:41:07,865 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-15] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:41:08,085 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:41:08,086 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:41:08,092 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 3680 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:41:08,092 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:41:08,257 org.mybatis.spring.mapper.ClassPathMapperScanner [restartedMain] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[App]' package. Please check your configuration.
+2019-01-26 15:41:08,619 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:41:08,671 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 577 ms
+2019-01-26 15:41:08,727 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:41:08,773 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-01-26 15:41:08,776 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-01-26 15:41:08,787 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-01-26 15:41:08,788 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\Springboot-helloworld\transaction-logs
+2019-01-26 15:41:08,788 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 10.24.84.49.tm
+2019-01-26 15:41:08,788 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-01-26 15:41:08,788 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-01-26 15:41:08,788 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-01-26 15:41:08,788 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-01-26 15:41:08,789 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-01-26 15:41:08,789 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-01-26 15:41:08,789 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-01-26 15:41:08,789 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-01-26 15:41:08,789 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-01-26 15:41:08,790 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-01-26 15:41:08,790 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-01-26 15:41:08,790 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-01-26 15:41:08,790 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-01-26 15:41:08,790 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-01-26 15:41:08,791 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-01-26 15:41:08,791 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-01-26 15:41:08,791 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-01-26 15:41:08,791 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-01-26 15:41:08,792 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-01-26 15:41:08,792 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-01-26 15:41:08,793 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-01-26 15:41:08,820 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] (AbstractApplicationContext.java:554) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/XADataSourceAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine suitable jdbc url
+2019-01-26 15:41:08,820 com.atomikos.icatch.imp.TransactionServiceImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-01-26 15:41:08,823 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:41:08,830 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-26 15:41:08,834 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] (LoggingFailureAnalysisReporter.java:42) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2019-01-26 15:41:10,673 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:41:10,673 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:41:10,677 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 3680 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:41:10,678 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:41:10,879 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:41:10,904 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 225 ms
+2019-01-26 15:41:10,974 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:41:11,022 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 15:41:11,039 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 15:41:11,039 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 0.377 seconds (JVM running for 229.829)
+2019-01-26 15:41:11,040 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-01-26 15:41:44,665 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-21] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:41:44,836 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:41:44,837 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:41:44,844 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 3680 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:41:44,844 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:41:45,070 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:41:45,106 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 258 ms
+2019-01-26 15:41:45,194 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:41:45,256 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 15:41:45,273 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 15:41:45,273 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 0.45 seconds (JVM running for 264.064)
+2019-01-26 15:41:45,275 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-01-26 15:41:53,210 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-01-26 15:41:53,213 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 3 ms
+2019-01-26 15:41:53,216 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-2 - Starting...
+2019-01-26 15:41:58,019 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-2 - Start completed.
+2019-01-26 15:41:58,664 App.Service.UserServiceTest2 [http-nio-8080-exec-1] (UserServiceTest2.java:35) INFO  --> result:Page{count=true, pageNum=4, pageSize=3, startRow=9, endRow=12, total=13, pages=5, reasonable=true, pageSizeZero=false}[User(id=null, name=ç››å¤§ä¿¡æ�¯2, age=22), User(id=null, name=ä¹�å��ä¹�, age=22), User(id=null, name=å±±ä¸œé»„é‡‘çœ‹åˆ°, age=22)]
+2019-01-26 15:48:03,104 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-30] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:48:03,104 com.zaxxer.hikari.HikariDataSource [Thread-30] (HikariDataSource.java:350) INFO  --> HikariPool-2 - Shutdown initiated...
+2019-01-26 15:48:03,109 com.zaxxer.hikari.HikariDataSource [Thread-30] (HikariDataSource.java:352) INFO  --> HikariPool-2 - Shutdown completed.
+2019-01-26 15:48:03,244 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:48:03,245 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:48:03,249 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 3680 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:48:03,249 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:48:03,439 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:48:03,472 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 222 ms
+2019-01-26 15:48:03,556 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:48:03,620 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 15:48:03,642 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 15:48:03,643 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 0.405 seconds (JVM running for 642.433)
+2019-01-26 15:48:03,645 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-01-26 15:49:48,766 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-01-26 15:49:48,882 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 8504 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:49:48,883 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:49:48,912 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:49:48,913 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:49:50,269 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:49:50,502 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1589 ms
+2019-01-26 15:49:50,876 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:49:51,059 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 15:49:51,104 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 15:49:51,108 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.408 seconds (JVM running for 3.091)
+2019-01-26 15:50:37,854 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-01-26 15:50:37,860 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 6 ms
+2019-01-26 15:50:37,890 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-01-26 15:50:40,173 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2019-01-26 15:50:40,501 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-1] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:51:01,582 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:51:33,154 App.Service.UserServiceTest2 [http-nio-8080-exec-3] (UserServiceTest2.java:29) INFO  --> result:User(id=null, name=UUU, age=22)
+2019-01-26 15:51:36,832 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:55:25,849 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-6] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:55:27,775 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-7] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:56:01,430 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:56:10,076 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-01-26 15:56:10,188 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 2500 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 15:56:10,189 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 15:56:10,211 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 15:56:10,212 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 15:56:11,163 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 15:56:11,286 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1074 ms
+2019-01-26 15:56:11,542 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 15:56:11,693 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 15:56:11,735 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 15:56:11,738 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 1.765 seconds (JVM running for 2.398)
+2019-01-26 15:57:06,816 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-01-26 15:57:06,822 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 6 ms
+2019-01-26 15:57:06,852 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-01-26 15:57:16,120 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-1] (PoolBase.java:472) WARN  --> HikariPool-1 - Default transaction isolation level detection failed (No operations allowed after connection closed.).
+2019-01-26 15:57:16,121 com.zaxxer.hikari.pool.HikariPool [http-nio-8080-exec-1] (HikariPool.java:574) ERROR --> HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setTransactionIsolation(ConnectionImpl.java:2279)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:424)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:374)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy86.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy74.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy78.findbyname(Unknown Source)
+	at App.Service.UserServiceTest2.querybyUsername(UserServiceTest2.java:28)
+	at App.Service.UserServiceTest2$$FastClassBySpringCGLIB$$c33ef53c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at App.Service.UserServiceTest2$$EnhancerBySpringCGLIB$$3724c41f.querybyUsername(<generated>)
+	at App.Controller.UserController.aaa(UserController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1259)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:575)
+	at com.mysql.cj.jdbc.ConnectionImpl.setTransactionIsolation(ConnectionImpl.java:2226)
+	... 94 more
+2019-01-26 15:57:16,125 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-3] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-01-26 15:57:16,148 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-1] (ExceptionHandlerExceptionResolver.java:419) WARN  --> Failure in @ExceptionHandler public java.util.Map<java.lang.String, java.lang.Object> App.Advice.GlobalExceptionHandler.errorResult(java.lang.Exception)
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:298)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:261)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1100)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:915)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:287)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:289)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:180)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:119)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:408)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1297)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1109)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:50)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:466)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1225)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:743)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:696)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:686)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:553)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1149)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:394)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:294)
+	... 60 more
+2019-01-26 15:58:07,433 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-3] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2019-01-26 15:58:08,681 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:58:08,694 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-3] (ExceptionHandlerExceptionResolver.java:419) WARN  --> Failure in @ExceptionHandler public java.util.Map<java.lang.String, java.lang.Object> App.Advice.GlobalExceptionHandler.errorResult(java.lang.Exception)
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:298)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:261)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1100)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:915)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:287)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:289)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:180)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:119)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:408)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1297)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1109)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:50)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:466)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1225)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:743)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:696)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:686)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:553)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1149)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:394)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:294)
+	... 60 more
+2019-01-26 15:58:08,681 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:58:08,681 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-5] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+### The error may exist in App/Mapper/test2/UserMapperTest2.java (best guess)
+### The error may involve App.Mapper.test2.UserMapperTest2.findbyname-Inline
+### The error occurred while setting parameters
+### SQL: select * from user where name=?
+### Cause: java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+; uncategorized SQLException; SQL state [HY000]; error code [1267]; Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='; nested exception is java.sql.SQLException: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=']
+2019-01-26 15:59:11,710 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 15:59:18,243 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-9] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 15:59:30,273 App.Service.UserServiceTest2 [http-nio-8080-exec-10] (UserServiceTest2.java:24) INFO  --> result:1
+2019-01-26 15:59:54,305 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-1] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:04:49,284 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-5] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:05:05,669 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-3] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:05:44,882 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:05:54,734 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-6] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:08:06,880 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-01-26 16:08:06,978 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 7436 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 16:08:06,982 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 16:08:07,011 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 16:08:07,011 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 16:08:07,952 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 16:08:08,075 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1064 ms
+2019-01-26 16:08:08,340 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 16:08:08,480 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 16:08:08,520 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 16:08:08,522 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 1.703 seconds (JVM running for 2.365)
+2019-01-26 16:08:13,690 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-01-26 16:08:13,696 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 6 ms
+2019-01-26 16:08:13,717 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-01-26 16:08:16,578 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2019-01-26 16:08:17,546 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-1] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:08:54,597 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:11:05,764 App.Service.UserServiceTest2 [http-nio-8080-exec-5] (UserServiceTest2.java:24) INFO  --> result:1
+2019-01-26 16:11:10,407 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-6] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8' for column 'name' at row 1]
+2019-01-26 16:11:18,239 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8...' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8...' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8...' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8...' for column 'name' at row 1]
+2019-01-26 16:12:12,388 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-7] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8...' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8...' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8...' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE9\x98\xBF\xE7\x88\xB8...' for column 'name' at row 1]
+2019-01-26 16:12:26,869 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:12:35,028 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-9] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1]
+2019-01-26 16:13:10,763 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-5] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-26 16:13:10,764 com.zaxxer.hikari.HikariDataSource [Thread-5] (HikariDataSource.java:350) INFO  --> HikariPool-1 - Shutdown initiated...
+2019-01-26 16:13:10,771 com.zaxxer.hikari.HikariDataSource [Thread-5] (HikariDataSource.java:352) INFO  --> HikariPool-1 - Shutdown completed.
+2019-01-26 16:13:10,940 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 16:13:10,940 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 16:13:10,949 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 7436 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 16:13:10,949 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 16:13:11,246 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 16:13:11,293 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 343 ms
+2019-01-26 16:13:11,373 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 16:13:11,430 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 16:13:11,444 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 16:13:11,444 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 0.515 seconds (JVM running for 305.286)
+2019-01-26 16:13:11,446 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-01-26 16:13:29,381 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-01-26 16:13:29,481 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 9472 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 16:13:29,483 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 16:13:29,513 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 16:13:29,514 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 16:13:30,504 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 16:13:30,637 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1123 ms
+2019-01-26 16:13:30,898 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 16:13:31,062 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 16:13:31,111 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 16:13:31,114 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 1.788 seconds (JVM running for 2.41)
+2019-01-26 16:13:40,485 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-01-26 16:13:40,491 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] (FrameworkServlet.java:546) INFO  --> Completed initialization in 6 ms
+2019-01-26 16:13:40,513 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-2] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-01-26 16:13:43,322 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-2] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2019-01-26 16:13:44,132 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1]
+2019-01-26 16:13:47,688 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-1] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A'' for column 'name' at row 1]
+2019-01-26 16:13:53,136 App.Service.UserServiceTest2 [http-nio-8080-exec-3] (UserServiceTest2.java:24) INFO  --> result:1
+2019-01-26 16:14:26,050 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+### The error may involve App.Mapper.test2.UserMapperTest2.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user(name,age) values(?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1
+; Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect string value: '\xE5\x95\x8A' for column 'name' at row 1]
+2019-01-26 16:17:50,531 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4bf27531 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,533 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@47162e30 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,534 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1f15901e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,535 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@223e0afe (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,535 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24f97ba2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,536 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52e8a6a3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,537 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@614e4980 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,537 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3375c6ad (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,538 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c3e9f0a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:50,539 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-6] (PoolBase.java:176) WARN  --> HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b74e790 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-01-26 16:17:52,460 App.Service.UserServiceTest2 [http-nio-8080-exec-6] (UserServiceTest2.java:24) INFO  --> result:1
+2019-01-26 16:18:07,776 App.Service.UserServiceTest2 [http-nio-8080-exec-7] (UserServiceTest2.java:35) INFO  --> result:Page{count=true, pageNum=1, pageSize=1, startRow=0, endRow=1, total=1, pages=1, reasonable=true, pageSizeZero=false}[User(id=null, name=啊, age=89)]
+2019-01-26 16:18:35,646 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-01-26 16:18:35,745 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 15096 (D:\Project\Springboot-helloworld\target\classes started by 12442 in D:\Project\Springboot-helloworld)
+2019-01-26 16:18:35,746 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-01-26 16:18:35,772 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-26 16:18:35,772 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-26 16:18:36,804 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-01-26 16:18:36,948 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1176 ms
+2019-01-26 16:18:37,220 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-26 16:18:37,396 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-01-26 16:18:37,454 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-26 16:18:37,457 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 1.872 seconds (JVM running for 2.513)
+2019-01-26 16:18:58,580 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-01-26 16:18:58,587 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
+2019-01-26 16:18:58,626 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-01-26 16:19:01,287 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2019-01-26 16:19:01,821 App.Service.UserServiceTest2 [http-nio-8080-exec-1] (UserServiceTest2.java:35) INFO  --> result:Page{count=true, pageNum=1, pageSize=1, startRow=0, endRow=1, total=1, pages=1, reasonable=true, pageSizeZero=false}[User(id=null, name=啊, age=89)]

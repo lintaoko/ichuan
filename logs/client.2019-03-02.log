@@ -1,0 +1,279 @@
+2019-03-02 12:42:33,664 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-02 12:42:33,728 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 54 ms
+2019-03-02 12:42:37,166 com.atomikos.recovery.xa.XaResourceRecoveryManager [Atomikos:2] (Slf4jLogger.java:40) WARN  --> Error while retrieving xids from resource - will retry later...
+com.mysql.cj.jdbc.MysqlXAException: Undetermined error occurred in the underlying Connection - check your data for consistency
+	at com.mysql.cj.jdbc.MysqlXAConnection.mapXAExceptionFromSQLException(MysqlXAConnection.java:347)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:189)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:117)
+	at com.atomikos.datasource.xa.RecoveryScan.recoverXids(RecoveryScan.java:32)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.retrievePreparedXidsFromXaResource(XaResourceRecoveryManager.java:158)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.recover(XaResourceRecoveryManager.java:67)
+	at com.atomikos.datasource.xa.XATransactionalResource.recover(XATransactionalResource.java:449)
+	at com.atomikos.icatch.imp.TransactionServiceImp.performRecovery(TransactionServiceImp.java:490)
+	at com.atomikos.icatch.imp.TransactionServiceImp.access$000(TransactionServiceImp.java:56)
+	at com.atomikos.icatch.imp.TransactionServiceImp$1.alarm(TransactionServiceImp.java:471)
+	at com.atomikos.timing.PooledAlarmTimer.notifyListeners(PooledAlarmTimer.java:95)
+	at com.atomikos.timing.PooledAlarmTimer.run(PooledAlarmTimer.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 58,906,650 milliseconds ago.  The last packet sent successfully to the server was 58,906,771 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:168)
+	... 13 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: The last packet successfully received from the server was 58,906,650 milliseconds ago.  The last packet sent successfully to the server was 58,906,771 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1186)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 20 more
+2019-03-02 12:42:38,418 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:02:36,777 com.atomikos.icatch.imp.TransactionServiceImp [Thread-141] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-03-02 15:02:36,782 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-141] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-02 15:02:36,783 com.atomikos.datasource.pool.ConnectionPool [Thread-141] (Slf4jLogger.java:28) INFO  --> atomikos connection pool 'dataSource': destroying pool...
+2019-03-02 15:02:37,080 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-02 15:02:37,081 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-02 15:02:37,090 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-02 15:02:37,091 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-02 15:02:37,276 org.mybatis.spring.mapper.ClassPathMapperScanner [restartedMain] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[App/Mapper]' package. Please check your configuration.
+2019-03-02 15:02:37,302 org.mybatis.spring.mapper.ClassPathMapperScanner [restartedMain] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[App]' package. Please check your configuration.
+2019-03-02 15:02:37,459 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-02 15:02:37,520 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 427 ms
+2019-03-02 15:02:37,622 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-02 15:02:37,663 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-02 15:02:37,681 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-03-02 15:02:37,682 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-03-02 15:02:37,684 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-03-02 15:02:37,685 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-03-02 15:02:37,685 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-03-02 15:02:37,685 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-03-02 15:02:37,686 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-03-02 15:02:37,686 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-03-02 15:02:37,686 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-03-02 15:02:37,686 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-03-02 15:02:37,687 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-03-02 15:02:37,687 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-03-02 15:02:37,687 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-03-02 15:02:37,688 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-03-02 15:02:37,688 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-03-02 15:02:37,688 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-03-02 15:02:37,688 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-03-02 15:02:37,689 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-03-02 15:02:37,689 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-03-02 15:02:37,689 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-03-02 15:02:37,690 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-03-02 15:02:37,690 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-03-02 15:02:37,690 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-03-02 15:02:37,690 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-03-02 15:02:37,691 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-03-02 15:02:37,692 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-03-02 15:02:37,731 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-03-02 15:02:38,593 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:02:40,274 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-02 15:02:40,293 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-02 15:02:40,293 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.231 seconds (JVM running for 172090.03)
+2019-03-02 15:02:40,299 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:50) INFO  --> Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MybatisAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2019-03-02 15:13:48,237 com.atomikos.recovery.xa.XaResourceRecoveryManager [Atomikos:1] (Slf4jLogger.java:40) WARN  --> Error while retrieving xids from resource - will retry later...
+com.mysql.cj.jdbc.MysqlXAException: Undetermined error occurred in the underlying Connection - check your data for consistency
+	at com.mysql.cj.jdbc.MysqlXAConnection.mapXAExceptionFromSQLException(MysqlXAConnection.java:347)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:189)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:117)
+	at com.atomikos.datasource.xa.RecoveryScan.recoverXids(RecoveryScan.java:32)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.retrievePreparedXidsFromXaResource(XaResourceRecoveryManager.java:158)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.recover(XaResourceRecoveryManager.java:67)
+	at com.atomikos.datasource.xa.XATransactionalResource.recover(XATransactionalResource.java:449)
+	at com.atomikos.icatch.imp.TransactionServiceImp.performRecovery(TransactionServiceImp.java:490)
+	at com.atomikos.icatch.imp.TransactionServiceImp.access$000(TransactionServiceImp.java:56)
+	at com.atomikos.icatch.imp.TransactionServiceImp$1.alarm(TransactionServiceImp.java:471)
+	at com.atomikos.timing.PooledAlarmTimer.notifyListeners(PooledAlarmTimer.java:95)
+	at com.atomikos.timing.PooledAlarmTimer.run(PooledAlarmTimer.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,207 milliseconds ago.  The last packet sent successfully to the server was 29,303 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:168)
+	... 13 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,207 milliseconds ago.  The last packet sent successfully to the server was 29,303 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1186)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 20 more
+2019-03-02 15:14:09,241 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:14:40,244 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:15:01,246 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:15:32,249 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:15:53,251 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:16:24,252 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:16:45,254 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:17:16,255 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:17:37,262 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:18:08,265 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:18:29,265 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:19:00,267 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:19:21,267 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:19:35,221 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-02 15:20:34,906 com.atomikos.recovery.xa.XaResourceRecoveryManager [Atomikos:1] (Slf4jLogger.java:40) WARN  --> Error while retrieving xids from resource - will retry later...
+com.mysql.cj.jdbc.MysqlXAException: Undetermined error occurred in the underlying Connection - check your data for consistency
+	at com.mysql.cj.jdbc.MysqlXAConnection.mapXAExceptionFromSQLException(MysqlXAConnection.java:347)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:189)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:117)
+	at com.atomikos.datasource.xa.RecoveryScan.recoverXids(RecoveryScan.java:32)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.retrievePreparedXidsFromXaResource(XaResourceRecoveryManager.java:158)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.recover(XaResourceRecoveryManager.java:67)
+	at com.atomikos.datasource.xa.XATransactionalResource.recover(XATransactionalResource.java:449)
+	at com.atomikos.icatch.imp.TransactionServiceImp.performRecovery(TransactionServiceImp.java:490)
+	at com.atomikos.icatch.imp.TransactionServiceImp.access$000(TransactionServiceImp.java:56)
+	at com.atomikos.icatch.imp.TransactionServiceImp$1.alarm(TransactionServiceImp.java:471)
+	at com.atomikos.timing.PooledAlarmTimer.notifyListeners(PooledAlarmTimer.java:95)
+	at com.atomikos.timing.PooledAlarmTimer.run(PooledAlarmTimer.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,203 milliseconds ago.  The last packet sent successfully to the server was 29,310 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:168)
+	... 13 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,203 milliseconds ago.  The last packet sent successfully to the server was 29,310 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1186)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 20 more
+2019-03-02 15:20:37,329 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:1] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource

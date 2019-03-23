@@ -3,6 +3,8 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.spec.SecretKeySpec;
 import org.apache.tomcat.util.codec.binary.Base64;
+import org.jasypt.encryption.StringEncryptor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class AesEncryptUtils {
     //可配置到Constant中，并读取配置文件注入,16位,自己定义
@@ -42,13 +44,15 @@ public class AesEncryptUtils {
 
     public static void main(String[] args) throws Exception {
         //test
-        String content = "dd";
-        System.out.println("加密前：" + content);
+//        String content = "dd";
+//        System.out.println("加密前：" + content);
+//
+//        String encrypt = encrypt(content, KEY);
+//        System.out.println("加密后：" + encrypt);
+//
+//        String decrypt = decrypt(encrypt, KEY);
+//        System.out.println("解密后：" + decrypt);
 
-        String encrypt = encrypt(content, KEY);
-        System.out.println("加密后：" + encrypt);
 
-        String decrypt = decrypt(encrypt, KEY);
-        System.out.println("解密后：" + decrypt);
     }
 }

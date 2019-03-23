@@ -26,7 +26,7 @@
             url:"api/userinf/userloginid",
             data:Encrypt(JSON.stringify({userLoginId:1})),
             dataType:'json',
-            contentType:"application/json",
+            contentType:"Application/json",
             success:function (resData) {
                 alert(resData);
                 alert(Decrypt(resData));

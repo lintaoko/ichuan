@@ -1,0 +1,243 @@
+2019-03-14 00:01:06,148 com.atomikos.recovery.xa.XaResourceRecoveryManager [Atomikos:2] (Slf4jLogger.java:40) WARN  --> Error while retrieving xids from resource - will retry later...
+com.mysql.cj.jdbc.MysqlXAException: Undetermined error occurred in the underlying Connection - check your data for consistency
+	at com.mysql.cj.jdbc.MysqlXAConnection.mapXAExceptionFromSQLException(MysqlXAConnection.java:347)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:189)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:117)
+	at com.atomikos.datasource.xa.RecoveryScan.recoverXids(RecoveryScan.java:32)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.retrievePreparedXidsFromXaResource(XaResourceRecoveryManager.java:158)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.recover(XaResourceRecoveryManager.java:67)
+	at com.atomikos.datasource.xa.XATransactionalResource.recover(XATransactionalResource.java:449)
+	at com.atomikos.icatch.imp.TransactionServiceImp.performRecovery(TransactionServiceImp.java:490)
+	at com.atomikos.icatch.imp.TransactionServiceImp.access$000(TransactionServiceImp.java:56)
+	at com.atomikos.icatch.imp.TransactionServiceImp$1.alarm(TransactionServiceImp.java:471)
+	at com.atomikos.timing.PooledAlarmTimer.notifyListeners(PooledAlarmTimer.java:95)
+	at com.atomikos.timing.PooledAlarmTimer.run(PooledAlarmTimer.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,135 milliseconds ago.  The last packet sent successfully to the server was 29,155 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:168)
+	... 13 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,135 milliseconds ago.  The last packet sent successfully to the server was 29,155 milliseconds ago.
+	at jdk.internal.reflect.GeneratedConstructorAccessor48.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1186)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 20 more
+2019-03-14 00:01:27,158 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:01:58,160 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:02:19,164 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:02:50,168 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:03:11,169 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:03:42,178 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:04:03,181 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:04:34,203 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:04:55,206 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:05:26,213 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:05:47,214 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:06:18,220 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:06:39,222 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:07:10,228 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:07:31,230 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:08:02,233 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:08:23,234 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:08:54,237 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:09:15,241 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:09:46,251 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:10:07,253 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:10:38,261 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:10:59,264 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:11:30,266 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:11:51,268 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:12:22,271 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:12:43,274 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:13:14,280 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:13:35,281 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:14:06,285 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:14:27,289 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:14:58,302 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:15:19,304 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:15:50,311 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:16:11,315 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:16:42,320 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:17:03,322 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:17:34,324 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:17:55,327 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:18:26,333 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:18:47,335 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:19:18,339 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:19:39,342 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:20:10,354 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:20:31,357 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:21:02,367 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:21:23,369 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:21:54,371 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:22:15,373 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 00:22:46,377 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 11:37:10,492 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-14 11:37:10,613 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 10596 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-14 11:37:10,614 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-14 11:37:11,458 com.atomikos.jdbc.AbstractDataSourceBean [main] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-03-14 11:37:12,797 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-03-14 11:37:12,799 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-03-14 11:37:12,803 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-03-14 11:37:12,804 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-03-14 11:37:12,804 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 10.150.74.160.tm
+2019-03-14 11:37:12,804 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-03-14 11:37:12,805 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-03-14 11:37:12,805 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-03-14 11:37:12,805 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-03-14 11:37:12,805 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-03-14 11:37:12,806 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-03-14 11:37:12,806 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-03-14 11:37:12,807 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-03-14 11:37:12,807 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-03-14 11:37:12,807 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-03-14 11:37:12,807 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-03-14 11:37:12,808 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-03-14 11:37:12,808 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-03-14 11:37:12,808 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-03-14 11:37:12,808 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-03-14 11:37:12,809 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-03-14 11:37:12,809 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-03-14 11:37:12,809 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-03-14 11:37:12,809 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-03-14 11:37:12,810 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-03-14 11:37:12,810 com.atomikos.icatch.provider.imp.AssemblerImp [main] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-03-14 11:37:13,020 com.atomikos.datasource.xa.XATransactionalResource [main] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-03-14 11:37:13,483 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8084 (http)
+2019-03-14 11:37:13,674 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3024 ms
+2019-03-14 11:37:14,177 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-14 11:37:14,271 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-14 11:37:14,515 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8084 (http) with context path ''
+2019-03-14 11:37:14,518 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 4.118 seconds (JVM running for 5.031)
+2019-03-14 11:37:14,724 org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-14 11:37:14,732 org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
+2019-03-14 11:37:14,747 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8084/
+2019-03-14 11:37:14,748 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 11:37:14,748 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-14 11:37:14,749 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 11:37:14,749 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 11:37:14,752 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 11:37:14,752 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:47) INFO  --> SPEND TIME : 5
+2019-03-14 11:38:42,475 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:35) INFO  --> URL : http://lintaoko.ngrok.wendal.cn/
+2019-03-14 11:38:42,475 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 11:38:42,475 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:37) INFO  --> IP : 127.0.0.1
+2019-03-14 11:38:42,476 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 11:38:42,476 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 11:38:42,476 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 11:38:42,476 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:47) INFO  --> SPEND TIME : 1
+2019-03-14 11:41:38,025 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:35) INFO  --> URL : http://lintaoko.ngrok.wendal.cn/
+2019-03-14 11:41:38,026 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 11:41:38,026 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:37) INFO  --> IP : 127.0.0.1
+2019-03-14 11:41:38,026 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 11:41:38,026 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 11:41:38,027 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 11:41:38,027 App.Aop.WebLogAspect [http-nio-8084-exec-9] (WebLogAspect.java:47) INFO  --> SPEND TIME : 2
+2019-03-14 12:07:47,471 App.Aop.WebLogAspect [http-nio-8084-exec-5] (WebLogAspect.java:35) INFO  --> URL : http://lintaoko.ngrok.wendal.cn/
+2019-03-14 12:07:47,472 App.Aop.WebLogAspect [http-nio-8084-exec-5] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 12:07:47,472 App.Aop.WebLogAspect [http-nio-8084-exec-5] (WebLogAspect.java:37) INFO  --> IP : 127.0.0.1
+2019-03-14 12:07:47,472 App.Aop.WebLogAspect [http-nio-8084-exec-5] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 12:07:47,473 App.Aop.WebLogAspect [http-nio-8084-exec-5] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 12:07:47,473 App.Aop.WebLogAspect [http-nio-8084-exec-5] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 12:07:47,473 App.Aop.WebLogAspect [http-nio-8084-exec-5] (WebLogAspect.java:47) INFO  --> SPEND TIME : 2
+2019-03-14 12:07:47,496 App.Aop.WebLogAspect [http-nio-8084-exec-11] (WebLogAspect.java:35) INFO  --> URL : http://lintaoko.ngrok.wendal.cn/
+2019-03-14 12:07:47,497 App.Aop.WebLogAspect [http-nio-8084-exec-11] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 12:07:47,497 App.Aop.WebLogAspect [http-nio-8084-exec-11] (WebLogAspect.java:37) INFO  --> IP : 127.0.0.1
+2019-03-14 12:07:47,497 App.Aop.WebLogAspect [http-nio-8084-exec-11] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 12:07:47,497 App.Aop.WebLogAspect [http-nio-8084-exec-11] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 12:07:47,498 App.Aop.WebLogAspect [http-nio-8084-exec-11] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 12:07:47,498 App.Aop.WebLogAspect [http-nio-8084-exec-11] (WebLogAspect.java:47) INFO  --> SPEND TIME : 2
+2019-03-14 12:38:29,950 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-14 12:38:30,255 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 10796 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-14 12:38:30,257 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-14 12:38:33,902 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8084 (http)
+2019-03-14 12:38:34,327 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3806 ms
+2019-03-14 12:38:35,535 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-14 12:38:35,754 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-14 12:38:36,167 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8084 (http) with context path ''
+2019-03-14 12:38:36,194 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 6.459 seconds (JVM running for 8.993)
+2019-03-14 12:38:59,874 org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-3] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-14 12:38:59,883 org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-3] (FrameworkServlet.java:546) INFO  --> Completed initialization in 9 ms
+2019-03-14 12:38:59,906 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8084/
+2019-03-14 12:38:59,906 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 12:38:59,906 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-14 12:38:59,907 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 12:38:59,908 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 12:38:59,914 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 12:38:59,914 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:47) INFO  --> SPEND TIME : 8
+2019-03-14 13:17:00,372 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-14 13:17:00,680 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 12004 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-14 13:17:00,706 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-14 13:17:04,776 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8084 (http)
+2019-03-14 13:17:05,063 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 4262 ms
+2019-03-14 13:17:05,866 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-14 13:17:06,080 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-14 13:17:06,382 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8084 (http) with context path ''
+2019-03-14 13:17:06,386 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 6.83 seconds (JVM running for 10.068)
+2019-03-14 13:17:22,287 org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-14 13:17:22,298 org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 11 ms
+2019-03-14 13:17:22,312 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8084/
+2019-03-14 13:17:22,313 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 13:17:22,313 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-14 13:17:22,315 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 13:17:22,315 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 13:17:22,320 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 13:17:22,320 App.Aop.WebLogAspect [http-nio-8084-exec-1] (WebLogAspect.java:47) INFO  --> SPEND TIME : 8
+2019-03-14 14:32:43,196 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:35) INFO  --> URL : http://lintaoko.ngrok.wendal.cn/
+2019-03-14 14:32:43,197 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 14:32:43,198 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:37) INFO  --> IP : 127.0.0.1
+2019-03-14 14:32:43,198 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 14:32:43,199 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 14:32:43,199 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 14:32:43,199 App.Aop.WebLogAspect [http-nio-8084-exec-3] (WebLogAspect.java:47) INFO  --> SPEND TIME : 3
+2019-03-14 15:51:07,609 App.Aop.WebLogAspect [http-nio-8084-exec-6] (WebLogAspect.java:35) INFO  --> URL : http://lintaoko.ngrok.wendal.cn/
+2019-03-14 15:51:07,620 App.Aop.WebLogAspect [http-nio-8084-exec-6] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 15:51:07,621 App.Aop.WebLogAspect [http-nio-8084-exec-6] (WebLogAspect.java:37) INFO  --> IP : 127.0.0.1
+2019-03-14 15:51:07,621 App.Aop.WebLogAspect [http-nio-8084-exec-6] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 15:51:07,621 App.Aop.WebLogAspect [http-nio-8084-exec-6] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 15:51:07,622 App.Aop.WebLogAspect [http-nio-8084-exec-6] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 15:51:07,622 App.Aop.WebLogAspect [http-nio-8084-exec-6] (WebLogAspect.java:47) INFO  --> SPEND TIME : 14
+2019-03-14 17:00:02,834 App.Aop.WebLogAspect [http-nio-8084-exec-10] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8084/
+2019-03-14 17:00:02,835 App.Aop.WebLogAspect [http-nio-8084-exec-10] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-14 17:00:02,835 App.Aop.WebLogAspect [http-nio-8084-exec-10] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-14 17:00:02,836 App.Aop.WebLogAspect [http-nio-8084-exec-10] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-14 17:00:02,836 App.Aop.WebLogAspect [http-nio-8084-exec-10] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-14 17:00:02,837 App.Aop.WebLogAspect [http-nio-8084-exec-10] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-14 17:00:02,837 App.Aop.WebLogAspect [http-nio-8084-exec-10] (WebLogAspect.java:47) INFO  --> SPEND TIME : 3

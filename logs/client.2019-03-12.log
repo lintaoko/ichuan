@@ -1,0 +1,882 @@
+2019-03-12 13:30:03,745 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 13:30:03,911 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 15668 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 13:30:03,913 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 13:30:03,962 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 13:30:03,962 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 13:30:05,496 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 13:30:05,636 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1673 ms
+2019-03-12 13:30:06,095 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 13:30:06,178 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 13:30:06,358 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 13:30:06,398 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 13:30:06,400 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.74 seconds (JVM running for 3.625)
+2019-03-12 13:30:06,682 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 13:30:06,690 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 8 ms
+2019-03-12 13:30:07,675 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> URL : http://lintaoko.ngrok.wendal.cn/
+2019-03-12 13:30:07,675 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 13:30:07,676 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:37) INFO  --> IP : 127.0.0.1
+2019-03-12 13:30:07,678 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 13:30:07,678 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 13:30:07,681 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-12 13:30:07,681 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:47) INFO  --> SPEND TIME : 7
+2019-03-12 14:13:34,118 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-5] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-12 14:13:34,362 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 14:13:34,362 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 14:13:34,372 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 15668 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 14:13:34,372 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 14:13:35,032 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 14:13:35,101 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 727 ms
+2019-03-12 14:13:35,138 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] (AbstractApplicationContext.java:554) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shopCarController' defined in file [D:\Project\ichuan粉丝站后台管理系统\target\classes\App\Controller\ShopCarController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [App.Controller.ShopCarController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@8848fda]
+2019-03-12 14:13:35,147 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-12 14:13:35,155 org.springframework.boot.SpringApplication [restartedMain] (SpringApplication.java:858) ERROR --> Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shopCarController' defined in file [D:\Project\ichuan粉丝站后台管理系统\target\classes\App\Controller\ShopCarController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [App.Controller.ShopCarController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@8848fda]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at App.App.main(App.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [App.Controller.ShopCarController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@8848fda]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:785)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:717)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: LApp/Service/ShopCarService;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3062)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2249)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:780)
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: App.Service.ShopCarService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:148)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 30 more
+2019-03-12 14:13:36,860 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 14:13:36,861 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 14:13:36,866 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 15668 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 14:13:36,866 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 14:13:37,076 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 14:13:37,109 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 242 ms
+2019-03-12 14:13:37,131 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] (AbstractApplicationContext.java:554) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shopCarController' defined in file [D:\Project\ichuan粉丝站后台管理系统\target\classes\App\Controller\ShopCarController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [App.Controller.ShopCarController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@9f511c1]
+2019-03-12 14:13:37,135 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-12 14:13:37,136 org.springframework.boot.SpringApplication [restartedMain] (SpringApplication.java:858) ERROR --> Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shopCarController' defined in file [D:\Project\ichuan粉丝站后台管理系统\target\classes\App\Controller\ShopCarController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [App.Controller.ShopCarController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@9f511c1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at App.App.main(App.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [App.Controller.ShopCarController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@9f511c1]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:785)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:717)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:550)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: LApp/Service/ShopCarService;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3062)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2249)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:780)
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: App.Service.ShopCarService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:148)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 30 more
+2019-03-12 14:25:07,922 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 14:25:07,923 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 14:25:07,927 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 15668 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 14:25:07,927 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 14:25:08,159 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 14:25:08,263 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 335 ms
+2019-03-12 14:25:08,567 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 14:25:08,679 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 14:25:08,846 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 14:25:08,863 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 14:25:08,863 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 0.949 seconds (JVM running for 3306.087)
+2019-03-12 14:25:08,865 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-03-12 16:25:07,555 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 16:25:07,671 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 8312 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:25:07,673 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:25:07,705 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:25:07,705 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:25:08,970 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:25:09,104 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1398 ms
+2019-03-12 16:25:09,422 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] (AbstractApplicationContext.java:554) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springSecurityConfig': Unsatisfied dependency expressed through field 'accessDeniedHandler'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.web.access.AccessDeniedHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-03-12 16:25:09,433 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-12 16:25:09,515 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] (LoggingFailureAnalysisReporter.java:42) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field accessDeniedHandler in App.SpringSecurityConfig required a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' in your configuration.
+
+2019-03-12 16:26:22,599 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 16:26:22,707 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 10600 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:26:22,708 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:26:22,739 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:26:22,739 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:26:23,920 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:26:24,075 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1336 ms
+2019-03-12 16:26:24,380 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] (AbstractApplicationContext.java:554) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springSecurityConfig': Unsatisfied dependency expressed through field 'accessDeniedHandler'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.web.access.AccessDeniedHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-03-12 16:26:24,391 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-12 16:26:24,479 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] (LoggingFailureAnalysisReporter.java:42) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field accessDeniedHandler in App.SpringSecurityConfig required a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' in your configuration.
+
+2019-03-12 16:26:30,499 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 16:26:30,622 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 23940 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:26:30,623 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:26:30,660 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:26:30,660 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:26:32,363 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:26:32,548 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1888 ms
+2019-03-12 16:26:33,189 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:26:33,327 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 16:26:33,602 org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] (UserDetailsServiceAutoConfiguration.java:86) INFO  --> 
+
+Using generated security password: df84ff29-4dc8-470f-9b69-32817ae2269d
+
+2019-03-12 16:26:33,720 org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17af43b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@38d9c5a, org.springframework.security.web.header.HeaderWriterFilter@74b95272, org.springframework.security.web.csrf.CsrfFilter@38bd0940, org.springframework.security.web.authentication.logout.LogoutFilter@2d139f28, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f8f38ed, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@28b60417, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e59516, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@88ebb99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62084160, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@180eceb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69de1f71, org.springframework.security.web.session.SessionManagementFilter@36c6a52f, org.springframework.security.web.access.ExceptionTranslationFilter@31803f4c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20555704]
+2019-03-12 16:26:33,974 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:61) WARN  --> Unable to start LiveReload server
+2019-03-12 16:26:34,061 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 16:26:34,066 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.626 seconds (JVM running for 4.309)
+2019-03-12 16:27:07,331 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 16:27:07,342 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 10 ms
+2019-03-12 16:28:25,751 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 16:28:25,876 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 22300 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:28:25,877 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:28:25,914 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:28:25,914 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:28:27,411 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:28:27,650 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1735 ms
+2019-03-12 16:28:28,218 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:28:28,336 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 16:28:28,547 org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] (UserDetailsServiceAutoConfiguration.java:86) INFO  --> 
+
+Using generated security password: 3f41986e-64d3-41c3-873e-c62018cee14f
+
+2019-03-12 16:28:28,628 org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@506a24d5, org.springframework.security.web.context.SecurityContextPersistenceFilter@32e0a3e4, org.springframework.security.web.header.HeaderWriterFilter@2066a3c0, org.springframework.security.web.csrf.CsrfFilter@1389a564, org.springframework.security.web.authentication.logout.LogoutFilter@d8ff880, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63dc14dd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@18bef0a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4aee4d8d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@75c1a269, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cb559c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67be7f33, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a89cf02, org.springframework.security.web.session.SessionManagementFilter@24e47a57, org.springframework.security.web.access.ExceptionTranslationFilter@7c9bbc67, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4eb5be47]
+2019-03-12 16:28:28,715 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:61) WARN  --> Unable to start LiveReload server
+2019-03-12 16:28:28,756 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 16:28:28,759 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.079 seconds (JVM running for 3.739)
+2019-03-12 16:28:47,017 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 16:28:47,026 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 8 ms
+2019-03-12 16:28:56,055 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 16:28:56,178 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 26960 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:28:56,179 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:28:56,222 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:28:56,222 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:28:57,461 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:28:57,594 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1371 ms
+2019-03-12 16:28:57,997 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:28:58,079 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 16:28:58,228 org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] (UserDetailsServiceAutoConfiguration.java:86) INFO  --> 
+
+Using generated security password: a92e9be1-d55f-44e2-b099-4efe8a6abc7f
+
+2019-03-12 16:28:58,287 org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6af6a54d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3064c494, org.springframework.security.web.header.HeaderWriterFilter@5d8e6273, org.springframework.security.web.csrf.CsrfFilter@c768262, org.springframework.security.web.authentication.logout.LogoutFilter@45164d48, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@641a839f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c3c493a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c1f018d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@639ff210, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@104faa7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a3723e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@165fe67c, org.springframework.security.web.session.SessionManagementFilter@31bdf113, org.springframework.security.web.access.ExceptionTranslationFilter@799d9b4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57c64589]
+2019-03-12 16:28:58,380 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:61) WARN  --> Unable to start LiveReload server
+2019-03-12 16:28:58,421 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 16:28:58,424 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.493 seconds (JVM running for 3.216)
+2019-03-12 16:29:00,642 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 16:29:00,650 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
+2019-03-12 16:29:22,167 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 16:29:22,277 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 22908 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:29:22,279 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:29:22,317 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:29:22,317 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:29:23,423 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:29:23,578 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1260 ms
+2019-03-12 16:29:24,231 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:29:24,407 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 16:29:24,780 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:61) WARN  --> Unable to start LiveReload server
+2019-03-12 16:29:24,861 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 16:29:24,866 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.754 seconds (JVM running for 3.467)
+2019-03-12 16:29:26,329 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-1] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:29:26,566 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:29:26,567 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:29:26,577 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 22908 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:29:26,578 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:29:26,931 org.mybatis.spring.mapper.ClassPathMapperScanner [restartedMain] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[App/Mapper]' package. Please check your configuration.
+2019-03-12 16:29:26,963 org.mybatis.spring.mapper.ClassPathMapperScanner [restartedMain] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[App]' package. Please check your configuration.
+2019-03-12 16:29:27,149 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:29:27,233 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 652 ms
+2019-03-12 16:29:27,339 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:29:27,381 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 16:29:27,533 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:61) WARN  --> Unable to start LiveReload server
+2019-03-12 16:29:27,560 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 16:29:27,561 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 1.01 seconds (JVM running for 6.163)
+2019-03-12 16:29:27,567 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:50) INFO  --> Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MybatisAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2019-03-12 16:29:29,791 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 16:29:29,799 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 8 ms
+2019-03-12 16:33:59,744 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 16:33:59,848 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 16316 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:33:59,850 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:33:59,892 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:33:59,892 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:34:01,183 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:34:01,322 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1430 ms
+2019-03-12 16:34:01,704 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:34:01,786 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 16:34:01,958 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:61) WARN  --> Unable to start LiveReload server
+2019-03-12 16:34:01,998 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 16:34:02,001 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.324 seconds (JVM running for 3.003)
+2019-03-12 16:34:02,861 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 16:34:02,869 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 8 ms
+2019-03-12 16:34:02,891 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-03-12 16:34:02,893 com.zaxxer.hikari.util.DriverDataSource [http-nio-8080-exec-1] (DriverDataSource.java:68) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-03-12 16:34:10,024 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-1] (PoolBase.java:472) WARN  --> HikariPool-1 - Default transaction isolation level detection failed (No operations allowed after connection closed.).
+2019-03-12 16:34:10,026 com.zaxxer.hikari.pool.HikariPool [http-nio-8080-exec-1] (HikariPool.java:574) ERROR --> HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setTransactionIsolation(ConnectionImpl.java:2279)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:424)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:374)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at App.Service.GoodsEvaluationService$$EnhancerBySpringCGLIB$$5990e0e6.queryGoodsEvaluationByGoodsId(<generated>)
+	at App.Controller.GoodsEvaluationController.queryGoodsEvaluationByGoodsId(GoodsEvaluationController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1259)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:575)
+	at com.mysql.cj.jdbc.ConnectionImpl.setTransactionIsolation(ConnectionImpl.java:2226)
+	... 72 more
+2019-03-12 16:34:10,033 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-2] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-03-12 16:34:10,039 com.zaxxer.hikari.util.DriverDataSource [http-nio-8080-exec-2] (DriverDataSource.java:68) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-03-12 16:34:10,074 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-1] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.]
+2019-03-12 16:34:11,457 com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-2] (PoolBase.java:472) WARN  --> HikariPool-1 - Default transaction isolation level detection failed (No operations allowed after connection closed.).
+2019-03-12 16:34:11,458 com.zaxxer.hikari.pool.HikariPool [http-nio-8080-exec-2] (HikariPool.java:574) ERROR --> HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setTransactionIsolation(ConnectionImpl.java:2279)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:424)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:374)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at App.Service.GoodsEvaluationService$$EnhancerBySpringCGLIB$$5990e0e6.queryGoodsEvaluationByGoodsId(<generated>)
+	at App.Controller.GoodsEvaluationController.queryGoodsEvaluationByGoodsId(GoodsEvaluationController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1259)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:575)
+	at com.mysql.cj.jdbc.ConnectionImpl.setTransactionIsolation(ConnectionImpl.java:2226)
+	... 72 more
+2019-03-12 16:34:11,464 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.]
+2019-03-12 16:34:37,340 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-6] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-03-12 16:34:37,340 com.zaxxer.hikari.util.DriverDataSource [http-nio-8080-exec-6] (DriverDataSource.java:68) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-03-12 16:34:37,811 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-6] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2019-03-12 16:36:31,377 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-1] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:36:31,377 com.zaxxer.hikari.HikariDataSource [Thread-1] (HikariDataSource.java:350) INFO  --> HikariPool-1 - Shutdown initiated...
+2019-03-12 16:36:31,382 com.zaxxer.hikari.HikariDataSource [Thread-1] (HikariDataSource.java:352) INFO  --> HikariPool-1 - Shutdown completed.
+2019-03-12 16:36:31,571 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 16:36:31,572 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 16:36:31,585 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 16316 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 16:36:31,585 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 16:36:31,924 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 16:36:31,957 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 367 ms
+2019-03-12 16:36:32,103 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 16:36:32,176 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 16:36:32,291 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:61) WARN  --> Unable to start LiveReload server
+2019-03-12 16:36:32,306 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 16:36:32,307 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 0.753 seconds (JVM running for 153.308)
+2019-03-12 16:36:32,309 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-03-12 16:39:59,714 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 16:39:59,723 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 8 ms
+2019-03-12 16:40:44,610 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-6] (HikariDataSource.java:110) INFO  --> HikariPool-2 - Starting...
+2019-03-12 16:40:44,611 com.zaxxer.hikari.util.DriverDataSource [http-nio-8080-exec-6] (DriverDataSource.java:68) WARN  --> Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-03-12 16:40:44,910 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-6] (HikariDataSource.java:123) INFO  --> HikariPool-2 - Start completed.
+2019-03-12 16:48:46,696 com.zaxxer.hikari.pool.ProxyConnection [http-nio-8080-exec-9] (ProxyConnection.java:153) WARN  --> HikariPool-2 - Connection com.mysql.cj.jdbc.ConnectionImpl@2bc5a779 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 360,004 milliseconds ago.  The last packet sent successfully to the server was 360,004 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2074)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:388)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doCleanupAfterCompletion(DataSourceTransactionManager.java:374)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.cleanupAfterCompletion(AbstractPlatformTransactionManager.java:1007)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:793)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:533)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:304)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at App.Service.ShopCarService$$EnhancerBySpringCGLIB$$91323d82.queryShopCarByUserId(<generated>)
+	at App.Controller.ShopCarController.queryShopCarByUserId(ShopCarController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 360,004 milliseconds ago.  The last packet sent successfully to the server was 360,004 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+	... 69 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 75 more
+2019-03-12 16:50:24,457 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/game
+2019-03-12 16:50:24,457 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 16:50:24,458 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 16:50:24,459 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 16:50:24,460 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 16:50:24,463 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-12 16:50:24,464 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:47) INFO  --> SPEND TIME : 7
+2019-03-12 18:27:40,990 com.zaxxer.hikari.pool.HikariPool [HikariPool-2 housekeeper] (HikariPool.java:766) WARN  --> HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=41m25s836ms184µs381ns).
+2019-03-12 20:00:39,631 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-7] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:00:39,649 com.zaxxer.hikari.HikariDataSource [Thread-7] (HikariDataSource.java:350) INFO  --> HikariPool-2 - Shutdown initiated...
+2019-03-12 20:00:39,710 com.zaxxer.hikari.HikariDataSource [Thread-7] (HikariDataSource.java:352) INFO  --> HikariPool-2 - Shutdown completed.
+2019-03-12 20:00:40,396 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:00:40,397 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:00:40,410 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 16316 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:00:40,410 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:00:40,915 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:00:40,977 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 563 ms
+2019-03-12 20:00:41,328 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:00:41,411 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:00:41,615 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:00:41,643 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:00:41,644 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 1.298 seconds (JVM running for 12402.655)
+2019-03-12 20:00:41,646 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-03-12 20:00:49,514 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:00:49,772 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 28980 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:00:49,775 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:00:49,867 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:00:49,867 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:00:52,116 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:00:52,302 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 2434 ms
+2019-03-12 20:00:52,948 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:00:53,066 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:00:53,322 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:00:53,376 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:00:53,381 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.998 seconds (JVM running for 5.206)
+2019-03-12 20:00:53,461 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:00:53,473 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 11 ms
+2019-03-12 20:01:13,357 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:01:13,476 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 11124 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:01:13,477 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:01:13,526 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:01:13,527 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:01:15,076 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:01:15,302 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1775 ms
+2019-03-12 20:01:15,958 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:01:16,152 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:01:16,537 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:01:16,601 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:01:16,606 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.311 seconds (JVM running for 4.059)
+2019-03-12 20:01:34,401 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:01:34,411 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 10 ms
+2019-03-12 20:02:32,011 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:02:32,230 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 11300 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:02:32,233 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:02:32,296 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:02:32,297 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:02:34,337 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:02:34,513 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 2216 ms
+2019-03-12 20:02:35,259 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:02:35,378 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:02:35,633 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:02:35,683 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:02:35,687 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.808 seconds (JVM running for 4.992)
+2019-03-12 20:02:35,875 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:02:35,884 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 8 ms
+2019-03-12 20:02:35,900 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/
+2019-03-12 20:02:35,901 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 20:02:35,902 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 20:02:35,904 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 20:02:35,904 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 20:02:35,907 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-12 20:02:35,908 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:47) INFO  --> SPEND TIME : 8
+2019-03-12 20:04:03,078 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:04:03,529 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 23308 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:04:03,532 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:04:03,633 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:04:03,634 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:04:06,299 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:04:06,562 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 2927 ms
+2019-03-12 20:04:07,126 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:04:07,254 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:04:07,425 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:04:07,474 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:04:07,477 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 5.017 seconds (JVM running for 5.959)
+2019-03-12 20:04:09,933 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:04:09,943 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 9 ms
+2019-03-12 20:04:09,958 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/
+2019-03-12 20:04:09,959 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 20:04:09,960 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 20:04:09,961 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 20:04:09,962 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 20:04:09,965 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-12 20:04:09,966 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:47) INFO  --> SPEND TIME : 8
+2019-03-12 20:04:32,301 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/
+2019-03-12 20:04:32,301 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 20:04:32,301 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 20:04:32,302 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 20:04:32,302 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 20:04:32,302 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-12 20:04:32,303 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:47) INFO  --> SPEND TIME : 3
+2019-03-12 20:04:55,127 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:04:55,243 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 29764 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:04:55,245 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:04:55,288 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:04:55,288 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:04:56,425 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:04:56,564 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1276 ms
+2019-03-12 20:04:57,002 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:04:57,146 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:04:57,279 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:04:57,330 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:04:57,334 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.275 seconds (JVM running for 2.98)
+2019-03-12 20:05:02,962 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:05:02,970 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
+2019-03-12 20:05:02,984 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/
+2019-03-12 20:05:02,985 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 20:05:02,986 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 20:05:02,988 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 20:05:02,988 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 20:05:02,991 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-12 20:05:02,991 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:47) INFO  --> SPEND TIME : 7
+2019-03-12 20:06:54,777 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:06:54,976 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 24560 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:06:54,978 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:06:55,042 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:06:55,042 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:06:56,950 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:06:57,134 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 2091 ms
+2019-03-12 20:06:57,844 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:06:58,037 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:06:58,299 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:06:58,353 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:06:58,357 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.672 seconds (JVM running for 4.594)
+2019-03-12 20:07:31,427 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:07:31,437 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 9 ms
+2019-03-12 20:07:31,453 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/
+2019-03-12 20:07:31,453 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 20:07:31,454 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 20:07:31,456 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 20:07:31,456 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 20:07:31,459 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/index.html"; model=null]
+2019-03-12 20:07:31,460 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:47) INFO  --> SPEND TIME : 8
+2019-03-12 20:07:50,524 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:07:50,649 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 23800 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:07:50,651 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:07:50,688 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:07:50,689 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:07:51,941 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:07:52,082 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1393 ms
+2019-03-12 20:07:52,524 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:07:52,622 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:07:52,780 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:07:52,838 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:07:52,842 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.374 seconds (JVM running for 3.022)
+2019-03-12 20:07:54,712 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:07:54,720 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
+2019-03-12 20:07:57,662 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/
+2019-03-12 20:07:57,662 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 20:07:57,663 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 20:07:57,664 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 20:07:57,665 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 20:07:57,668 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/index.html"; model=null]
+2019-03-12 20:07:57,668 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:47) INFO  --> SPEND TIME : 7
+2019-03-12 20:08:31,694 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:08:31,878 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 15492 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:08:31,896 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:08:31,982 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:08:31,982 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:08:34,090 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:08:34,362 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 2379 ms
+2019-03-12 20:08:35,002 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:08:35,115 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:08:35,294 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:08:35,344 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:08:35,348 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.8 seconds (JVM running for 4.733)
+2019-03-12 20:08:47,097 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:08:47,105 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
+2019-03-12 20:08:47,121 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/
+2019-03-12 20:08:47,121 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 20:08:47,122 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 20:08:47,123 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 20:08:47,123 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 20:08:47,126 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-12 20:08:47,126 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:47) INFO  --> SPEND TIME : 5
+2019-03-12 20:09:43,862 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 20:09:43,970 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 26660 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 20:09:43,971 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 20:09:44,000 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 20:09:44,000 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 20:09:45,241 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 20:09:45,383 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1382 ms
+2019-03-12 20:09:45,812 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 20:09:45,910 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 20:09:46,100 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 20:09:46,143 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 20:09:46,146 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.343 seconds (JVM running for 2.988)
+2019-03-12 20:09:52,730 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 20:09:52,738 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 8 ms
+2019-03-12 20:09:52,752 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> URL : http://localhost:8080/
+2019-03-12 20:09:52,752 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:36) INFO  --> HTTP_METHOD : GET
+2019-03-12 20:09:52,753 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:37) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-03-12 20:09:52,754 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:38) INFO  --> CLASS_METHOD : App.Controller.JspController.game
+2019-03-12 20:09:52,754 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:39) INFO  --> ARGS : []
+2019-03-12 20:09:52,757 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:46) INFO  --> RESPONSE : ModelAndView [view="redirect:/pages/game.html"; model=null]
+2019-03-12 20:09:52,757 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:47) INFO  --> SPEND TIME : 6
+2019-03-12 22:14:30,780 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-03-12 22:14:30,913 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 18860 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-03-12 22:14:30,919 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-03-12 22:14:31,042 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-12 22:14:31,042 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-12 22:14:33,235 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-03-12 22:14:33,404 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 2362 ms
+2019-03-12 22:14:33,976 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 22:14:34,147 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-03-12 22:14:34,375 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-03-12 22:14:34,421 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-12 22:14:34,425 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.722 seconds (JVM running for 4.463)

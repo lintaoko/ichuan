@@ -1,0 +1,983 @@
+2019-02-28 15:14:37,884 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-02-28 15:14:38,022 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-02-28 15:14:38,023 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-02-28 15:14:38,054 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-28 15:14:38,054 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-28 15:14:39,164 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-02-28 15:14:39,347 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1292 ms
+2019-02-28 15:14:39,486 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-02-28 15:14:41,430 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:14:41,497 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-02-28 15:14:41,506 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-02-28 15:14:41,508 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-02-28 15:14:41,511 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-02-28 15:14:41,511 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-02-28 15:14:41,511 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-02-28 15:14:41,512 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-02-28 15:14:41,512 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-02-28 15:14:41,512 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-02-28 15:14:41,513 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-02-28 15:14:41,513 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-02-28 15:14:41,513 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-02-28 15:14:41,513 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-02-28 15:14:41,513 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-02-28 15:14:41,513 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-02-28 15:14:41,514 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-02-28 15:14:41,514 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-02-28 15:14:41,514 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-02-28 15:14:41,514 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-02-28 15:14:41,514 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-02-28 15:14:41,515 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-02-28 15:14:41,515 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-02-28 15:14:41,515 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-02-28 15:14:41,515 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-02-28 15:14:41,515 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-02-28 15:14:41,516 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-02-28 15:14:41,516 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-02-28 15:14:42,639 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 15:14:42,845 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-02-28 15:14:42,885 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 15:14:42,889 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 5.091 seconds (JVM running for 5.934)
+2019-02-28 15:14:53,759 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-02-28 15:14:53,767 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 6 ms
+2019-02-28 15:16:21,924 com.atomikos.icatch.imp.TransactionServiceImp [Thread-5] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-02-28 15:16:21,928 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-5] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:16:21,929 com.atomikos.datasource.pool.ConnectionPool [Thread-5] (Slf4jLogger.java:28) INFO  --> atomikos connection pool 'dataSource': destroying pool...
+2019-02-28 15:16:22,088 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-28 15:16:22,088 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-28 15:16:22,094 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-02-28 15:16:22,094 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-02-28 15:16:22,316 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-02-28 15:16:22,358 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 262 ms
+2019-02-28 15:16:22,412 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-02-28 15:16:23,242 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:16:23,265 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-02-28 15:16:23,275 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-02-28 15:16:23,276 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-02-28 15:16:23,277 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-02-28 15:16:23,277 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-02-28 15:16:23,277 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-02-28 15:16:23,277 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-02-28 15:16:23,277 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-02-28 15:16:23,278 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-02-28 15:16:23,278 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-02-28 15:16:23,278 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-02-28 15:16:23,278 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-02-28 15:16:23,278 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-02-28 15:16:23,278 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-02-28 15:16:23,278 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-02-28 15:16:23,279 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-02-28 15:16:23,279 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-02-28 15:16:23,279 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-02-28 15:16:23,279 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-02-28 15:16:23,279 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-02-28 15:16:23,280 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-02-28 15:16:23,280 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-02-28 15:16:23,280 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-02-28 15:16:23,280 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-02-28 15:16:23,280 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-02-28 15:16:23,280 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-02-28 15:16:23,281 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-02-28 15:16:24,230 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 15:16:24,393 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-02-28 15:16:24,405 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 15:16:24,406 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.327 seconds (JVM running for 107.451)
+2019-02-28 15:16:24,407 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-02-28 15:19:08,208 com.atomikos.icatch.imp.TransactionServiceImp [Thread-9] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-02-28 15:19:08,209 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-9] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:19:08,210 com.atomikos.datasource.pool.ConnectionPool [Thread-9] (Slf4jLogger.java:28) INFO  --> atomikos connection pool 'dataSource': destroying pool...
+2019-02-28 15:19:08,354 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-28 15:19:08,355 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-28 15:19:08,359 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-02-28 15:19:08,359 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-02-28 15:19:08,589 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-02-28 15:19:08,631 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 271 ms
+2019-02-28 15:19:08,680 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-02-28 15:19:10,151 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:19:10,172 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-02-28 15:19:10,177 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-02-28 15:19:10,178 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-02-28 15:19:10,179 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-02-28 15:19:10,179 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-02-28 15:19:10,179 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-02-28 15:19:10,179 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-02-28 15:19:10,180 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-02-28 15:19:10,181 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-02-28 15:19:10,182 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-02-28 15:19:14,517 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 15:19:14,682 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-02-28 15:19:14,701 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 15:19:14,702 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 6.355 seconds (JVM running for 277.748)
+2019-02-28 15:19:14,703 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-02-28 15:19:23,785 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-02-28 15:19:23,788 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 3 ms
+2019-02-28 15:19:51,307 com.atomikos.icatch.imp.TransactionServiceImp [Thread-15] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-02-28 15:19:51,309 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-15] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:19:51,309 com.atomikos.datasource.pool.ConnectionPool [Thread-15] (Slf4jLogger.java:28) INFO  --> atomikos connection pool 'dataSource': destroying pool...
+2019-02-28 15:19:51,450 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-28 15:19:51,451 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-28 15:19:51,456 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-02-28 15:19:51,456 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-02-28 15:19:51,662 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-02-28 15:19:51,689 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 232 ms
+2019-02-28 15:19:51,722 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-02-28 15:19:52,766 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:19:52,786 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-02-28 15:19:52,792 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-02-28 15:19:52,792 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-02-28 15:19:52,793 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-02-28 15:19:52,794 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-02-28 15:19:52,794 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-02-28 15:19:52,794 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-02-28 15:19:52,794 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-02-28 15:19:52,794 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-02-28 15:19:52,794 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-02-28 15:19:52,794 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-02-28 15:19:52,795 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-02-28 15:19:52,795 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-02-28 15:19:52,795 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-02-28 15:19:52,795 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-02-28 15:19:52,795 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-02-28 15:19:52,795 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-02-28 15:19:52,795 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-02-28 15:19:52,795 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-02-28 15:19:52,796 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-02-28 15:19:52,796 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-02-28 15:19:52,796 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-02-28 15:19:52,796 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-02-28 15:19:52,796 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-02-28 15:19:52,796 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-02-28 15:19:52,796 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-02-28 15:19:52,796 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-02-28 15:19:54,583 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 15:19:54,710 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-02-28 15:19:54,726 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 15:19:54,726 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.283 seconds (JVM running for 317.773)
+2019-02-28 15:19:54,728 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-02-28 15:19:56,200 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-02-28 15:19:56,203 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 3 ms
+2019-02-28 15:30:57,106 com.atomikos.icatch.imp.TransactionServiceImp [Thread-21] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-02-28 15:30:57,108 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-21] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:30:57,109 com.atomikos.datasource.pool.ConnectionPool [Thread-21] (Slf4jLogger.java:28) INFO  --> atomikos connection pool 'dataSource': destroying pool...
+2019-02-28 15:30:57,291 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-28 15:30:57,291 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-28 15:30:57,296 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-02-28 15:30:57,296 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-02-28 15:30:57,492 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-02-28 15:30:57,519 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 221 ms
+2019-02-28 15:30:57,551 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-02-28 15:30:59,749 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:30:59,770 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-02-28 15:30:59,775 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-02-28 15:30:59,775 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-02-28 15:30:59,776 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-02-28 15:30:59,777 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-02-28 15:30:59,777 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-02-28 15:30:59,777 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-02-28 15:30:59,777 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-02-28 15:30:59,777 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-02-28 15:30:59,777 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-02-28 15:30:59,777 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-02-28 15:30:59,777 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-02-28 15:30:59,778 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-02-28 15:30:59,779 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-02-28 15:30:59,779 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-02-28 15:30:59,779 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-02-28 15:30:59,779 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-02-28 15:30:59,779 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-02-28 15:31:01,085 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 15:31:01,246 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-02-28 15:31:01,262 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 15:31:01,262 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 3.983 seconds (JVM running for 984.311)
+2019-02-28 15:31:01,262 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-02-28 15:31:19,888 com.atomikos.icatch.imp.TransactionServiceImp [Thread-27] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-02-28 15:31:19,888 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-27] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:31:19,888 com.atomikos.datasource.pool.ConnectionPool [Thread-27] (Slf4jLogger.java:28) INFO  --> atomikos connection pool 'dataSource': destroying pool...
+2019-02-28 15:31:20,018 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-28 15:31:20,019 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-28 15:31:20,023 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-02-28 15:31:20,023 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-02-28 15:31:20,214 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-02-28 15:31:20,243 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 219 ms
+2019-02-28 15:31:20,278 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-02-28 15:31:21,273 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 15:31:21,293 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-02-28 15:31:21,298 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-02-28 15:31:21,299 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-02-28 15:31:21,300 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-02-28 15:31:21,300 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-02-28 15:31:21,301 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-02-28 15:31:21,302 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-02-28 15:31:21,302 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-02-28 15:31:21,302 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-02-28 15:31:21,302 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-02-28 15:31:21,302 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-02-28 15:31:21,302 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-02-28 15:31:21,302 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-02-28 15:31:21,302 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-02-28 15:31:21,303 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-02-28 15:31:21,303 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-02-28 15:31:21,303 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-02-28 15:31:21,303 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-02-28 15:31:21,303 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-02-28 15:31:22,257 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 15:31:22,411 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-02-28 15:31:22,426 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 15:31:22,427 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.416 seconds (JVM running for 1005.472)
+2019-02-28 15:31:22,428 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-02-28 17:18:16,434 com.atomikos.recovery.xa.XaResourceRecoveryManager [Atomikos:2] (Slf4jLogger.java:40) WARN  --> Error while retrieving xids from resource - will retry later...
+com.mysql.cj.jdbc.MysqlXAException: Undetermined error occurred in the underlying Connection - check your data for consistency
+	at com.mysql.cj.jdbc.MysqlXAConnection.mapXAExceptionFromSQLException(MysqlXAConnection.java:347)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:189)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:117)
+	at com.atomikos.datasource.xa.RecoveryScan.recoverXids(RecoveryScan.java:32)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.retrievePreparedXidsFromXaResource(XaResourceRecoveryManager.java:158)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.recover(XaResourceRecoveryManager.java:67)
+	at com.atomikos.datasource.xa.XATransactionalResource.recover(XATransactionalResource.java:449)
+	at com.atomikos.icatch.imp.TransactionServiceImp.performRecovery(TransactionServiceImp.java:490)
+	at com.atomikos.icatch.imp.TransactionServiceImp.access$000(TransactionServiceImp.java:56)
+	at com.atomikos.icatch.imp.TransactionServiceImp$1.alarm(TransactionServiceImp.java:471)
+	at com.atomikos.timing.PooledAlarmTimer.notifyListeners(PooledAlarmTimer.java:95)
+	at com.atomikos.timing.PooledAlarmTimer.run(PooledAlarmTimer.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,255 milliseconds ago.  The last packet sent successfully to the server was 29,360 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:168)
+	... 13 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,255 milliseconds ago.  The last packet sent successfully to the server was 29,360 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1186)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 20 more
+2019-02-28 17:18:17,937 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 18:30:23,640 com.atomikos.icatch.imp.TransactionServiceImp [Thread-33] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-02-28 18:30:35,625 com.atomikos.recovery.xa.XaResourceRecoveryManager [Atomikos:2] (Slf4jLogger.java:40) WARN  --> Error while retrieving xids from resource - will retry later...
+com.mysql.cj.jdbc.MysqlXAException: Undetermined error occurred in the underlying Connection - check your data for consistency
+	at com.mysql.cj.jdbc.MysqlXAConnection.mapXAExceptionFromSQLException(MysqlXAConnection.java:347)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:189)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:117)
+	at com.atomikos.datasource.xa.RecoveryScan.recoverXids(RecoveryScan.java:32)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.retrievePreparedXidsFromXaResource(XaResourceRecoveryManager.java:158)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.recover(XaResourceRecoveryManager.java:67)
+	at com.atomikos.datasource.xa.XATransactionalResource.recover(XATransactionalResource.java:449)
+	at com.atomikos.icatch.imp.TransactionServiceImp.performRecovery(TransactionServiceImp.java:490)
+	at com.atomikos.icatch.imp.TransactionServiceImp.access$000(TransactionServiceImp.java:56)
+	at com.atomikos.icatch.imp.TransactionServiceImp$1.alarm(TransactionServiceImp.java:471)
+	at com.atomikos.timing.PooledAlarmTimer.notifyListeners(PooledAlarmTimer.java:95)
+	at com.atomikos.timing.PooledAlarmTimer.run(PooledAlarmTimer.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,249 milliseconds ago.  The last packet sent successfully to the server was 29,343 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:168)
+	... 13 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,249 milliseconds ago.  The last packet sent successfully to the server was 29,343 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1186)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 20 more
+2019-02-28 18:30:35,625 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-33] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-28 18:30:35,625 com.atomikos.datasource.pool.ConnectionPool [Thread-33] (Slf4jLogger.java:28) INFO  --> atomikos connection pool 'dataSource': destroying pool...
+2019-02-28 18:30:35,786 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-28 18:30:35,786 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-28 18:30:35,786 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-02-28 18:30:35,786 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-02-28 18:30:35,927 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 18:30:36,005 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-02-28 18:30:36,052 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 266 ms
+2019-02-28 18:30:36,092 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-02-28 18:30:36,907 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 18:30:36,938 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-02-28 18:30:36,938 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-02-28 18:30:38,023 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 18:30:38,167 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-02-28 18:30:38,185 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 18:30:38,186 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 2.415 seconds (JVM running for 11761.241)
+2019-02-28 18:30:38,188 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-02-28 19:36:42,143 com.atomikos.recovery.xa.XaResourceRecoveryManager [Atomikos:2] (Slf4jLogger.java:40) WARN  --> Error while retrieving xids from resource - will retry later...
+com.mysql.cj.jdbc.MysqlXAException: Undetermined error occurred in the underlying Connection - check your data for consistency
+	at com.mysql.cj.jdbc.MysqlXAConnection.mapXAExceptionFromSQLException(MysqlXAConnection.java:347)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:189)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:117)
+	at com.atomikos.datasource.xa.RecoveryScan.recoverXids(RecoveryScan.java:32)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.retrievePreparedXidsFromXaResource(XaResourceRecoveryManager.java:158)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.recover(XaResourceRecoveryManager.java:67)
+	at com.atomikos.datasource.xa.XATransactionalResource.recover(XATransactionalResource.java:449)
+	at com.atomikos.icatch.imp.TransactionServiceImp.performRecovery(TransactionServiceImp.java:490)
+	at com.atomikos.icatch.imp.TransactionServiceImp.access$000(TransactionServiceImp.java:56)
+	at com.atomikos.icatch.imp.TransactionServiceImp$1.alarm(TransactionServiceImp.java:471)
+	at com.atomikos.timing.PooledAlarmTimer.notifyListeners(PooledAlarmTimer.java:95)
+	at com.atomikos.timing.PooledAlarmTimer.run(PooledAlarmTimer.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,285 milliseconds ago.  The last packet sent successfully to the server was 29,378 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:168)
+	... 13 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,285 milliseconds ago.  The last packet sent successfully to the server was 29,378 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1186)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 20 more
+2019-02-28 19:36:43,211 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 19:57:35,188 com.atomikos.icatch.imp.TransactionServiceImp [Thread-39] (Slf4jLogger.java:28) INFO  --> Transaction Service: Entering shutdown (false, 9223372036854775807)...
+2019-02-28 19:57:35,190 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-39] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-28 19:57:35,191 com.atomikos.datasource.pool.ConnectionPool [Thread-39] (Slf4jLogger.java:28) INFO  --> atomikos connection pool 'dataSource': destroying pool...
+2019-02-28 19:57:35,359 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-28 19:57:35,359 org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] (DeferredLog.java:227) INFO  --> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-28 19:57:35,363 App.App [restartedMain] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 20212 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-02-28 19:57:35,364 App.App [restartedMain] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-02-28 19:57:35,573 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-02-28 19:57:35,604 org.springframework.web.context.ContextLoader [restartedMain] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 239 ms
+2019-02-28 19:57:35,644 com.atomikos.jdbc.AbstractDataSourceBean [restartedMain] (Slf4jLogger.java:24) WARN  --> AtomikosDataSoureBean 'dataSource': poolSize equals default - this may cause performance problems!
+2019-02-28 19:57:37,496 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 19:57:37,525 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2019-02-28 19:57:37,533 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Loaded jar:file:/D:/Maven/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2019-02-28 19:57:37,534 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:24) WARN  --> Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2019-02-28 19:57:37,535 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_max_retries = 5
+2019-02-28 19:57:37,535 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_dir = D:\Project\ichuan粉丝站后台管理系统\transaction-logs
+2019-02-28 19:57:37,535 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.tm_unique_name = 192.168.123.111.tm
+2019-02-28 19:57:37,535 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_jta_timeout = 10000
+2019-02-28 19:57:37,535 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.serial_jta_transactions = true
+2019-02-28 19:57:37,536 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.allow_subtransactions = true
+2019-02-28 19:57:37,536 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.automatic_resource_registration = true
+2019-02-28 19:57:37,539 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2019-02-28 19:57:37,539 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.log_base_name = tmlog
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: java.naming.provider.url = rmi://localhost:1099
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.checkpoint_interval = 500
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.client_demarcation = false
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.trust_client_tm = false
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.rmi_export_class = none
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.enable_logging = true
+2019-02-28 19:57:37,540 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_timeout = 300000
+2019-02-28 19:57:37,541 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.threaded_2pc = false
+2019-02-28 19:57:37,541 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.recovery_delay = 10000
+2019-02-28 19:57:37,541 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> USING: com.atomikos.icatch.max_actives = 50
+2019-02-28 19:57:37,541 com.atomikos.icatch.provider.imp.AssemblerImp [restartedMain] (Slf4jLogger.java:28) INFO  --> Using default (local) logging and recovery...
+2019-02-28 19:57:40,062 com.atomikos.datasource.xa.XATransactionalResource [restartedMain] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 19:57:40,202 org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] (OptionalLiveReloadServer.java:57) INFO  --> LiveReload server is running on port 35729
+2019-02-28 19:57:40,216 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 19:57:40,216 App.App [restartedMain] (StartupInfoLogger.java:59) INFO  --> Started App in 4.866 seconds (JVM running for 16983.284)
+2019-02-28 19:57:40,217 org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] (ConditionEvaluationDeltaLoggingListener.java:56) INFO  --> Condition evaluation unchanged
+2019-02-28 20:17:14,821 com.atomikos.recovery.xa.XaResourceRecoveryManager [Atomikos:2] (Slf4jLogger.java:40) WARN  --> Error while retrieving xids from resource - will retry later...
+com.mysql.cj.jdbc.MysqlXAException: Undetermined error occurred in the underlying Connection - check your data for consistency
+	at com.mysql.cj.jdbc.MysqlXAConnection.mapXAExceptionFromSQLException(MysqlXAConnection.java:347)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:189)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:117)
+	at com.atomikos.datasource.xa.RecoveryScan.recoverXids(RecoveryScan.java:32)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.retrievePreparedXidsFromXaResource(XaResourceRecoveryManager.java:158)
+	at com.atomikos.recovery.xa.XaResourceRecoveryManager.recover(XaResourceRecoveryManager.java:67)
+	at com.atomikos.datasource.xa.XATransactionalResource.recover(XATransactionalResource.java:449)
+	at com.atomikos.icatch.imp.TransactionServiceImp.performRecovery(TransactionServiceImp.java:490)
+	at com.atomikos.icatch.imp.TransactionServiceImp.access$000(TransactionServiceImp.java:56)
+	at com.atomikos.icatch.imp.TransactionServiceImp$1.alarm(TransactionServiceImp.java:471)
+	at com.atomikos.timing.PooledAlarmTimer.notifyListeners(PooledAlarmTimer.java:95)
+	at com.atomikos.timing.PooledAlarmTimer.run(PooledAlarmTimer.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,267 milliseconds ago.  The last packet sent successfully to the server was 29,366 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+	at com.mysql.cj.jdbc.MysqlXAConnection.recover(MysqlXAConnection.java:168)
+	... 13 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,267 milliseconds ago.  The last packet sent successfully to the server was 29,366 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:555)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:725)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:664)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:979)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:914)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1150)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1186)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:549)
+	... 20 more
+2019-02-28 20:17:35,853 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:17:45,873 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:17:45,874 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:17:55,889 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:17:55,892 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:18:05,901 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:18:05,902 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:18:15,908 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:18:15,913 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:18:25,926 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:18:25,928 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:18:35,945 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:18:35,945 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:06,981 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:06,984 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:16,987 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:16,988 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:26,992 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:26,992 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:36,997 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:36,997 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:47,007 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:47,008 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:57,013 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:19:57,016 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:07,022 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:07,023 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:17,043 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:17,045 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:27,064 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:27,064 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:37,083 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:37,086 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:47,103 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:47,103 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:57,121 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:20:57,123 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:07,141 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:07,144 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:17,158 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:17,159 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:27,166 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:27,168 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:37,173 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:37,173 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:47,177 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:47,180 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:57,183 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:21:57,185 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:07,196 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:07,198 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:17,208 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:17,211 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:27,215 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:27,217 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:37,230 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:37,231 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:47,240 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:47,241 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:57,257 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:22:57,257 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:07,271 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:07,274 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:17,280 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:17,282 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:27,301 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:27,301 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:37,319 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:37,322 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:47,338 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:47,339 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:57,344 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:23:57,345 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:07,352 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:07,355 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:17,361 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:17,364 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:27,367 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:27,370 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:37,382 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:37,384 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:47,398 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:47,400 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:57,413 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:24:57,415 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:07,434 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:07,435 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:17,448 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:17,449 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:27,466 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:27,467 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:37,480 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:37,483 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:47,501 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:47,501 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:57,506 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:25:57,509 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:07,516 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:07,516 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:17,533 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:17,535 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:27,546 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:27,548 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:37,555 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:37,556 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:47,560 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:47,563 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:57,577 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:26:57,580 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:07,586 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:07,589 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:17,596 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:17,598 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:27,613 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:27,615 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:37,621 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:37,622 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:47,627 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:47,630 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:57,648 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:27:57,651 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:07,663 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:07,665 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:17,683 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:17,686 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:27,701 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:27,703 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:37,709 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:37,712 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:47,727 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:47,728 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:57,734 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:28:57,736 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:07,751 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:07,752 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:17,764 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:17,765 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:27,768 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:27,770 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:37,777 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:37,779 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:47,787 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:47,789 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:57,807 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:29:57,809 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:07,825 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:07,826 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:17,849 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:17,852 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:27,872 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:27,874 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:37,883 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:37,885 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:47,891 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:47,892 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:57,897 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:30:57,898 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:07,914 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:07,916 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:17,930 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:17,931 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:27,937 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:27,938 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:37,956 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:37,957 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:47,970 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:47,971 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:57,988 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:31:57,990 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:08,009 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:08,011 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:18,030 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:18,033 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:28,036 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:28,037 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:38,057 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:38,059 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:48,074 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:48,077 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:58,079 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:32:58,082 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:08,090 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:08,090 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:18,108 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:18,110 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:28,119 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:28,122 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:38,136 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:38,136 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:48,152 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:48,155 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:58,159 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:33:58,161 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:08,170 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:08,172 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:18,182 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:18,184 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:28,190 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:28,192 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:38,211 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:38,214 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:48,222 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:48,225 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:58,243 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:34:58,245 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:08,266 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:08,267 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:18,276 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:18,279 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:28,295 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:28,298 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:38,301 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:38,301 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:48,310 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:48,311 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:58,315 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:35:58,316 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:08,320 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:08,321 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:18,337 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:18,340 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:28,348 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:28,350 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:38,359 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:38,365 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:48,381 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:48,381 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:58,401 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:36:58,404 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:08,420 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:08,420 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:18,432 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:18,434 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:28,442 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:28,443 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:38,461 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:38,464 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:48,482 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:48,485 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:58,493 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:37:58,495 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:08,516 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:08,518 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:18,531 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:18,534 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:28,537 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:28,537 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:38,552 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:38,554 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:48,558 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:48,560 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:58,570 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:38:58,571 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:08,586 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:08,588 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:18,608 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:18,611 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:28,614 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:28,616 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:38,626 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:38,628 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:48,638 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:48,640 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:58,649 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:39:58,651 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:08,668 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:08,671 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:18,674 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:18,675 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:28,680 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:28,682 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:38,685 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:38,687 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:48,707 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:48,708 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:58,719 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:40:58,721 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:08,726 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:08,728 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:18,749 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:18,751 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:28,757 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:28,759 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:38,764 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:38,766 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:48,771 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:48,773 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:58,787 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:41:58,788 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:08,804 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:08,806 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:18,810 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:18,811 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:28,816 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:28,818 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:38,831 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:38,833 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:48,845 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:48,847 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:58,868 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:42:58,870 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:08,887 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:08,889 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:18,906 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:18,908 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:28,921 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:28,923 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:38,943 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:38,944 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:48,960 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:48,962 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:58,976 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:43:58,977 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:08,987 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:08,988 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:19,006 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:19,008 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:29,022 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:29,025 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:39,037 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:39,039 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:49,046 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:49,048 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:59,056 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:44:59,059 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:09,069 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:09,070 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:19,073 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:19,075 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:29,081 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:29,083 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:39,099 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:39,101 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:49,110 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:49,112 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:59,119 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:45:59,121 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:09,126 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:09,128 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:19,136 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:19,137 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:29,152 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:29,154 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:39,174 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:39,176 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:49,185 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:49,187 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:59,202 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:46:59,203 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:09,211 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:09,213 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:19,228 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:19,230 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:29,239 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:29,241 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:39,246 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:39,249 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:49,257 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:49,259 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:59,275 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:47:59,278 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:09,285 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:09,288 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:19,299 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:19,301 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:29,305 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:29,307 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:39,323 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:39,323 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:49,333 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:49,335 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:59,351 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:48:59,353 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:49:09,356 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 20:49:09,359 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 23:49:17,310 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
+2019-02-28 23:49:17,330 com.atomikos.datasource.xa.XATransactionalResource [Atomikos:2] (Slf4jLogger.java:28) INFO  --> dataSource: refreshed XAResource
