@@ -1,8 +1,10 @@
 package App.Controller;
 
 import App.Domain.Goods;
+import App.Domain.GoodsVo;
 import App.Service.GoodsService;
-import com.google.gson.JsonObject;
+
+import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,13 +20,17 @@ public class GoodsController {
     GoodsService goodsService;
     //查询单件货物包括样式名
     @GetMapping("api/goods/goodsid/all")
-    public Goods queryGoodsAllInfByGoodsId (@RequestBody Goods goods){
-       return goodsService.queryGoodsAllInfByGoodsId(goods.getGoodsId());
+    public GoodsVo queryGoodsAllInfByGoodsId (@RequestParam Integer goodsId){
+        GoodsVo goodsVo=goodsService.queryGoodsAllInfByGoodsId(goodsId);
+        goodsVo.setGoodsInfJson(JSONObject.parseObject(goodsVo.getGoodsInf()));
+        return goodsVo;
     }
     //查询单件货物不包括样式名
     @GetMapping("api/goods/goodsid")
-    public Goods queryGoodsInfByGoodsId (@RequestBody Goods goods){
-        return goodsService.queryGoodsInfByGoodsId(goods.getGoodsId());
+    public GoodsVo queryGoodsInfByGoodsId (@RequestParam Integer goodsId){
+        GoodsVo goodsVo=goodsService.queryGoodsInfByGoodsId(goodsId);
+        goodsVo.setGoodsInfJson(JSONObject.parseObject(goodsVo.getGoodsInf()));
+        return goodsVo;
     }
     //查询货物从样式
     @GetMapping("api/goods/goodstype")
@@ -33,9 +39,8 @@ public class GoodsController {
     }
     //添加货物
     @PostMapping("api/goods")
-    @RolesAllowed("ADMIN")
-    public Integer goodsInsert(@RequestBody Goods goods){
-        return  goodsService.goodsInsert(goods.getGoodsName(), goods.getGoodsImg(), goods.getGoodsQuantity(), goods.getGoodInf(), goods.getGoodsType());
+    public Integer goodsInsert(@RequestBody GoodsVo goods){
+        return  goodsService.goodsInsert(goods.getGoodsName(), goods.getGoodsImg(), goods.getGoodsQuantity(), goods.getGoodsInfJson(), goods.getGoodsType());
     }
     //删除货物
     @DeleteMapping("api/goods/goodsid")

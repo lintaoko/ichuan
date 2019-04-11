@@ -2,10 +2,13 @@ package App.Service;
 
 import App.Domain.Goods;
 import App.Domain.GoodsType;
-import com.google.gson.JsonObject;
+
+import App.Domain.GoodsVo;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
@@ -14,18 +17,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Transactional
 public class GoodsService {
     @Autowired
     private RestTemplate restTemplate;
     //查询单件货物包括样式名
-    public Goods queryGoodsAllInfByGoodsId(Integer goodsId) {
+    public GoodsVo queryGoodsAllInfByGoodsId(Integer goodsId) {
         String url="http://127.0.0.1:8081/api/goods/"+goodsId+"/goodsid/all";
-        return this.restTemplate.getForObject(url, Goods.class);
+        return this.restTemplate.getForObject(url, GoodsVo.class);
     }
     //查询单件货物不包括样式名
-    public Goods queryGoodsInfByGoodsId(Integer goodsId) {
+    public GoodsVo queryGoodsInfByGoodsId(Integer goodsId) {
         String url="http://127.0.0.1:8081/api/goods/"+goodsId+"/goodsid";
-        return this.restTemplate.getForObject(url, Goods.class);
+        return this.restTemplate.getForObject(url, GoodsVo.class);
     }
     //查询货物BygoodType
     public Goods[] queryGoodsInfByGoodsType(Integer goodsType) {
@@ -33,13 +37,13 @@ public class GoodsService {
         return this.restTemplate.getForObject(url, Goods[].class);
     }
     //添加货物
-    public Integer goodsInsert(String goodsName ,String goodsImg , Integer goodsQuantity, JsonObject goodsinf,Integer goodsType){
+    public Integer goodsInsert(String goodsName , String goodsImg , Integer goodsQuantity, JSONObject goodsInf, Integer goodsType){
         String url="http://127.0.0.1:8081/api/goods";
         MultiValueMap<String,Object> multiValueMap=new LinkedMultiValueMap<>();
         multiValueMap.add("goodsName",goodsName);
         multiValueMap.add("goodsImg",goodsImg);
         multiValueMap.add("goodsQuantity",goodsQuantity);
-        multiValueMap.add("goodsinf",goodsinf);
+        multiValueMap.add("goodsInf",JSONObject.toJSONString(goodsInf));
         multiValueMap.add("goodsType",goodsType);
         return this.restTemplate.postForObject(url, multiValueMap, Integer.class);
     }

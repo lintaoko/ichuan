@@ -16,8 +16,8 @@ public class GoodsEvaluationController {
     GoodsEvaluationService goodsEvaluationService;
     //评论查询
     @GetMapping("api/goodsevaluation/goodsid")
-    public GoodsEvaluation[] queryGoodsEvaluationByGoodsId(@RequestBody GoodsEvaluation goodsEvaluation){
-        return goodsEvaluationService.queryGoodsEvaluationByGoodsId(goodsEvaluation.getGoodsId());
+    public GoodsEvaluation[] queryGoodsEvaluationByGoodsId(@RequestParam Integer goodsEvaluationId){
+        return goodsEvaluationService.queryGoodsEvaluationByGoodsId(goodsEvaluationId);
     }
     //评论添加
     @PostMapping("api/goodsevaluation")

@@ -6,6 +6,7 @@ import App.Service.UserInfService;
 import App.Untils.SecurityParameter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,9 +16,9 @@ public class UserInfController  {
     @Autowired
     UserInfService userInfService;
     //查询个人信息
-    @GetMapping("api/userinf/userloginid")
-    public UserInf queryUserInfByUserLoginId( @RequestBody UserInf userInf){
-        return userInfService.queryUserInfByUserLoginId(userInf.getUserLoginId());
+    @GetMapping(value = "api/userinf/userloginid",produces = MediaType.APPLICATION_JSON_VALUE)
+    public UserInf queryUserInfByUserLoginId( @RequestParam Integer userLoginId){
+        return userInfService.queryUserInfByUserLoginId(userLoginId);
     }
     //增添个人信息
     @PostMapping("api/userinf")

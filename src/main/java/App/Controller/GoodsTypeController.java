@@ -14,8 +14,8 @@ public class GoodsTypeController {
 
     //查询类别
     @GetMapping("api/goodstype/typeid")
-    public GoodsType queryGoodsTypeByTypeId(@RequestBody GoodsType goodsType) {
-        return goodsTypeService.queryGoodsTypeByTypeId(goodsType.getTypeId());
+    public GoodsType queryGoodsTypeByTypeId(@RequestParam Integer goodsTypeId) {
+        return goodsTypeService.queryGoodsTypeByTypeId(goodsTypeId);
     }
     //增加类别
     @PostMapping("api/goodstype/typename")

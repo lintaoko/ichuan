@@ -59,7 +59,7 @@ public class JspController {
         UserLogin us = (UserLogin) authentication.getPrincipal();
         return  us.getUserLoginId() ;
     }
-    @RequestMapping("/Suuu")
+    @RequestMapping("/error")
     public String Suuu(){
         System.out.println("Turn to Suuu.jsp");
         return "Suuu";

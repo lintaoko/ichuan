@@ -7,6 +7,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.web.cors.CorsUtils;
 
 
 @Configuration
@@ -25,6 +26,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 //我们指定任何用户都可以访问多个URL的模式。
                 //任何用户都可以访问以"/resources/","/signup", 或者 "/about"开头的URL。                                                     
                 .antMatchers("/login","/api/**","/file/**","/save","/index","/js/**").permitAll()
+                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
                 //以 "/admin/" 开头的URL只能让拥有 "ROLE_ADMIN"角色的用户访问。
                 //请注意我们使用 hasRole 方法，没有使用 "ROLE_" 前缀。
                 .antMatchers("/admin").hasRole("ADMIN")
@@ -42,8 +44,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .formLogin().loginPage("/login").loginProcessingUrl("/loginProcessingUrl")
                 //指定登录成功后跳转到/index页面
                 .defaultSuccessUrl("/userId")
+                .failureForwardUrl("/error")
                 //指定登录失败后跳转到/login?error页面
-                .failureUrl("/Suuu")
                 .permitAll()
                 .and()
                 //开启cookie储存用户信息，并设置有效期为14天，指定cookie中的密钥
@@ -55,6 +57,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 //指定登场成功之后跳转的url
                 .logoutSuccessUrl("/logoutsuccess")
                 .permitAll()
+                .and()
+                .cors()
                 .and()
                 .csrf().disable();//否则无法提交表单
         http.sessionManagement().maximumSessions(1).expiredUrl("/login");

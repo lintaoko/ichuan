@@ -4,11 +4,13 @@ import App.Domain.GoodsType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 @Service
+@Transactional
 public class GoodsTypeService {
     @Autowired
     private RestTemplate restTemplate;

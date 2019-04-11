@@ -16,18 +16,18 @@ public class ReplyPostingController {
     ReplyPostingService replyPostingService;
     //查询自己的回复贴
     @GetMapping("api/replyposting/replyuserid")
-    public ReplyPosting[] queryReplyPostingByReplyUserId(@RequestBody ReplyPosting replyPosting){
-     return replyPostingService.queryReplyPostingByReplyUserId(replyPosting.getReplyUserId());
+    public ReplyPosting[] queryReplyPostingByReplyUserId(@RequestParam Integer userId){
+     return replyPostingService.queryReplyPostingByReplyUserId(userId);
     }
     //查询主题帖的回复贴
     @GetMapping("api/replyposting/mainpostingid")
-    public ReplyPosting[] queryReplyPostingByMainPostingId(@RequestBody ReplyPosting replyPosting){
-        return replyPostingService.queryReplyPostingByMainPostingId(replyPosting.getMainPostingId());
+    public ReplyPosting[] queryReplyPostingByMainPostingId(@RequestParam Integer mainPostingId){
+        return replyPostingService.queryReplyPostingByMainPostingId(mainPostingId);
     }
     //查询主题帖中某人的回复贴(只看楼主)
     @GetMapping("api/replyposting/mainpostingid/replyuserid")
-    public ReplyPosting[] queryReplyPostingByMainPostingIdAndReplyUserId(@RequestBody ReplyPosting replyPosting){
-        return replyPostingService.queryReplyPostingByMainPostingIdAndReplyUserId(replyPosting.getMainPostingId(), replyPosting.getReplyUserId());
+    public ReplyPosting[] queryReplyPostingByMainPostingIdAndReplyUserId(@RequestParam Integer replyUserId,@RequestParam Integer mainPostingId){
+        return replyPostingService.queryReplyPostingByMainPostingIdAndReplyUserId(mainPostingId, replyUserId);
     }
     //回复主题帖
     @PostMapping("api/replyposting")

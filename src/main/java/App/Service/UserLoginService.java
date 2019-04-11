@@ -4,8 +4,11 @@ import App.Domain.UserLogin;
 import App.Mapper.UserLoginMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
+
 public class UserLoginService {
     @Autowired
     UserLoginMapper userLoginMapper;

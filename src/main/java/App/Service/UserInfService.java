@@ -4,8 +4,10 @@ import App.Domain.UserInf;
 import App.Mapper.UserInfMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class UserInfService {
     @Autowired
     UserInfMapper userInfMapper;

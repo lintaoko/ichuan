@@ -26,13 +26,13 @@ public class MainPostingController {
     }
     //主题帖查询byUserId(查询自己的贴子)
     @GetMapping("api/mainposting/userid")
-    public MainPosting[] queryMainPostingByUserId(@RequestBody MainPosting mainPosting){
-        return mainPostingService.queryMainPostingByUserId(mainPosting.getUserId());
+    public MainPosting[] queryMainPostingByUserId(@RequestParam Integer userId){
+        return mainPostingService.queryMainPostingByUserId(userId);
     }
     //主题帖搜索
     @GetMapping("api/mainposting/postingtitle")
-    public MainPosting[] queryMainPostingByLikePostingTitle(@RequestBody MainPosting mainPosting){
-        return mainPostingService.queryMainPostingByLikePostingTitle(mainPosting.getPostingTitle());
+    public MainPosting[] queryMainPostingByLikePostingTitle(@RequestParam String postingTitle){
+        return mainPostingService.queryMainPostingByLikePostingTitle(postingTitle);
     }
     //发表主题帖
     @PostMapping("api/mainposting")
