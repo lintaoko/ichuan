@@ -17,7 +17,7 @@ public  enum  Result {
     public static String toJson(Result result){
             JSONObject object = new JSONObject();
             object.put("code", result.getCode());
-        return object.toString();
+        return object.toJSONString();
     }
     public void setCode(int code) {
         this.code = code;

@@ -1,596 +1,234 @@
-2019-04-11 16:16:44,334 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 16:16:44,662 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 10536 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 16:16:44,662 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 16:16:46,311 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 16:16:46,417 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 16:16:46,421 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:16:46,421 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:16:46,425 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:16:46,425 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:16:46,425 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:16:46,425 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:16:46,425 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:16:46,585 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 16:16:47,258 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 16:16:47,258 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 16:16:48,002 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 16:16:48,529 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3805 ms
-2019-04-11 16:16:48,796 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 16:16:48,812 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 16:16:48,812 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 16:16:48,812 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 16:16:48,812 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 16:16:48,812 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 16:16:48,812 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 16:16:48,812 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 16:16:50,140 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
-2019-04-11 16:16:50,155 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4996c99, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d1dcdff, org.springframework.security.web.header.HeaderWriterFilter@66273da0, org.springframework.web.filter.CorsFilter@1b956cfa, org.springframework.security.web.authentication.logout.LogoutFilter@63c12e52, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62dbe64e, org.springframework.security.web.session.ConcurrentSessionFilter@1effd53c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ff35a3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d109c4f, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7fe82967, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@315f09ef, org.springframework.security.web.session.SessionManagementFilter@1229a2b7, org.springframework.security.web.access.ExceptionTranslationFilter@7f353d99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a92be4f]
-2019-04-11 16:16:50,343 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 16:16:50,608 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-11 16:16:50,608 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 6.43 seconds (JVM running for 7.796)
-2019-04-11 16:18:15,034 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
-2019-04-11 16:18:15,043 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 8 ms
-2019-04-11 16:18:15,065 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-1] (AbstractHandlerExceptionResolver.java:194) WARN  --> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2019-04-11 16:18:21,887 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/goods/goodsid/all
-2019-04-11 16:18:21,887 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:18:21,888 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:18:21,889 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.GoodsController.queryGoodsAllInfByGoodsId
-2019-04-11 16:18:21,890 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:35) INFO  --> ARGS : [17]
-2019-04-11 16:18:21,896 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-3] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
-2019-04-11 16:18:23,599 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-3] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
-2019-04-11 16:18:24,855 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:40) INFO  --> RESPONSE : GoodsVo(goodsInfJson={"asd":"asasdd","asdasd":"asdasdsdasdasd","adass":"as"})
-2019-04-11 16:18:24,856 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:41) INFO  --> SPEND TIME : 2969
-2019-04-11 16:19:59,187 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 16:19:59,305 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 10720 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 16:19:59,306 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 16:20:00,025 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 16:20:00,070 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 16:20:00,071 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:20:00,071 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:20:00,071 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:20:00,072 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:20:00,072 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:20:00,072 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:20:00,073 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:20:00,091 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 16:20:00,254 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 16:20:00,256 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 16:20:00,494 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 16:20:00,706 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1368 ms
-2019-04-11 16:20:00,830 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 16:20:00,834 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 16:20:00,835 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 16:20:00,835 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 16:20:00,835 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 16:20:00,835 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 16:20:00,835 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 16:20:00,836 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 16:20:01,682 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
-2019-04-11 16:20:01,686 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2938127d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1229a2b7, org.springframework.security.web.header.HeaderWriterFilter@658255aa, org.springframework.web.filter.CorsFilter@127a7272, org.springframework.security.web.authentication.logout.LogoutFilter@7ff35a3f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a451491, org.springframework.security.web.session.ConcurrentSessionFilter@7f353d99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51c959a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6920614, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@337bbfdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ff23ae7, org.springframework.security.web.session.SessionManagementFilter@76563d26, org.springframework.security.web.access.ExceptionTranslationFilter@7add323c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d41ba0f]
-2019-04-11 16:20:01,800 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 16:20:01,976 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-11 16:20:01,978 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 2.866 seconds (JVM running for 3.409)
-2019-04-11 16:20:22,994 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
-2019-04-11 16:20:23,000 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 5 ms
-2019-04-11 16:20:23,029 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/goods/goodsid
-2019-04-11 16:20:23,029 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:20:23,030 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:20:23,030 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.GoodsController.queryGoodsInfByGoodsId
-2019-04-11 16:20:23,031 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> ARGS : [17]
-2019-04-11 16:20:23,036 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
-2019-04-11 16:20:25,018 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-1] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
-2019-04-11 16:20:26,379 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:40) INFO  --> RESPONSE : GoodsVo(goodsInfJson={"asd":"asasdd","asdasd":"asdasdsdasdasd","adass":"as"})
-2019-04-11 16:20:26,379 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:41) INFO  --> SPEND TIME : 3350
-2019-04-11 16:20:31,451 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/goods/goodsid
-2019-04-11 16:20:31,451 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:20:31,451 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:20:31,452 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.GoodsController.queryGoodsInfByGoodsId
-2019-04-11 16:20:31,452 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:35) INFO  --> ARGS : [17]
-2019-04-11 16:20:32,164 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:40) INFO  --> RESPONSE : GoodsVo(goodsInfJson={"asd":"asasdd","asdasd":"asdasdsdasdasd","adass":"as"})
-2019-04-11 16:20:32,165 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:41) INFO  --> SPEND TIME : 714
-2019-04-11 16:21:04,787 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 16:21:04,914 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 18564 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 16:21:04,915 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 16:21:05,714 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 16:21:05,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 16:21:05,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:21:05,755 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:21:05,755 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:21:05,755 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:21:05,755 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:21:05,755 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:21:05,755 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:21:05,772 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 16:21:05,921 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 16:21:05,922 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 16:21:06,160 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 16:21:06,341 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1394 ms
-2019-04-11 16:21:06,457 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 16:21:06,463 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 16:21:06,464 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 16:21:06,464 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 16:21:06,464 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 16:21:06,465 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 16:21:06,465 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 16:21:06,466 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 16:21:07,277 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
-2019-04-11 16:21:07,281 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fb29ca9, org.springframework.security.web.context.SecurityContextPersistenceFilter@35d5ac51, org.springframework.security.web.header.HeaderWriterFilter@58ff8d79, org.springframework.web.filter.CorsFilter@1e253c9d, org.springframework.security.web.authentication.logout.LogoutFilter@5b3a7ef5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43e9089, org.springframework.security.web.session.ConcurrentSessionFilter@52e04737, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a3194c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f7076bc, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2f5ac102, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@350d3f4d, org.springframework.security.web.session.SessionManagementFilter@5d5c04f9, org.springframework.security.web.access.ExceptionTranslationFilter@1deceb67, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21bd20ee]
-2019-04-11 16:21:07,400 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 16:21:07,594 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-11 16:21:07,597 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 2.884 seconds (JVM running for 3.466)
-2019-04-11 16:21:12,784 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
-2019-04-11 16:21:12,790 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] (FrameworkServlet.java:546) INFO  --> Completed initialization in 6 ms
-2019-04-11 16:21:12,816 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/goods/goodsid
-2019-04-11 16:21:12,816 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:21:12,816 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:21:12,817 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.GoodsController.queryGoodsInfByGoodsId
-2019-04-11 16:21:12,817 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:35) INFO  --> ARGS : [17]
-2019-04-11 16:21:12,823 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-4] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
-2019-04-11 16:21:13,877 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-4] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
-2019-04-11 16:21:14,534 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:40) INFO  --> RESPONSE : GoodsVo(goodsInfJson={"asd":"asasdd","asdasd":"asdasdsdasdasd","adass":"as"})
-2019-04-11 16:21:14,535 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1719
-2019-04-11 16:28:49,954 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 16:28:50,086 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 7992 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 16:28:50,087 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 16:28:50,877 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 16:28:50,921 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 16:28:50,922 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:28:50,922 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:28:50,923 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:28:50,923 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:28:50,923 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:28:50,923 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:28:50,924 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:28:50,949 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 16:28:51,094 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 16:28:51,095 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 16:28:51,313 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 16:28:51,484 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1358 ms
-2019-04-11 16:28:51,592 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 16:28:51,596 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 16:28:51,597 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 16:28:51,597 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 16:28:51,597 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 16:28:51,597 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 16:28:51,598 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 16:28:51,598 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 16:28:52,277 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
-2019-04-11 16:28:52,280 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4996c99, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d1dcdff, org.springframework.security.web.header.HeaderWriterFilter@66273da0, org.springframework.web.filter.CorsFilter@1b956cfa, org.springframework.security.web.authentication.logout.LogoutFilter@63c12e52, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62dbe64e, org.springframework.security.web.session.ConcurrentSessionFilter@1effd53c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ff35a3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d109c4f, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7fe82967, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@315f09ef, org.springframework.security.web.session.SessionManagementFilter@1229a2b7, org.springframework.security.web.access.ExceptionTranslationFilter@7f353d99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a92be4f]
-2019-04-11 16:28:52,393 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 16:28:52,576 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-11 16:28:52,578 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 2.702 seconds (JVM running for 3.276)
-2019-04-11 16:28:59,479 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
-2019-04-11 16:28:59,486 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
-2019-04-11 16:28:59,523 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:28:59,523 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:28:59,524 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:28:59,525 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:28:59,525 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:28:59,528 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:28:59,528 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:41) INFO  --> SPEND TIME : 5
-2019-04-11 16:29:25,781 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-3] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
-2019-04-11 16:29:26,579 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-3] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
-2019-04-11 16:29:26,587 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-3] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:29:26,609 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-3] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: om12@qq.cm(String), om12@qq.cm(String), om12@qq.cm(String)
-2019-04-11 16:29:26,894 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-3] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:29:26,984 App.Config.MyAuthenticationProvider [http-nio-8080-exec-3] (MyAuthenticationProvider.java:38) INFO  --> 用户om12@qq.cm登录
-2019-04-11 16:29:37,334 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:29:37,335 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:29:37,335 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:29:37,336 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:29:37,336 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:29:37,337 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:29:37,337 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:41) INFO  --> SPEND TIME : 3
-2019-04-11 16:29:45,375 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-6] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:29:45,375 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-6] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: om12@qq.cm(String), om12@qq.cm(String), om12@qq.cm(String)
-2019-04-11 16:29:45,395 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-6] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:29:45,475 App.Config.MyAuthenticationProvider [http-nio-8080-exec-6] (MyAuthenticationProvider.java:38) INFO  --> 用户om12@qq.cm登录
-2019-04-11 16:29:45,482 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/userId
-2019-04-11 16:29:45,482 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:29:45,482 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:29:45,482 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.id
-2019-04-11 16:29:45,482 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:35) INFO  --> ARGS : [org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31d2ce11: Principal: UserLogin(userLoginId=1, accountNumber=lintao, password=$2a$10$6yFCHpE8u4IyRj05OgQz7eUdyfzV9lCJwlOPWLmbNtAznweLNOjXG, email=om12@qq.cm, phone=21231, type=1, role=ROLE_ADMIN, accountNonExpired=false, accountNonLocked=false, credentialsNonExpired=false, enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 9AD9AC1B812813713EA01E6C181DCF59; Granted Authorities: ROLE_ADMIN]
-2019-04-11 16:29:45,483 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:40) INFO  --> RESPONSE : 1
-2019-04-11 16:29:45,483 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
-2019-04-11 16:29:46,772 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:29:46,773 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:29:46,773 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:29:46,774 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:29:46,774 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:29:46,775 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:29:46,775 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 3
-2019-04-11 16:30:24,511 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 16:30:24,644 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 12372 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 16:30:24,645 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 16:30:25,334 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 16:30:25,374 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 16:30:25,375 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:30:25,375 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:30:25,375 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:30:25,376 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:30:25,376 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:30:25,376 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:30:25,376 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:30:25,394 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 16:30:25,539 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 16:30:25,541 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 16:30:25,751 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 16:30:25,925 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1245 ms
-2019-04-11 16:30:26,033 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 16:30:26,037 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 16:30:26,037 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 16:30:26,038 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 16:30:26,038 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 16:30:26,038 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 16:30:26,038 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 16:30:26,039 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 16:30:26,687 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
-2019-04-11 16:30:26,691 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48b4a043, org.springframework.security.web.context.SecurityContextPersistenceFilter@46c269e0, org.springframework.security.web.header.HeaderWriterFilter@23b8d9f3, org.springframework.web.filter.CorsFilter@2f5b8250, org.springframework.security.web.authentication.logout.LogoutFilter@3968bc60, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4da6d664, org.springframework.security.web.session.ConcurrentSessionFilter@4fc3c165, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6069dd38, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43045f9f, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6e0c6a7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4821aa9f, org.springframework.security.web.session.SessionManagementFilter@4649d70a, org.springframework.security.web.access.ExceptionTranslationFilter@508a65bf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a451491]
-2019-04-11 16:30:26,801 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 16:30:26,986 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-11 16:30:26,988 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 2.549 seconds (JVM running for 3.094)
-2019-04-11 16:30:30,487 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
-2019-04-11 16:30:30,493 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 5 ms
-2019-04-11 16:30:35,492 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-5] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
-2019-04-11 16:30:39,976 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-5] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
-2019-04-11 16:30:39,981 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-5] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:30:39,999 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-5] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: om12@qq.cm(String), om12@qq.cm(String), om12@qq.cm(String)
-2019-04-11 16:30:40,036 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-5] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:30:40,119 App.Config.MyAuthenticationProvider [http-nio-8080-exec-5] (MyAuthenticationProvider.java:38) INFO  --> 用户om12@qq.cm登录
-2019-04-11 16:30:46,706 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/userId
-2019-04-11 16:30:46,707 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:30:46,707 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:30:46,708 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.id
-2019-04-11 16:30:46,708 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : [org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ce2c5729: Principal: UserLogin(userLoginId=1, accountNumber=lintao, password=$2a$10$6yFCHpE8u4IyRj05OgQz7eUdyfzV9lCJwlOPWLmbNtAznweLNOjXG, email=om12@qq.cm, phone=21231, type=1, role=ROLE_ADMIN, accountNonExpired=false, accountNonLocked=false, credentialsNonExpired=false, enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 9E56ED66180BB90BD0016C8A66FB5AD1; Granted Authorities: ROLE_ADMIN]
-2019-04-11 16:30:46,710 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : 1
-2019-04-11 16:30:46,711 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 5
-2019-04-11 16:30:48,415 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:30:48,416 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:30:48,416 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:30:48,417 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:30:48,417 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:30:48,418 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:30:48,418 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:41) INFO  --> SPEND TIME : 3
-2019-04-11 16:30:50,780 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:30:50,781 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: om12@qq.cm(String), om12@qq.cm(String), om12@qq.cm(String)
-2019-04-11 16:30:51,351 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:31:38,809 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 16:31:38,945 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 9340 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 16:31:38,945 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 16:31:39,702 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 16:31:39,742 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 16:31:39,743 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:31:39,743 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:31:39,743 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:31:39,744 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:31:39,744 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:31:39,744 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:31:39,744 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:31:39,762 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 16:31:39,903 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 16:31:39,904 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 16:31:40,122 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 16:31:40,295 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1312 ms
-2019-04-11 16:31:40,406 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 16:31:40,410 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 16:31:40,410 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 16:31:40,410 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 16:31:40,411 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 16:31:40,411 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 16:31:40,411 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 16:31:40,412 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 16:31:41,072 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15b642b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@38bb9d7a, org.springframework.security.web.header.HeaderWriterFilter@7e7f0216, org.springframework.web.filter.CorsFilter@518bfd90, org.springframework.security.web.authentication.logout.LogoutFilter@767191b1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b852b49, org.springframework.security.web.session.ConcurrentSessionFilter@60783105, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78d6447a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1907874b, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6edcad64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@317a118b, org.springframework.security.web.session.SessionManagementFilter@62db3891, org.springframework.security.web.access.ExceptionTranslationFilter@58ff8d79, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65b97f47]
-2019-04-11 16:31:41,183 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 16:31:41,377 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-11 16:31:41,379 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 2.652 seconds (JVM running for 3.236)
-2019-04-11 16:31:50,261 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
-2019-04-11 16:31:50,266 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 5 ms
-2019-04-11 16:31:50,302 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:31:50,302 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:31:50,302 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:31:50,303 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:31:50,303 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:31:50,305 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:31:50,306 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 5
-2019-04-11 16:31:53,840 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-4] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
-2019-04-11 16:31:54,605 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-4] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
-2019-04-11 16:31:54,609 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:31:54,637 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
-2019-04-11 16:31:54,675 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:31:54,764 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:31:54,765 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:31:54,765 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:31:54,765 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:31:54,765 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:31:54,766 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:31:54,766 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:41) INFO  --> SPEND TIME : 2
-2019-04-11 16:31:58,749 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:31:58,749 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
-2019-04-11 16:31:58,770 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:31:58,862 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:31:58,862 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:31:58,862 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:31:58,863 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:31:58,863 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:31:58,863 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:31:58,863 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
-2019-04-11 16:32:22,674 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-10] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:32:22,675 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-10] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: om12@qq.cm(String), om12@qq.cm(String), om12@qq.cm(String)
-2019-04-11 16:32:22,694 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-10] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:32:22,771 App.Config.MyAuthenticationProvider [http-nio-8080-exec-10] (MyAuthenticationProvider.java:38) INFO  --> 用户om12@qq.cm登录
-2019-04-11 16:35:00,540 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 16:35:00,670 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 9520 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 16:35:00,670 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 16:35:01,525 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 16:35:01,573 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 16:35:01,574 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:35:01,574 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:35:01,574 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:35:01,575 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:35:01,575 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 16:35:01,575 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:35:01,575 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 16:35:01,597 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 16:35:01,774 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 16:35:01,775 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 16:35:02,040 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 16:35:02,229 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1520 ms
-2019-04-11 16:35:02,335 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 16:35:02,338 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 16:35:02,339 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 16:35:02,339 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 16:35:02,339 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 16:35:02,340 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 16:35:02,340 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 16:35:02,340 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 16:35:02,989 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53cf9c99, org.springframework.security.web.context.SecurityContextPersistenceFilter@e5cbff2, org.springframework.security.web.header.HeaderWriterFilter@25290bca, org.springframework.web.filter.CorsFilter@7b306b9f, org.springframework.security.web.authentication.logout.LogoutFilter@26dc9bd5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1422ac7f, org.springframework.security.web.session.ConcurrentSessionFilter@4649d70a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fc3c165, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6069dd38, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@52d97ab6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@142213d5, org.springframework.security.web.session.SessionManagementFilter@4ac86d6a, org.springframework.security.web.access.ExceptionTranslationFilter@4a734c04, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c87e6b7]
-2019-04-11 16:35:03,106 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 16:35:03,299 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-11 16:35:03,301 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 2.845 seconds (JVM running for 3.517)
-2019-04-11 16:35:03,961 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
-2019-04-11 16:35:03,968 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
-2019-04-11 16:35:04,004 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:35:04,004 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:35:04,004 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:35:04,005 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:35:04,006 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:35:04,007 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:35:04,008 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 4
-2019-04-11 16:35:07,912 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-4] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
-2019-04-11 16:35:08,619 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-4] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
-2019-04-11 16:35:08,627 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:35:08,649 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
-2019-04-11 16:35:08,684 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:35:08,766 App.Config.MyAuthenticationProvider [http-nio-8080-exec-4] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
-2019-04-11 16:35:56,465 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 16:35:56,466 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:35:56,466 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:35:56,466 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 16:35:56,466 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 16:35:56,466 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 16:35:56,467 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:41) INFO  --> SPEND TIME : 2
-2019-04-11 16:36:00,284 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 16:36:00,284 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
-2019-04-11 16:36:00,305 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 16:36:00,381 App.Config.MyAuthenticationProvider [http-nio-8080-exec-9] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
-2019-04-11 16:36:06,628 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/userId
-2019-04-11 16:36:06,628 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 16:36:06,629 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 16:36:06,629 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.id
-2019-04-11 16:36:06,629 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : [org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31d1b2fd: Principal: UserLogin(userLoginId=1, accountNumber=lintao, password=$2a$10$6yFCHpE8u4IyRj05OgQz7eUdyfzV9lCJwlOPWLmbNtAznweLNOjXG, email=om12@qq.cm, phone=21231, type=1, role=ROLE_ADMIN, accountNonExpired=false, accountNonLocked=false, credentialsNonExpired=false, enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffde5d4: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: E5C29B77874E99C18969F9C763A4E002; Granted Authorities: ROLE_ADMIN]
-2019-04-11 16:36:06,629 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : 1
-2019-04-11 16:36:06,629 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
-2019-04-11 17:13:44,999 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 17:13:45,115 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 15220 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 17:13:45,115 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 17:13:45,846 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 17:13:45,894 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 17:13:45,895 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 17:13:45,895 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 17:13:45,896 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 17:13:45,896 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 17:13:45,896 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 17:13:45,896 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 17:13:45,896 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 17:13:45,915 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 17:13:46,102 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 17:13:46,103 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 17:13:46,341 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 17:13:46,579 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1435 ms
-2019-04-11 17:13:46,749 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 17:13:46,755 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 17:13:46,756 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 17:13:46,756 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 17:13:46,756 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 17:13:46,757 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 17:13:46,757 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 17:13:46,758 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 17:13:47,564 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48b4a043, org.springframework.security.web.context.SecurityContextPersistenceFilter@43045f9f, org.springframework.security.web.header.HeaderWriterFilter@4fc3c165, org.springframework.web.filter.CorsFilter@2f5b8250, org.springframework.security.web.authentication.logout.LogoutFilter@60bbacfc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6cc86152, org.springframework.security.web.session.ConcurrentSessionFilter@558756be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6403e24c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75ae4a1f, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@522bf64e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4821aa9f, org.springframework.security.web.session.SessionManagementFilter@7b6860f9, org.springframework.security.web.access.ExceptionTranslationFilter@66273da0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e5af8e1]
-2019-04-11 17:13:47,681 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 17:13:47,862 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-11 17:13:47,864 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 2.943 seconds (JVM running for 3.511)
-2019-04-11 17:14:03,513 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
-2019-04-11 17:14:03,520 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 7 ms
-2019-04-11 17:14:03,567 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 17:14:03,567 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 17:14:03,567 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 17:14:03,568 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 17:14:03,568 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 17:14:03,571 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 17:14:03,571 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 4
-2019-04-11 17:14:07,729 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-7] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
-2019-04-11 17:14:09,436 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-7] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
-2019-04-11 17:14:09,444 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 17:14:09,460 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
-2019-04-11 17:14:09,733 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 17:14:09,816 App.Config.MyAuthenticationProvider [http-nio-8080-exec-7] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
-2019-04-11 17:20:06,071 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 17:20:06,071 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 17:20:06,071 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 17:20:06,072 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 17:20:06,072 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 17:20:06,072 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 17:20:06,072 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
-2019-04-11 17:20:10,266 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
-2019-04-11 17:20:10,266 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
-2019-04-11 17:20:10,286 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
-2019-04-11 17:20:10,361 App.Config.MyAuthenticationProvider [http-nio-8080-exec-4] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
-2019-04-11 17:20:38,121 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 17:20:38,121 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 17:20:38,122 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 17:20:38,122 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 17:20:38,122 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 17:20:38,123 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 17:20:38,123 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 2
-2019-04-11 17:20:40,092 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/userId
-2019-04-11 17:20:40,093 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 17:20:40,094 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 17:20:40,094 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.id
-2019-04-11 17:20:40,095 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:35) INFO  --> ARGS : [org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ce286371: Principal: UserLogin(userLoginId=1, accountNumber=lintao, password=$2a$10$6yFCHpE8u4IyRj05OgQz7eUdyfzV9lCJwlOPWLmbNtAznweLNOjXG, email=om12@qq.cm, phone=21231, type=1, role=ROLE_ADMIN, accountNonExpired=false, accountNonLocked=false, credentialsNonExpired=false, enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 879AE0BDC8AE5FD8BD60648C89BA19F7; Granted Authorities: ROLE_ADMIN]
-2019-04-11 17:20:40,096 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:40) INFO  --> RESPONSE : 1
-2019-04-11 17:20:40,097 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:41) INFO  --> SPEND TIME : 5
-2019-04-11 17:20:40,136 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
-2019-04-11 17:20:40,137 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
-2019-04-11 17:20:40,138 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
-2019-04-11 17:20:40,138 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
-2019-04-11 17:20:40,139 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:35) INFO  --> ARGS : []
-2019-04-11 17:20:40,139 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:40) INFO  --> RESPONSE : login
-2019-04-11 17:20:40,139 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:41) INFO  --> SPEND TIME : 3
-2019-04-11 17:21:56,938 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
-2019-04-11 17:21:57,072 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 5320 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
-2019-04-11 17:21:57,073 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
-2019-04-11 17:21:57,775 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
-2019-04-11 17:21:57,818 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2019-04-11 17:21:57,819 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 17:21:57,819 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 17:21:57,819 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 17:21:57,819 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 17:21:57,819 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2019-04-11 17:21:57,820 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 17:21:57,820 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2019-04-11 17:21:57,840 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2019-04-11 17:21:58,010 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2019-04-11 17:21:58,011 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2019-04-11 17:21:58,294 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
-2019-04-11 17:21:58,469 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1365 ms
-2019-04-11 17:21:58,578 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2019-04-11 17:21:58,582 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
-2019-04-11 17:21:58,583 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
-2019-04-11 17:21:58,583 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
-2019-04-11 17:21:58,583 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
-2019-04-11 17:21:58,583 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
-2019-04-11 17:21:58,584 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
-2019-04-11 17:21:58,584 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
-2019-04-11 17:21:59,210 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] (AbstractApplicationContext.java:554) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
-public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-to { /error}: There is already 'jspController' bean method
-public java.lang.String App.Controller.JspController.Suuu() mapped.
-2019-04-11 17:21:59,227 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-04-11 17:21:59,232 org.springframework.boot.SpringApplication [main] (SpringApplication.java:858) ERROR --> Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
-public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-to { /error}: There is already 'jspController' bean method
-public java.lang.String App.Controller.JspController.Suuu() mapped.
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at App.App.main(App.java:54)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
-public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-to { /error}: There is already 'jspController' bean method
-public java.lang.String App.Controller.JspController.Suuu() mapped.
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
-	... 21 more
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
-public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-to { /error}: There is already 'jspController' bean method
-public java.lang.String App.Controller.JspController.Suuu() mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
-	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer$MvcCorsFilter.getMvcCorsFilter(CorsConfigurer.java:116)
-	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer$MvcCorsFilter.access$000(CorsConfigurer.java:103)
-	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.getCorsFilter(CorsConfigurer.java:97)
-	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.configure(CorsConfigurer.java:66)
-	at org.springframework.security.config.annotation.web.configurers.CorsConfigurer.configure(CorsConfigurer.java:39)
-	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:384)
-	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330)
-	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
-	at org.springframework.security.config.annotation.web.builders.WebSecurity.performBuild(WebSecurity.java:294)
-	at org.springframework.security.config.annotation.web.builders.WebSecurity.performBuild(WebSecurity.java:79)
-	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:334)
-	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104)
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$674e2316.CGLIB$springSecurityFilterChain$3(<generated>)
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$674e2316$$FastClassBySpringCGLIB$$7400c083.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$674e2316.springSecurityFilterChain(<generated>)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 22 more
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
-public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-to { /error}: There is already 'jspController' bean method
-public java.lang.String App.Controller.JspController.Suuu() mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
-	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1212)
-	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:340)
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:171)
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:107)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
-	... 52 more
-Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
-public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-to { /error}: There is already 'jspController' bean method
-public java.lang.String App.Controller.JspController.Suuu() mapped.
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:621)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:589)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:315)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
-	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
-	... 65 more
+2019-04-14 16:26:06,695 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.13.Final
+2019-04-14 16:26:06,875 App.App [main] (StartupInfoLogger.java:50) INFO  --> Starting App on DESKTOP-Q8QA67I with PID 4528 (started by 12442 in D:\Project\ichuan粉丝站后台管理系统)
+2019-04-14 16:26:06,875 App.App [main] (SpringApplication.java:679) INFO  --> The following profiles are active: test
+2019-04-14 16:26:07,691 com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [main] (EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50) INFO  --> Post-processing PropertySource instances
+2019-04-14 16:26:07,738 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2019-04-14 16:26:07,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2019-04-14 16:26:07,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2019-04-14 16:26:07,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2019-04-14 16:26:07,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2019-04-14 16:26:07,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2019-04-14 16:26:07,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application-test.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2019-04-14 16:26:07,754 com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [main] (EncryptablePropertySourceConverter.java:38) INFO  --> Converting PropertySource applicationConfig: [classpath:/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2019-04-14 16:26:07,769 com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [main] (DefaultLazyPropertyFilter.java:31) INFO  --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2019-04-14 16:26:07,939 com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [main] (DefaultLazyPropertyResolver.java:31) INFO  --> Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2019-04-14 16:26:07,939 com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [main] (DefaultLazyPropertyDetector.java:30) INFO  --> Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2019-04-14 16:26:08,219 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 8080 (http)
+2019-04-14 16:26:08,469 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1547 ms
+2019-04-14 16:26:08,625 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:32) INFO  --> String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2019-04-14 16:26:08,641 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
+2019-04-14 16:26:08,641 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
+2019-04-14 16:26:08,641 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
+2019-04-14 16:26:08,641 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
+2019-04-14 16:26:08,641 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
+2019-04-14 16:26:08,641 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
+2019-04-14 16:26:08,641 com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [main] (DefaultLazyEncryptor.java:58) INFO  --> Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
+2019-04-14 16:26:09,531 org.springframework.security.web.DefaultSecurityFilterChain [main] (DefaultSecurityFilterChain.java:43) INFO  --> Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c58255, org.springframework.security.web.context.SecurityContextPersistenceFilter@1229a2b7, org.springframework.security.web.header.HeaderWriterFilter@658255aa, org.springframework.web.filter.CorsFilter@eac3a26, org.springframework.security.web.authentication.logout.LogoutFilter@7ff35a3f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a451491, org.springframework.security.web.session.ConcurrentSessionFilter@7f353d99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51c959a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6920614, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@53e800f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10b1a751, org.springframework.security.web.session.SessionManagementFilter@76563d26, org.springframework.security.web.access.ExceptionTranslationFilter@7add323c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d41ba0f]
+2019-04-14 16:26:09,641 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-14 16:26:09,828 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-14 16:26:09,828 App.App [main] (StartupInfoLogger.java:59) INFO  --> Started App in 3.242 seconds (JVM running for 4.086)
+2019-04-14 16:26:16,562 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-04-14 16:26:16,562 org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 0 ms
+2019-04-14 16:26:16,609 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:26:16,609 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:26:16,609 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:26:16,609 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:26:16,609 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:26:16,609 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:26:16,609 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 0
+2019-04-14 16:26:21,656 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-4] (HikariDataSource.java:110) INFO  --> HikariPool-1 - Starting...
+2019-04-14 16:26:23,692 com.zaxxer.hikari.HikariDataSource [http-nio-8080-exec-4] (HikariDataSource.java:123) INFO  --> HikariPool-1 - Start completed.
+2019-04-14 16:26:23,692 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
+2019-04-14 16:26:23,724 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
+2019-04-14 16:26:23,781 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:26:23,969 App.Config.MyAuthenticationProvider [http-nio-8080-exec-4] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
+2019-04-14 16:28:35,431 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:28:35,431 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:28:35,432 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:28:35,432 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:28:35,432 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:28:35,432 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:28:35,432 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:28:40,278 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
+2019-04-14 16:28:40,279 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
+2019-04-14 16:28:40,299 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:28:40,378 App.Config.MyAuthenticationProvider [http-nio-8080-exec-7] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
+2019-04-14 16:28:57,826 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:28:57,826 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:28:57,827 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:28:57,827 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:28:57,827 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:28:57,827 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:28:57,827 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:28:59,810 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-3] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
+2019-04-14 16:28:59,810 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-3] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
+2019-04-14 16:28:59,830 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-3] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:28:59,910 App.Config.MyAuthenticationProvider [http-nio-8080-exec-3] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
+2019-04-14 16:29:01,581 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:29:01,582 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:29:01,582 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:29:01,582 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:29:01,582 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:29:01,582 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:29:01,582 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:29:04,328 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:29:04,328 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:29:04,328 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:29:04,328 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:29:04,329 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:29:04,331 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:29:04,331 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 3
+2019-04-14 16:29:10,139 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:29:10,139 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:29:10,140 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:29:10,140 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:29:10,140 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:29:10,140 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:29:10,141 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:41) INFO  --> SPEND TIME : 2
+2019-04-14 16:29:15,662 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
+2019-04-14 16:29:15,662 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
+2019-04-14 16:29:15,685 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-7] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:29:15,764 App.Config.MyAuthenticationProvider [http-nio-8080-exec-7] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
+2019-04-14 16:34:21,724 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:34:21,724 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:34:21,724 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:34:21,724 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:34:21,724 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:34:21,724 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:34:21,725 App.Aop.WebLogAspect [http-nio-8080-exec-9] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:34:25,217 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:34:25,217 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:34:25,218 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:34:25,218 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:34:25,218 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:34:25,218 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:34:25,218 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:34:27,447 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:34:27,447 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:34:27,447 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:34:27,447 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:34:27,448 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:34:27,448 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:34:27,448 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:34:32,997 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:34:32,997 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:34:32,998 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:34:32,998 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:34:32,998 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:34:32,998 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:34:32,998 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:35:16,174 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/userinf/userloginid
+2019-04-14 16:35:16,174 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:35:16,175 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:35:16,175 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.UserInfController.queryUserInfByUserLoginId
+2019-04-14 16:35:16,175 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:35) INFO  --> ARGS : [1]
+2019-04-14 16:35:16,223 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_inf where UserLoginId=? 
+2019-04-14 16:35:16,224 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: 1(Integer)
+2019-04-14 16:35:16,245 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-4] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:35:16,533 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:40) INFO  --> RESPONSE : UserInf(userInfId=1, userLoginId=1, userName=111, phone=asddsa, address=1232s, email=1233@qq.com, age=88, hobby=love todo)
+2019-04-14 16:35:16,534 App.Aop.WebLogAspect [http-nio-8080-exec-4] (WebLogAspect.java:41) INFO  --> SPEND TIME : 360
+2019-04-14 16:36:34,320 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/userinf/userloginid
+2019-04-14 16:36:34,321 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:36:34,321 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:36:34,321 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.UserInfController.queryUserInfByUserLoginId
+2019-04-14 16:36:34,321 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:35) INFO  --> ARGS : [2]
+2019-04-14 16:36:34,593 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-5] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_inf where UserLoginId=? 
+2019-04-14 16:36:34,594 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-5] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: 2(Integer)
+2019-04-14 16:36:34,615 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-5] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 0
+2019-04-14 16:36:35,147 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:40) INFO  --> RESPONSE : null
+2019-04-14 16:36:35,148 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:41) INFO  --> SPEND TIME : 828
+2019-04-14 16:37:18,188 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/userinf/userloginid
+2019-04-14 16:37:18,189 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:37:18,189 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:37:18,189 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.UserInfController.queryUserInfByUserLoginId
+2019-04-14 16:37:18,189 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:35) INFO  --> ARGS : [2]
+2019-04-14 16:37:18,229 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-10] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_inf where UserLoginId=? 
+2019-04-14 16:37:18,229 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-10] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: 2(Integer)
+2019-04-14 16:37:18,250 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-10] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:37:18,766 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:40) INFO  --> RESPONSE : UserInf(userInfId=2, userLoginId=2, userName=Tawn, phone=213132, address=1233, email=213123, age=2131, hobby=232)
+2019-04-14 16:37:18,766 App.Aop.WebLogAspect [http-nio-8080-exec-10] (WebLogAspect.java:41) INFO  --> SPEND TIME : 578
+2019-04-14 16:37:44,770 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:37:44,770 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:37:44,770 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:37:44,770 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:37:44,770 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:37:44,771 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:37:44,771 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:37:54,498 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/userinf/userloginid
+2019-04-14 16:37:54,499 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:37:54,499 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:37:54,499 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.UserInfController.queryUserInfByUserLoginId
+2019-04-14 16:37:54,499 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:35) INFO  --> ARGS : [2]
+2019-04-14 16:37:54,766 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-8] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_inf where UserLoginId=? 
+2019-04-14 16:37:54,766 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-8] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: 2(Integer)
+2019-04-14 16:37:55,020 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-8] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:37:55,533 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:40) INFO  --> RESPONSE : UserInf(userInfId=2, userLoginId=2, userName=Tawn, phone=213132, address=1233, email=213123, age=2131, hobby=232)
+2019-04-14 16:37:55,534 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1036
+2019-04-14 16:38:01,227 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:38:01,228 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:38:01,228 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:38:01,228 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:38:01,229 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:38:01,230 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:38:01,230 App.Aop.WebLogAspect [http-nio-8080-exec-3] (WebLogAspect.java:41) INFO  --> SPEND TIME : 3
+2019-04-14 16:38:03,726 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/api/userinf/userloginid
+2019-04-14 16:38:03,726 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:38:03,727 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:38:03,727 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.UserInfController.queryUserInfByUserLoginId
+2019-04-14 16:38:03,727 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> ARGS : [2]
+2019-04-14 16:38:03,996 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-1] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_inf where UserLoginId=? 
+2019-04-14 16:38:03,996 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-1] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: 2(Integer)
+2019-04-14 16:38:04,546 App.Mapper.UserInfMapper.queryUserInfByUserLoginId [http-nio-8080-exec-1] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:38:04,604 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:40) INFO  --> RESPONSE : UserInf(userInfId=2, userLoginId=2, userName=Tawn, phone=213132, address=1233, email=213123, age=2131, hobby=232)
+2019-04-14 16:38:04,604 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:41) INFO  --> SPEND TIME : 878
+2019-04-14 16:38:18,514 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:38:18,514 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:38:18,514 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:38:18,514 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:38:18,514 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:38:18,515 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:38:18,515 App.Aop.WebLogAspect [http-nio-8080-exec-2] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:38:24,148 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:38:24,149 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:38:24,149 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:38:24,149 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:38:24,149 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:38:24,149 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:38:24,150 App.Aop.WebLogAspect [http-nio-8080-exec-6] (WebLogAspect.java:41) INFO  --> SPEND TIME : 2
+2019-04-14 16:38:29,471 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:38:29,471 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:38:29,472 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:38:29,472 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:38:29,472 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:38:29,472 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:38:29,473 App.Aop.WebLogAspect [http-nio-8080-exec-5] (WebLogAspect.java:41) INFO  --> SPEND TIME : 2
+2019-04-14 16:38:31,701 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:38:31,701 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:38:31,701 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:38:31,701 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:38:31,701 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:38:31,702 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:38:31,702 App.Aop.WebLogAspect [http-nio-8080-exec-7] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:38:38,569 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/error
+2019-04-14 16:38:38,570 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:38:38,570 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:38:38,570 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.BaseErrorController.error
+2019-04-14 16:38:38,570 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:38:38,570 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:40) INFO  --> RESPONSE : Suuu
+2019-04-14 16:38:38,570 App.Aop.WebLogAspect [http-nio-8080-exec-8] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:38:45,245 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
+2019-04-14 16:38:45,246 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao(String), lintao(String), lintao(String)
+2019-04-14 16:38:45,266 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-9] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:38:45,345 App.Config.MyAuthenticationProvider [http-nio-8080-exec-9] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao登录
+2019-04-14 16:38:47,678 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:31) INFO  --> URL : http://localhost:8080/login
+2019-04-14 16:38:47,678 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:32) INFO  --> HTTP_METHOD : GET
+2019-04-14 16:38:47,678 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:33) INFO  --> IP : 0:0:0:0:0:0:0:1
+2019-04-14 16:38:47,678 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:34) INFO  --> CLASS_METHOD : App.Controller.JspController.aaa
+2019-04-14 16:38:47,679 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:35) INFO  --> ARGS : []
+2019-04-14 16:38:47,679 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:40) INFO  --> RESPONSE : login
+2019-04-14 16:38:47,679 App.Aop.WebLogAspect [http-nio-8080-exec-1] (WebLogAspect.java:41) INFO  --> SPEND TIME : 1
+2019-04-14 16:38:53,516 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-2] (BaseJdbcLogger.java:159) DEBUG --> ==>  Preparing: select * from user_login where AccountNumber=? or Email=? or Phone=? 
+2019-04-14 16:38:53,517 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-2] (BaseJdbcLogger.java:159) DEBUG --> ==> Parameters: lintao2(String), lintao2(String), lintao2(String)
+2019-04-14 16:38:53,538 App.Mapper.UserLoginMapper.findByName [http-nio-8080-exec-2] (BaseJdbcLogger.java:159) DEBUG --> <==      Total: 1
+2019-04-14 16:38:53,616 App.Config.MyAuthenticationProvider [http-nio-8080-exec-2] (MyAuthenticationProvider.java:31) INFO  --> 用户lintao2登录
+2019-04-14 17:25:53,271 com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] (HikariPool.java:766) WARN  --> HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m29s381ms686µs527ns).

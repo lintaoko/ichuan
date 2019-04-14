@@ -59,11 +59,6 @@ public class JspController {
         UserLogin us = (UserLogin) authentication.getPrincipal();
         return  us.getUserLoginId() ;
     }
-    @RequestMapping("/error")
-    public String Suuu(){
-        System.out.println("Turn to Suuu.jsp");
-        return "Suuu";
-    }
     //全局错误测试
     @RequestMapping("/errortest")
     public String bbb(){
@@ -80,7 +75,7 @@ public class JspController {
     public String upload(HttpServletRequest request) {
         List<MultipartFile> files =((MultipartHttpServletRequest)request).getFiles("file");
         MultipartFile file;
-        StringBuilder src= new StringBuilder(new String());
+        StringBuffer src= new StringBuffer();
         for (int i =0; i< files.size(); ++i) {
             file=files.get(i);
             if (!file.isEmpty()) {

@@ -14,6 +14,8 @@ import org.springframework.web.cors.CorsUtils;
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
+    private MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
+    @Autowired
     private MyAuthenticationProvider provider;
     @Override
     //重写了configure参数为AuthenticationManagerBuilder的方法
@@ -42,9 +44,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
                 //指定登录页的路径
                 .formLogin().loginPage("/login").loginProcessingUrl("/loginProcessingUrl")
+                .successHandler(myAuthenticationSuccessHandler)
                 //指定登录成功后跳转到/index页面
-                .defaultSuccessUrl("/userId")
-                .failureForwardUrl("/error")
+//                .defaultSuccessUrl("/userId")
+//                .failureForwardUrl("/error")
                 //指定登录失败后跳转到/login?error页面
                 .permitAll()
                 .and()

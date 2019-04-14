@@ -3,6 +3,8 @@ package App.Config;
 import App.Domain.Result;
 import App.Domain.UserLogin;
 import com.alibaba.fastjson.JSONObject;
+import com.mysql.cj.xdevapi.JsonArray;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
@@ -13,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@Slf4j
 @Component
 public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
     @Override
@@ -22,8 +25,10 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
         UserLogin userLogin=(UserLogin) authentication.getPrincipal();
         try {
             out = httpServletResponse.getWriter();
-            out.append(JSONObject.toJSONString(userLogin));
-            out.append(Result.toJson(Result.SUCCESS));
+            JSONObject object = (JSONObject) JSONObject.toJSON(userLogin);
+            object.put("code",Result.SUCCESS.getCode());
+            System.out.println(object.toString());
+            out.append(JSONObject.toJSONString(object));
         }
         catch (Exception e){
             e.printStackTrace();

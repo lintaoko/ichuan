@@ -15,7 +15,7 @@ public class MyUserDetailsService implements UserDetailsService {
     @Autowired
     private UserLoginMapper userLoginMapper;
     @Override
-    public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
         //查询账号是否存在，是就返回一个UserDetails的对象，否就抛出异常！
         UserLogin user = userLoginMapper.findByName(userName);
         if (user == null) {

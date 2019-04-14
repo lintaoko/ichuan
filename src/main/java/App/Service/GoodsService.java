@@ -53,7 +53,7 @@ public class GoodsService {
         return this.restTemplate.exchange(url, HttpMethod.DELETE,null,Integer.class).getBody();
     }
     //货物数量变更
-    public Integer goodsUpdateGoodsQuantity (Integer goodsQuantity){
+    synchronized public Integer goodsUpdateGoodsQuantity (Integer goodsQuantity){
         String url="http://127.0.0.1:8081/api/goods/"+goodsQuantity+"/goodsquantity";
         return this.restTemplate.exchange(url, HttpMethod.PUT,null,Integer.class).getBody();
     }
