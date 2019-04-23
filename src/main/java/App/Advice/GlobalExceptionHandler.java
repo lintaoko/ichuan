@@ -1,15 +1,18 @@
 package App.Advice;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice(basePackages ="App.Controller")
+@Slf4j
 public class GlobalExceptionHandler {
     @ResponseBody
     //输出形式
@@ -22,6 +25,7 @@ public class GlobalExceptionHandler {
         PrintWriter pw=new PrintWriter(sw);
         e.printStackTrace(pw);
         errorResultMap.put("errorCode",e.getMessage());
+        e.printStackTrace();
         return errorResultMap;
     }
 }

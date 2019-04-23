@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.security.RolesAllowed;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @Slf4j
@@ -34,13 +35,13 @@ public class GoodsController {
     }
     //查询货物从样式
     @GetMapping("api/goods/goodstype")
-    public Goods[] queryGoodsInfByGoodsType(@RequestBody Goods goods) {
-        return goodsService.queryGoodsInfByGoodsType(goods.getGoodsType());
+    public Map queryGoodsInfByGoodsType(@RequestParam Integer goodsType, Integer pageNum, Integer pageSize) {
+        return goodsService.queryGoodsInfByGoodsType(goodsType,pageNum,pageSize);
     }
     //添加货物
     @PostMapping("api/goods")
     public Integer goodsInsert(@RequestBody GoodsVo goods){
-        return  goodsService.goodsInsert(goods.getGoodsName(), goods.getGoodsImg(), goods.getGoodsQuantity(), goods.getGoodsInfJson(), goods.getGoodsType());
+        return  goodsService.goodsInsert(goods.getGoodsName(), goods.getGoodsImg(), goods.getGoodsQuantity(), goods.getGoodsInf(), goods.getGoodsType());
     }
     //删除货物
     @DeleteMapping("api/goods/goodsid")

@@ -13,7 +13,6 @@ import java.util.Date;
 import java.util.List;
 
 @Service
-@Transactional
 
 public class ReplyPostingService {
     @Autowired

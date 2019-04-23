@@ -10,7 +10,6 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-@Transactional
 public class GoodsTypeService {
     @Autowired
     private RestTemplate restTemplate;

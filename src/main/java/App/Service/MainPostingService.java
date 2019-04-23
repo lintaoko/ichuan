@@ -1,6 +1,8 @@
 package App.Service;
 
 import App.Domain.MainPosting;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
@@ -9,19 +11,17 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Date;
-import java.util.List;
+import java.util.Arrays;
+import java.util.Map;
 
 @Service
-@Transactional
-
 public class MainPostingService {
     @Autowired
     private RestTemplate restTemplate;
     //主题帖获取
-    public MainPosting[] queryAllMainPosting(){
-        String url="http://127.0.0.1:8082/api/mainposting";
-        return this.restTemplate.getForObject(url, MainPosting[].class);
+    public Map queryAllMainPosting(Integer pageNum, Integer pageSize){
+        String url="http://127.0.0.1:8082/api/mainposting/"+pageNum+"/"+pageSize;
+        return this.restTemplate.getForObject(url, Map.class);
     }
     //主题帖查询byUserId(查询自己的贴子)
     public MainPosting[] queryMainPostingByUserId(Integer userId){

@@ -4,13 +4,16 @@ package App.Controller;
 import App.Domain.MainPosting;
 import App.Domain.UserLogin;
 import App.Service.MainPostingService;
+import com.mysql.cj.xdevapi.JsonArray;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @Slf4j
@@ -21,8 +24,17 @@ public class MainPostingController {
 
     //主题帖获取
     @GetMapping("api/mainposting")
-    public MainPosting[] queryAllMainPosting(){
-        return mainPostingService.queryAllMainPosting();
+    public Map queryAllMainPosting( Integer pageNum,Integer pageSize){
+        return mainPostingService.queryAllMainPosting(pageNum, pageSize);
+//        Map<String,Object> map=new HashMap<>();
+//        int i=1;
+//        for (MainPosting mainPosting:mainPostings) {
+//            map.put(Integer.toString(i),mainPosting);
+//            i++;
+//        }
+//        map.put("pageNum",pageNum);
+//        map.put("pageSize",pageSize);
+//        return map;
     }
     //主题帖查询byUserId(查询自己的贴子)
     @GetMapping("api/mainposting/userid")

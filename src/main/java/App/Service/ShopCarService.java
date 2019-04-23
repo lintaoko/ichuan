@@ -12,8 +12,6 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 @Service
-@Transactional
-
 public class ShopCarService {
     @Autowired
     private RestTemplate restTemplate;

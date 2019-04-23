@@ -14,7 +14,6 @@ import java.util.Date;
 import java.util.List;
 
 @Service
-@Transactional
 public class GoodsEvaluationService {
     @Autowired
     private RestTemplate restTemplate;

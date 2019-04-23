@@ -15,9 +15,9 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Service
-@Transactional
 public class GoodsService {
     @Autowired
     private RestTemplate restTemplate;
@@ -32,12 +32,12 @@ public class GoodsService {
         return this.restTemplate.getForObject(url, GoodsVo.class);
     }
     //查询货物BygoodType
-    public Goods[] queryGoodsInfByGoodsType(Integer goodsType) {
-        String url="http://127.0.0.1:8081/api/goods/"+goodsType+"/goodstype";
-        return this.restTemplate.getForObject(url, Goods[].class);
+    public Map queryGoodsInfByGoodsType(Integer goodsType, Integer pageNum, Integer pageSize) {
+        String url="http://127.0.0.1:8081/api/goods/"+goodsType+"/goodstype/"+pageNum+"/"+pageSize;
+        return this.restTemplate.getForObject(url, Map.class);
     }
     //添加货物
-    public Integer goodsInsert(String goodsName , String goodsImg , Integer goodsQuantity, JSONObject goodsInf, Integer goodsType){
+    public Integer goodsInsert(String goodsName , String goodsImg , Integer goodsQuantity, String goodsInf, Integer goodsType){
         String url="http://127.0.0.1:8081/api/goods";
         MultiValueMap<String,Object> multiValueMap=new LinkedMultiValueMap<>();
         multiValueMap.add("goodsName",goodsName);
