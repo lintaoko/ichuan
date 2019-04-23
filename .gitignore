@@ -1,4 +1,6 @@
 /.idea/
 /target/
 /src/main/java/resources/application.properties
-/logs/
+/src/main/java/resources/application-redis.properties
+
+/logs
