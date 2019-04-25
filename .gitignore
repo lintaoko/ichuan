@@ -1,6 +1,6 @@
 /.idea/
 /target/
-*.properties/
+*.properties
 /src/main/java/resources/static/img/
 /logs/
 /transaction-logs/
