@@ -2,5 +2,6 @@
 /target/
 /src/main/java/resources/application.properties
 /src/main/java/resources/application-redis.properties
+/src/main/java/resources/static/img/*
 /logs/
 /transaction-logs/
