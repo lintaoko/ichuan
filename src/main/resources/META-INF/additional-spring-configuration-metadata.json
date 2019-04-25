@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "jasypt.encryptor.password",
+      "type": "java.lang.String",
+      "description": "Description for jasypt.encryptor.password."
+    },
+    {
+      "name": "spring.redis.datebase",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.datebase."
+    }
+  ] }
