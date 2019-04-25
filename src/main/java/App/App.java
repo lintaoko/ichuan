@@ -17,6 +17,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 
 
 import javax.servlet.MultipartConfigElement;
@@ -32,6 +33,10 @@ import java.util.Properties;
 @MapperScan(basePackages = {"App/Mapper"})//Mapper调用
 public class App   {
 
+    @Bean
+    public ServerEndpointExporter serverEndpointExporter() {
+        return new ServerEndpointExporter();
+    }
     @Bean
     public RestTemplate restTemplate(){
 //        return new RestTemplate();
@@ -53,7 +58,6 @@ public class App   {
 //        @SpringBootApplication
             // @en..  +@co..  同级包和当前包
             SpringApplication.run(App.class,args);
-
         }
 }
 

@@ -2,5 +2,5 @@
 /target/
 /src/main/java/resources/application.properties
 /src/main/java/resources/application-redis.properties
-
-/logs
+/logs/
+/transaction-logs/
